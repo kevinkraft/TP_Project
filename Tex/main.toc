@@ -1,5 +1,7 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{1}{section*.1}
 \tocdepth@restore 
-\contentsline {section}{\numberline {I}Acknowledgements}{2}{section*.2}
-\contentsline {section}{\numberline {}References}{2}{section*.3}
+\contentsline {section}{\numberline {I}The Lorentz Transformation}{2}{section*.2}
+\contentsline {section}{\numberline {II}Reparameterisation of the Schwarzschild Solution}{2}{section*.3}
+\contentsline {section}{\numberline {III}Acknowledgements}{2}{section*.4}
+\contentsline {section}{\numberline {}References}{2}{section*.5}
