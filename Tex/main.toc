@@ -3,5 +3,7 @@
 \tocdepth@restore 
 \contentsline {section}{\numberline {I}The Lorentz Transformation}{2}{section*.2}
 \contentsline {section}{\numberline {II}Reparameterisation of the Schwarzschild Solution}{2}{section*.3}
-\contentsline {section}{\numberline {III}Acknowledgements}{2}{section*.4}
-\contentsline {section}{\numberline {}References}{2}{section*.5}
+\appendix 
+\contentsline {section}{\numberline {A}Calculations}{3}{section*.4}
+\contentsline {section}{\numberline {II}Acknowledgements}{3}{section*.5}
+\contentsline {section}{\numberline {}References}{3}{section*.6}
