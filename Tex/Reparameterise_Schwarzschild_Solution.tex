@@ -20,6 +20,71 @@ u = t - r - 2m \ln(r - 2m)
 \epsilon {ds}^{2} = r^2 ({d\theta}^2 + {{\sin}^2 \theta}{d \phi}^2) - 2 du dr - {du}^{2} + \frac{2m}{r} {du}^{2} 
 \end{equation*}
 
-\noindent See \ref{Appendix_Ed-Fin_trans} for a detailed calculation. 
+\noindent See \ref{Appendix_Ed-Fin_trans} for a detailed calculation. Note that if $m = 0$ the space-time becomes Minkowskian, as expected. Setting $r = 0$ in this Minkowskian space-time the line element becomes:
+
+$$ \epsilon {ds}^2 = - {du}^{2} \Rightarrow t = -1$$
+
+\noindent Which implies that $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u.(CHECK ITS A GEODESIC???)
+
+We want to find the limit of the Schwarzschild solution as $m \rightarrow \infty$. In its current form, the limit cannot be calculated so first a suitable coordinate transformation must be made. 
+
+\begin{eqnarray*} 
+u = \mu u'        & \text{, where }  \mu = \text{ const}\\
+r = {\mu}^{-1} r' & 
+\end{eqnarray*} 
+
+\noindent So that
   
+\begin{eqnarray*} 
+du = \mu du' \\
+dr = {\mu}^{-1} dr' \\
+\Rightarrow du dr = du' dr'
+\end{eqnarray*} 
+
+\noindent To obtain (SEE CALCS PG3):
+
+\begin{equation*}
+\epsilon {ds}^2 = {r'}^2 \sin^2 \theta \left\{ \frac{{d\theta}^2}{\mu^2 \sin^2 \theta} +  \mu^{-2} {d \phi}^2 \right\} - 2 {du'} {dr'} - \left( \mu^2 - \frac{2 m \mu^3}{r'} {du'} \right) 
+\end{equation*}
+
+\noindent Now set $m \mu^{3} = k = \text{ const} \Rightarrow m = k \mu^{-3}$ and make another transformation first done by Ivor Robinson(check this???) given by:
+
+\begin{eqnarray} 
+\sin{\theta} = \frac{1}{\cosh{(\mu \xi)}} & \text{   ,    } \mu^{-1} \phi = \eta  
+\end{eqnarray} 
+
+\noindent Which results in (SEE CALCS PG 3): 
+
+\begin{equation*}
+\epsilon {ds}^2 = \frac{r^2}{\cosh^{2}{\mu \xi}} ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr} - \left( \mu^{2} - \frac{2k}{r} \right) {du}^2
+\end{equation*}
+
+\noindent Where the primes have been dropped for notational simplicity. This is now in an appropriate form to take the limit $m \rightarrow \infty$ which is equivalent to $\mu \rightarrow 0$. This limit gives:
+
+\begin{equation}\label{Kasner_after_limit}
+\epsilon {ds}^2 = r^2 ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr} - \frac{2k}{r} {du}^2
+\end{equation}
+
+\noindent This is still a solution of the field equations, but it is no longer the Schwarzschild solution. It is found that this is the Kasner solution. To see this (SEE CALCS PG ???):
+
+\begin{equation}\label{Our_Kasner} 
+\epsilon {ds}^2 = T^{-2/3} {dX}^2 + T^{4/3} \left( dY^2 + dZ^2 \right) - dT^2
+\end{equation}
+
+\noindent By definition the Kasner solution is given by:
+
+\begin{equation*} 
+\epsilon {ds}^2 = T^{2p} {dX}^2 + T^{2q} dY^2 + T^{2r} dZ^2 - dT^2
+\end{equation*}
+
+\noindent With:
+
+\begin{eqnarray*}
+p + q + r = 1 = p^2 + q^2 + r^2
+\end{eqnarray*}
+
+\noindent So it is clear that Eqn.(\ref{Our_Kasner}) is the Kasner solution with $p = -1/3$ and $q = r = 2/3$.
+
+It is clear that Minkowskian space-time emerges again by setting $k = 0$ in Eqn.(\ref{Kasner_after_limit}), which is equivalent to $m = 0$. Again setting $r = 0$ to find that $\epsilon {ds}^2 = 0$ in this case. Thus $r = 0$ is now a null geodesic with $u$ an affine parameter along it (SHOW).  
+
 

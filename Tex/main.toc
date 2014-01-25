@@ -4,6 +4,7 @@
 \contentsline {section}{\numberline {I}The Lorentz Transformation}{2}{section*.2}
 \contentsline {section}{\numberline {II}Reparameterisation of the Schwarzschild Solution}{2}{section*.3}
 \appendix 
-\contentsline {section}{\numberline {A}Calculations}{3}{section*.4}
-\contentsline {section}{\numberline {II}Acknowledgements}{3}{section*.5}
-\contentsline {section}{\numberline {}References}{3}{section*.6}
+\contentsline {section}{\numberline {A}Calculations}{4}{section*.4}
+\contentsline {subsection}{\numberline {1}Eddington-Finkelstein Coordinate Transform}{4}{section*.5}
+\contentsline {section}{\numberline {II}Acknowledgements}{4}{section*.6}
+\contentsline {section}{\numberline {}References}{4}{section*.7}
