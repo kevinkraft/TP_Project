@@ -1,0 +1,169 @@
+\section{Special Linear Matrices of the Lorentz Transformation}
+
+Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ hermitian matrix:
+
+\begin{equation*}
+A = 
+\left( 
+\begin{array}{cc}
+t-z    & x + i y \\
+x - iy & t+z \\
+\end{array} 
+\right)  
+\end{equation*}
+
+\noindent with $A^{\dagger}(\vec{x}) = A(\vec{x})$. This is useful as its determinant is the same as the usual lorentz invariant quantity(WHAT DO WE CALL THIS???):
+
+\begin{equation*}
+\det(A(\vec{x})) = t^2 - x^2 - y^2 - z^2
+\end{equation*}
+
+Consider any $2 \times 2$ hermitian matrix H. 
+
+\begin{equation*}
+H = \left( \begin{array}{cc}
+p & q \\
+r & s \\
+\end{array} \right) \text{ ,     }
+H^{\dagger} = \left( \begin{array}{cc}
+\bar{p} & \bar{q} \\
+\bar{r} & \bar{s} \\
+\end{array} \right)
+\end{equation*}
+
+\noindent It is know that $H^{\dagger}(\vec{x}) = H(\vec{x})$ so it is clear that $p = \bar{p}$ and $s = \bar{s}$ and thus $p,s \in \mathbb{R}$. Also $q = \bar{r}$ and then of course $\bar{q} = r$. Hence knowing $p,q,r$ and $s$ is equivalent to knowing $4$ real numbers, two from $p$ and two from $q$. From these parameters the coordinates $(x,y,z,t)$ of a point in Minkowskian space-time can be constructed as:
+
+\begin{equation*}
+x + iy = q = \bar{r} \text{ ,   } t - z = p \text{ ,   } t+z = s
+\end{equation*}
+
+\noindent by comparing with matrix $A$ above. Hence it is true that there is a one to one correspondence between points in Minkowskian space-time and $2 \times 2$ hermitian matrices.
+
+Construct the following matrix:
+
+\begin{equation*} 
+U = \left( 
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right)
+\end{equation*}
+
+\noindent with $\alpha$,$\beta$,$\gamma$,$\delta \in \mathbb{C}$. With the condition that $\det(U) = 1$. Such matrices $U$ form a group called the special linear group, which is denoted by $SL(2, \mathbb{C})$. Given $A(\vec{x})$ consider $U A(\vec{x}) U^{\dagger}$. This is a $2 \times 2$ hermitian matrix since:
+
+\begin{eqnarray*} {cl}
+(U A(\vec{x}) U^{\dagger})^{\dagger} & =  (U^{\dagger})^{\dagger} A^{\dagger}(\vec{x}) U^{\dagger} \\
+                                     & = U A(\vec(x)) U^{\dagger}
+\end{eqnarray*} 
+
+\noindent since $(U^{\dagger})^{\dagger} = U$ and $A^{\dagger} = A$. Hence there exists a point $\vec{x'} = (x', y', z', t')$ in minkowskian space-time for which:
+
+\begin{equation}\label{SL_trans}
+A(\vec{x'}) = U A(\vec{x}) U^{\dagger}
+\end{equation}
+
+Any $U$ involves 6 real parameters, 2 each from the four complex components, with the condition $\det(U) = 1$ supplying two constraints. One on the real parts and one on the imaginary parts of the components. Now calculate the determinant of the matrix in the primed frame
+
+\begin{eqnarray*}  
+\det(A(\vec{x'})) & = \det(U A(\vec{x}) U^{\dagger}) \\
+                  & = (\det(U))(\det(A(\vec{x}))(\det(U^{\dagger})) \\
+                  & = (\det(U))(\det(A(\vec{x}))\bar{(\det(U))} \\
+                  & = \det(A(\vec{x}))
+\end{eqnarray*}
+
+\noindent Thus we have the relation:
+
+\begin{equation*}  
+{t'}^2 - {x'}^2 - {y'}^2 - {z'}^2 = {t}^2 - {x}^2 - {y}^2 - {z}^2
+\end{equation*}
+
+\noindent Hence the transformation $\vec{x} \rightarrow \vec{x'}$ implicit in Eqn.(\ref{SL_trans}) is a Lorentz transformation. Eqn.(\ref{SL_trans}) describes the most general proper, orthochronous Lorentz transformation.
+
+It is useful to calculate the matrix $U$ for some examples of Lorentz transformations. First, write Eqn.(\ref{SL_trans}) in terms of its components:
+
+\begin{eqnarray*} 
+\left(
+\begin{array}{cc}
+t' - z' & x' + i y' \\
+x' - i y' & t' + z' \\
+\end{array}
+\right)
+& =
+\left(
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+t-z & x + i y \\
+x - i y & t + z   \\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+\bar{\alpha} & \bar{\beta} \\
+\bar{\gamma} & \bar{\delta} \\
+\end{array}
+\right) \\
+& = \left(
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+(t-z)\bar{\alpha} + (x + iy)\bar{\beta} & (t-z)\bar{\gamma} + (x + iy)\bar{\delta} \\
+(x - iy)\bar{alpha} + (t+z)\bar{\beta} & (x-iy)\bar{\gamma} + (t+z)\bar{\delta} \\
+\end{array}
+\right)
+\end{eqnarray*}
+
+\noindent Thus we have the relations:
+
+\begin{equation}\label{coeff_equate_a}
+\tag{{\theequation}a}
+t' - z' = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta}
+\end{equation}
+\begin{equation}\label{coeff_equate_b}
+\tag{{\theequation}b}
+x' + iy' = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta}
+\end{equation}
+\begin{equation}\label{coeff_equate_c}
+\tag{{\theequation}c}
+t' + z' = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}
+\end{equation}
+
+\subsection{Example 1: (NAME????)}
+
+\noindent Find $U$ \ref{coeff_equate_a}\ref{coeff_equate_b}\ref{coeff_equate_c} corresponding to the one parameter Lorentz transformation:
+
+\begin{eqnarray*} 
+x' = x\cos{\theta} + y\sin{\theta} \\
+y' = -x\sin{\theta} + y\cos{\theta} \\
+z' = z \\
+t' = t
+\end{eqnarray*} 
+
+\noindent This implies that:
+
+\begin{eqnarray*}
+t'-z' = t-z \\
+x'+iy' = (x+iy) e^{-i \theta} \\
+t'+z' = t+z
+\end{eqnarray*}
+
+Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{coeff_equate_a}) to obtain: (SEE CALS)
+
+\subsection{Example 2: Special Relativity Lorentz Transfomation}
+
+(CALCS)
+
+\subsection{Example 3: Singular Lorentz Transformation}
+
+(CALCS)
+
+It is clear that there will always be two matrices $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x'}) = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondece between the elements of $SL(2,\mathbb{C})$ and the proper orthochronous Lorentz transofrmation.

@@ -5,5 +5,7 @@
 \contentsline {section}{\numberline {II}Reparameterisation of the Schwarzschild Solution}{2}{section*.3}
 \contentsline {subsection}{\numberline {A}Line Element of Minkowskian Space-Time}{4}{section*.4}
 \contentsline {section}{\numberline {III}The Singular Lorentz Transformation}{6}{section*.5}
-\contentsline {section}{\numberline {IV}Acknowledgements}{7}{section*.6}
-\contentsline {section}{\numberline {}References}{7}{section*.7}
+\contentsline {section}{\numberline {IV}Special Linear Matrices of the Lorentz Transformation}{7}{section*.6}
+\contentsline {subsection}{\numberline {A}Example 1: (NAME????)}{9}{section*.7}
+\contentsline {section}{\numberline {V}Acknowledgements}{9}{section*.8}
+\contentsline {section}{\numberline {}References}{9}{section*.9}
