@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  12 FEB 2014 17:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  16 FEB 2014 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -427,38 +427,13 @@ e
 Class revtex4 Warning: Assuming \noaffiliation for Kevin Maguire (10318135).
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
-Overfull \hbox (7.05551pt too wide) detected at line 4
- \OT1/cmr/bx/n/10 I.
+Overfull \hbox (5.00003pt too wide) detected at line 13
+ \OT1/cmr/m/n/10 11
  []
 
 
-Overfull \hbox (11.73604pt too wide) detected at line 5
- \OT1/cmr/bx/n/10 II.
- []
-
-
-Overfull \hbox (9.7778pt too wide) detected at line 6
- \OT1/cmr/m/n/10 A.
- []
-
-
-Overfull \hbox (16.41656pt too wide) detected at line 7
- \OT1/cmr/bx/n/10 III.
- []
-
-
-Overfull \hbox (15.74991pt too wide) detected at line 8
- \OT1/cmr/bx/n/10 IV.
- []
-
-
-Overfull \hbox (9.7778pt too wide) detected at line 9
- \OT1/cmr/m/n/10 A.
- []
-
-
-Overfull \hbox (11.38882pt too wide) detected at line 10
- \OT1/cmr/bx/n/10 V.
+Overfull \hbox (5.00003pt too wide) detected at line 14
+ \OT1/cmr/m/n/10 11
  []
 
 )
@@ -482,46 +457,42 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 LaTeX Warning: Reference `trans_x_to_xi_4' on page 6 undefined on input line 18
 .
 
-[6]) (./Special_Linear_Matrices_of_Lorentz.tex [7]
-
-LaTeX Warning: Reference `coeff_equate_c' on page 8 undefined on input line 149
-.
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{equation.4.
-23}) has been already used, duplicate ignored
+[6]) (./Special_Linear_Matrices_of_Lorentz.tex [7] [8pdfTeX warning (ext4): des
+tination with the same identifier (name{equation.4.23}) has been already used, 
+duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.151 \begin{eqnarray*}
+l.144 \begin{eqnarray*}
                        pdfTeX warning (ext4): destination with the same identif
 ier (name{equation.4.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.151 \begin{eqnarray*}
-                       ])
+l.144 \begin{eqnarray*}
+                       ]) (./Extended_Complex_Plane.tex [9] [10])
 
-Package natbib Warning: Empty `thebibliography' environment on input line 54.
+Package natbib Warning: Empty `thebibliography' environment on input line 56.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-[9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+[11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0D5FC160B390A835B929763213DF9706;601.
+(rerunfilecheck)             Checksum: DE84EF15BA6C1CA6D1BCDD1F9BC25750;884.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9454 strings out of 495059
- 145366 string characters out of 3182030
- 319518 words of memory out of 3000000
- 12505 multiletter control sequences out of 15000+200000
- 7204 words of font info for 28 fonts, out of 3000000 for 9000
+ 9474 strings out of 495059
+ 145742 string characters out of 3182030
+ 320518 words of memory out of 3000000
+ 12514 multiletter control sequences out of 15000+200000
+ 7550 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,13n,29p,639b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -534,12 +505,13 @@ t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (10 pages, 171068 bytes).
+y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 195671 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

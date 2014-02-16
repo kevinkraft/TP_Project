@@ -7,5 +7,8 @@
 \contentsline {section}{\numberline {III}The Singular Lorentz Transformation}{6}{section*.5}
 \contentsline {section}{\numberline {IV}Special Linear Matrices of the Lorentz Transformation}{7}{section*.6}
 \contentsline {subsection}{\numberline {A}Example 1: (NAME????)}{9}{section*.7}
-\contentsline {section}{\numberline {V}Acknowledgements}{9}{section*.8}
-\contentsline {section}{\numberline {}References}{9}{section*.9}
+\contentsline {subsection}{\numberline {B}Example 2: Special Relativity Lorentz Transfomation}{9}{section*.8}
+\contentsline {subsection}{\numberline {C}Example 3: Singular Lorentz Transformation}{9}{section*.9}
+\contentsline {section}{\numberline {V}Stereographic Projecttion and the Extended Complex Plane}{9}{section*.10}
+\contentsline {section}{\numberline {VI}Acknowledgements}{11}{section*.11}
+\contentsline {section}{\numberline {}References}{11}{section*.12}
