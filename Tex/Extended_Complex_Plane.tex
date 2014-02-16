@@ -94,8 +94,194 @@ z = \cos{\theta}.
 \begin{eqnarray*}
 \sin{\theta}(\cos{\phi} +i \sin{\phi}) = \frac{2\zeta}{\cot^2{\left(\theta/2\right)}}, \\
 2\sin{\left(\theta/2\right)}\cos{\left(\theta/2\right)}e^{i\phi} = 2\zeta \sin^2{\left(\theta/2\right)}, \\
-\Rightarrow 
+\Rightarrow \zeta = e^{i\phi}\cot{\left(\theta/2\right)}. 
 \end{eqnarray*}
+
+\noindent This makes sense as it is clear that if $\zeta = \infty$ then $\theta = 0$ as one would expect. In summary the following coordinate transformations have been constructed
+
+\begin{eqnarray}
+\vec{n} = (x, y, z) & = (\sin{\theta}\cos{\phi}, \sin{\theta}\sin{\phi}, \cos{\theta}), \\ \label{Ext_Complex_Vec_n}
+                    & = \left( \frac{\bar{\zeta} + \zeta}{\bar{\zeta}\zeta + 1}  ,i\frac{\bar{\zeta} - \zeta}{\bar{\zeta}\zeta + 1}, \frac{\bar{\zeta}\zeta - 1}{\bar{\zeta}\zeta + 1}  \right).
+\end{eqnarray}
+
+\noindent Where here $\vec{n}$ is a unit vector in $\mathbb{R}^3$ such that $\vec{n} \cdot \vec{n} = 1$.
+
+Let $\vec{x} = (x,y,z,t)$ be a point on the future null cone with vector $(0,0,0,0)$. Denote the future null cone as $N^{+}$ (not sure???), so that 
+
+\begin{equation*}
+N^+ : x^2 + y^2 + z^2 - t^2 = 0 \text{,  for  } t>0
+\end{equation*}
+
+as all the vectors in the null cone have a Loretz quadratic form equal to zero by definition. (SEE FIG PG 4:5). The intersection of the spave-like hypersurface $t = \text{const}>0$ is a 2-sphere denoted by 
+
+\begin{equation*}
+\mathbb{S}^2 (t) : x^2 + y^2 + z^2 - t^2 = \text{const}.
+\end{equation*}
+
+\noindent There is a generator of $N^+$ passing through each point of $\mathbb{S}^2 (t)$. These generators are the null geodesics tangent to $N^+$ and passing through the point $(0,0,0,0)$. Hence the points of $\mathbb{S}^2 (t)$, denoted by $(\theta,\phi)$ or $\zeta$, label the \textit{generators} of $N^{+}$.
+
+For any $t>0$ it is clear that
+
+\begin{equation*}
+\left(\frac{x}{t}\right)^2 +\left(\frac{y}{t}\right)^2 +\left(\frac{z}{t}\right)^2 = 1.
+\end{equation*}
+
+\noindent Hence we can write
+
+\begin{eqnarray}\nonumber
+\vec{x} & = t(\sin{\theta}\cos{\phi}, \sin{\theta}\sin{\phi}, \cos{\theta}, 1), \\\label{Ext_Complex_vec_x_relations}
+        & = t\left( \frac{\bar{\zeta} + \zeta}{\bar{\zeta}\zeta + 1}  ,i\frac{\bar{\zeta} - \zeta}{\bar{\zeta}\zeta + 1}, \frac{\bar{\zeta}\zeta - 1}{\bar{\zeta}\zeta + 1},1  \right).
+\end{eqnarray}
+
+\noindent It is shown explicitely that the direction of $\vec{x}$ is determined by $(\theta,\phi)$ or $\zeta$ by comparing this to Eqn.(\ref{Ext_Complex_Vec_n}). All possible directions of $\vec{x}$ on $N^{+}$ are covered if $\zeta \in \hat{\mathbb{C}}$. Now the Lorentz transformation $\vec{x} \rightarrow \vec{x'}$ is investigated. This tranformation takes the form  
+
+\begin{equation*}
+\vec{x} \rightarrow \vec{x'} = t'\left( \frac{\bar{\zeta'} + \zeta'}{\bar{\zeta'}\zeta' + 1}  ,i\frac{\bar{\zeta'} - \zeta'}{\bar{\zeta'}\zeta' + 1}, \frac{\bar{\zeta'}\zeta' - 1}{\bar{\zeta'}\zeta' + 1},1  \right).
+\end{equation*}
+
+\noindent We say that the null direction $\zeta$ is trandformed to the null direction $\zeta'$. The realtion between $\zeta$ and $\zeta'$ must also be determined. Construct the matix $A(\vec{x})$ as in Eqn.(\ref{Special_Matrices_A_first}). 
+
+\begin{equation*}
+A(\vec{x}) = 
+\left(
+\begin{array}{cc}
+\frac{2t}{\zeta\bar{\zeta}+1} & \frac{2t\zeta}{\zeta\bar{\zeta}+1} \\
+\frac{2t\bar{\zeta}}{\zeta\bar{\zeta}+1} & \frac{2t\zeta\bar{\zeta}}{\zeta\bar{\zeta}+1} \\
+\end{array}
+\right)
+=
+c_0\left(
+\begin{array}{cc}
+1           & \zeta \\ 
+\bar{\zeta} & \bar{\zeta}\zeta \\ 
+\end{array}
+\right).
+\end{equation*}
+
+\noindent Where $c_0 = 2t/\zeta\bar{\zeta}+1 \in \mathbb{R}^2$. Note that as $\vec{x}$ is a null vector $\det{(A(\vec{x}))} = 0$. Thus the transformed matrix $A(\vec{x'})$ is given similarly as
+
+\begin{equation*}
+A(\vec{x'}) = 
+{c_0}'\left(
+\begin{array}{cc}
+1           & \zeta' \\ 
+\bar{\zeta'} & \bar{\zeta'}\zeta' \\ 
+\end{array}
+\right).
+\end{equation*}
+
+\noindent Now, as in the examples in section (\ref{Special_Linear_Matrices_of_Lorentz}) we determine the special linear matrix $U$ such that
+
+\begin{equation}\label{Ext_Complex_UAU}
+A(\vec{x'}) = U A(\vec{x}) U^{\dagger}
+\end{equation}
+
+\noindent As before, this matrix equation is written component wise as
+
+\begin{equation*}
+{c_0}'\left(
+\begin{array}{cc}
+1           & \zeta' \\ 
+\bar{\zeta'} & \bar{\zeta'}\zeta' \\ 
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right)
+{c_0}\left(
+\begin{array}{cc}
+1           & \zeta \\ 
+\bar{\zeta} & \bar{\zeta}\zeta \\ 
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+\bar{\alpha} & \bar{\beta} \\
+\bar{\gamma} & \bar{\delta} \\
+\end{array}
+\right).
+\end{equation*}
+
+\noindent Then three separate relations between $\zeta$ and $\zeta'$ are obtained
+
+\begin{eqnarray}\label{Ext_Complex_zeta_trans_1} 
+{c_0}' = c_0 (\alpha \bar{\alpha} + \alpha \bar{\beta} \zeta + \bar{\alpha} \beta \bar{\zeta} + \beta \bar{\beta} \zeta \bar{\zeta}), \\\label{Ext_Complex_zeta_trans_2} 
+{c_0}'\zeta' = c_0 (\alpha \bar{\gamma} + \alpha \bar{\delta} \zeta + \bar{\gamma} \beta \bar{\zeta} + \beta \bar{\delta} \zeta \bar{\zeta}), \\\label{Ext_Complex_zeta_trans_3} 
+{c_0}'\zeta'\bar{\zeta'} = c_0 (\gamma \bar{\gamma} + \gamma \bar{\delta} \zeta + \bar{\gamma} \delta \bar{\zeta} + \delta \bar{\delta} \zeta \bar{\zeta}). \\
+\end{eqnarray} 
+
+\noindent Using Eqns.(\ref{Ext_Complex_zeta_trans_1}) and (\ref{Ext_Complex_zeta_trans_2}) to obtain
+
+\begin{equation*}
+\zeta' = \frac{{c_0}'\zeta'}{{c_0}'} = \frac{\alpha(\bar{\gamma} + \bar{\delta}\zeta) + \beta \bar{\zeta}(\bar{\gamma} + \bar{\delta}\zeta)}{\alpha(\bar{\alpha} + \bar{\beta}\zeta) + \beta \bar{\zeta}(\bar{\alpha} + \bar{\beta}\zeta)} \\
+\end{equation*}
+
+\noindent Thus 
+
+\begin{equation*}
+\zeta' = \frac{(\bar{\gamma} + \bar{\delta}\zeta)}{(\bar{\alpha} + \bar{\beta}\zeta)},
+\end{equation*}
+
+\noindent with $\alpha\delta - \beta\gamma = 1$ as before. This is a fractional linear transformation of the extended complex plane $\hat{\mathbb{C}}$. There is a one to one correspondence here between proper, orthochronous Lorentz transformations and fracational linear transformations of the extended complex plane. This is because the matrices $\pm U$ both satisfy Eqn.(\ref{Ext_Complex_UAU}) as in the previous section., but now both matricex give the same transformation as the signs will cancel in the fractional transformation.
+
+\subsection{Singular and Non-Singular Lorentz Transformations}
+
+A given Lorentz transformation is equivalent to known $\alpha$, $\beta$ , $\gamma$ and $\delta$ parameters module a sign and therefore gives an explicit fractional linear transformation. For a given Lorentz transformation a \textit{fixed point} of the correspondong fractional linear transformation corresponds to an invarient null direction. The fixed points $\zeta$ satisfy the relation $\zeta' = \zeta$. Thus
+
+\begin{eqnarray}\nonumber
+\frac{(\bar{\gamma} + \bar{\delta}\zeta)}{(\bar{\alpha} + \bar{\beta}\zeta)} = \zeta, \\\label{Ext_Complex_fixed_point}
+\Rightarrow \bar{\beta}\zeta^2 + (\bar{\alpha}- \bar{\delta})\zeta - \bar{\gamma} = 0. 
+\end{eqnarray}
+
+\noindent Clearly this is a quadratic equation over the field $\mathbb{C}$, thus it has two roots in general. Hence a Lorentz transformation does indeed leave two null directions invarient in general. The non-sigular case is when these roots do not coincide. If Eqn.(\ref{Ext_Complex_fixed_point}) has only one root then the corresponding Lorentz transformation leaves one null direction invarient, this is the singular case.
+
+Consider Eqn.(\ref{Ext_Complex_fixed_point}) again. Divide by $\zeta^2$ to obtain
+
+\begin{equation*}
+\bar{\beta} + (\bar{\alpha}- \bar{\delta})\zeta^{-1} - \bar{\gamma}\zeta^{-2} = 0.
+\end{equation*}
+
+\noindent Hence $\zeta = \infty$ is a solution os this eqution if $\beta = 0$. If $zeta = \infty$ then $\vec{x}$ is given by $\vec{x} = t(0,0,1,1)$ by Eqn.(\ref{Ext_Complex_vec_x_relations}). Thus it is clear that this corresponds to the null direction $z=t$. Compare this to example 3,section (\ref{Special_Linear_Matrices_Example_3}). Here $\beta$ is zero AND the null direction is $z=t$ as expected. If $\zeta = 0$ is a solution to Eqn.(\ref{Ext_Complex_fixed_point}) it is required that $\gamma = 0$, thus $\vec{x} = (0,0,-1,1)$. So it is predicted that a Lorentz transformation with a special linear matrix of the form
+
+\begin{equation*}   
+U = 
+\left(
+\begin{array}{cc}
+\alpha & \beta \\
+0 & \delta \\
+\end{array}
+\right),
+\end{equation*}   
+
+\noindent will leave the $Z=-t$ null direction invariant.
+
+\subsection{Example: Standard Lorentz Transformation}
+
+Continuing on from Example 2, section (\ref{Special_Linear_Matrices_Example_3}), where $\alpha$, $\beta$, $\gamma$ and $\delta$ were determined. $\zeta'$ can now be expressed as
+
+\begin{equation*} 
+\zeta' = \frac{-\sqrt{\gamma_0 - 1} + \sqrt{\gamma_0 + 1}\zeta}{\sqrt{\gamma_0 + 1} - \sqrt{\gamma_0 - 1}\zeta}.
+\end{equation*}
+
+If th condition $\zeta' = \zeta$ is imposed then
+
+\begin{eqnarray*}
+\sqrt{\gamma_0 - 1}(\zeta^2 - 1) = 0 \\
+\Rightarrow \zeta = \pm 1
+\end{eqnarray*}
+
+In the $\zeta = +1$ case $\vec{x} = t(1,0,0,1)$ and the invariant direction is $x=t$. Similarly in the $\zeta = -1$ case $\vec{x} = t(-1,0,0,1)$ and the invariant direction is $x = - t$. 
+
+
+
+
+
+
+   
 
 
 
