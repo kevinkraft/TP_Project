@@ -95,7 +95,7 @@ t'+z' = t+ z - \epsilon(a + \bar{a})(t+z) + \epsilon (c + \bar{c})x + i \epsilon
 x'+iy' = x+iy + \epsilon(a-\bar{a})(x+iy) + \epsilon(b + \bar{c})t + \epsilon (b-\bar{c})z + O(\epsilon^2).
 \end{eqnarray}
 
-\noindent As $a,b,c \in \mathhbb{C}$, set 
+\noindent As $a,b,c \in \mathbb{C}$, set 
 
 \begin{equation*}
 a = a_1 +ia_2 \text{,  } b = b_1 +ib_2 \text{,  } c = c_1 +ic_2 \text{.} 
@@ -103,7 +103,7 @@ a = a_1 +ia_2 \text{,  } b = b_1 +ib_2 \text{,  } c = c_1 +ic_2 \text{.}
 
 \noindent Then subbing these into the above equations, eliminating $t$ and $z$ respectively from Eqn.(\ref{Infinitesimal_Lorentz_Transform_1}) and (\ref{Infinitesimal_Lorentz_Transform_2}) and taking real and imaginary parts of Eqn.(\ref{Infinitesimal_Lorentz_Transform_3}) to obtain
 
-\begin{equation*}
+\begin{equation}\label{infinitesimal_Matrix_component_wise}
 \left(
 \begin{array}{c}
 x' \\
@@ -127,16 +127,149 @@ t\\
 0            & -2a_2        & (b_1 - c_1) & (b_1+c_1)\\
 2a_2         & 0            & (b_2+c_2)   & (b_2 - c_2) \\
 -(b_1 - c_1) & -(b_2 - c_2) & 0           & -2a_1 \\
-
+(b_1 + c_1)  & (b_2-c_2)    & -2a_1       & 0 \\
 \end{array}
 \right)
 \left(
 \begin{array}{c}
-
+x \\
+y\\
+z\\
+t\\
 \end{array}
 \right)
-+ O(\epsilon^2)
++ O(\epsilon^2).
+\end{equation}
+
+\noindent The above $4 \times 4$ matrix will be denoted as $\tensor{L}{^i_j}$, so that Eqn.(\ref{infinitesimal_Matrix_component_wise}) can be written simply as 
+
+\begin{equation}\label{Infinitesimal_Infinitesimal_Lorentz_Transformation}
+\bar{x}^i = x^i + \epsilon \tensor{L}{^{i}_{j}} x^j + O(\epsilon^2).
+\end{equation}
+
+\noindent Where $\bar{x}^i = (x',y',z',t')$. It is also necessary to check that the Lorentz invariance of the quadratic form still holds. 
+
+\begin{eqnarray*}
+{x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 & = x^2 + y^2 + z^2 - t^2 - 4\epsilon a_2 x y + 2 \epsilon(b_1 + c_1)xt \\
+                                  & + 2\epsilon (b_1 - c_1)xz + 4 \epsilon a_2 yx + 2\epsilon (b_2 - c_2)yt \\
+                                  & + 2 \epsilon (b_2 + c_2)yz - 4\epsilon a_1 zt + 2 \epsilon (c_1 - b_1)zx \\
+                                  & -2 \epsilon (c_2 + b_2)zy + 4 \epsilon a_1 tz - 2 \epsilon (c_1 + b_1)tx \\
+                                  & -2\epsilon (b_2 - c_2) ty + O(\epsilon^2) \\
+                                  & = x^2 + y^2 + z^2 - t^2 + O(\epsilon^2)
+\end{eqnarray*}
+
+\noindent Hence this transforamtion is still a Lorentz Transformation if we neglect terms of order $\epsilon^2$.
+
+Consider the time-like world line (SEE FIG pg 5:3)of a particle in Minkowkian space-time $x^i = x^i(s)$. If $s$ is arc length or proper time then $v^i(s) = \frac{dx^i}{ds}$ is the unit tangent(NOT SURE WHY???) vector field. It is clear that $v^i(s)$ must be time-like as $x^i(s)$ is time-like, thus
+
+\begin{equation*}
+\eta_{ij} v^i v^j = -1. 
 \end{equation*}
 
-   
+\noindent Where $\eta_{ij} - \text{diag}(1,1,1,-1)$ is the metric of minkowskiam space-time. This implies that 
+
+\begin{equation*}
+(v^1)^2  + (v^2)^2 + (v^3)^2  - (v^4)^2 = -1.
+\end{equation*}
+
+Now consider taking a step along the world line of the particle. Define $\bar{s} = s + \alpha$, where $\alpha$ is some real parameter, so that $v^i (s+\alpha) \vcentcolon = \bar{v}^i(\bar{s})$. Hence we also have
+
+\begin{equation*}
+({\bar{v}^1})^2  + ({\bar{v}^2})^2 + ({\bar{v}^3})^2  - ({\bar{v}^4})^2 = -1,
+\end{equation*}
+
+\noindent and so $v^i(s)$ and $\bar{v}^i(\bar{s})$ are related by a Lorentz transformation. In particlular $v^i(s+\epsilon)$ and $v^i(s)$ are related by an infinitesimal Lorentz Transformation given by Eqn.(\ref{Infinitesimal_Infinitesimal_Lorentz_Transformation}),
+
+\begin{equation}
+v^i(s+\epsilon) = v^i(s) = \epsilon \tensor{L}{^{i}_{j}}(s)v^j (s) + O(\epsilon^2).
+\end{equation}
+
+\noindent Rearranging to obtain
+
+\begin{equation}
+\frac{v^i(s+\epsilon) - v^i(s)}{\epsilon} = \tensor{L}{^{i}_{j}}(s)v^j (s) + O(\epsilon).
+\end{equation}
+
+\noindent Now taking the limit as the infinitesimal step, $\epsilon$ goes to zero to obtain a continuous differentiable equation,
+
+\begin{equation}\label{Infinitesimal_DE_interms_v}
+\frac{dv^i}{ds} = \tensor{L}{^{i}_{j}}(s) v^j (s).
+\end{equation}
+
+\noindent This equation determines the trajectory of the particle through Minkowskian space-time. In terms of $x$ this is equivalent to
+
+\begin{equation*}
+\frac{d^2 x^i}{ds^2} = \tensor{L}{^{i}_{j}}(s) \frac{d x^j}{ds}.
+\end{equation*}
+
+It is interesting to write these equations in terms of the particles $3$-velocity given by
+
+\begin{equation*}
+\vec{u} = \left( \frac{dx}{dt}, \frac{dy}{dt}, \frac{dz}{dt} \right).
+\end{equation*}
+
+\noindent Start by using the chain rule on $v^i$,
+
+\begin{equation*}\label{Infinitesimal_Chain_Rule}
+v^i = \frac{dx^i}{ds} = \frac{dx^i}{dt} \frac{dt}{ds} = \left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt},1\right) \frac{dt}{ds}.
+\end{equation*}
+
+\noindent Now determine the first integral of $v^i$, which is equal to $-1$ as $v^i$ is time-like,
+
+\begin{equation*} 
+-1 = \eta_{ij} v^i v^j =  \left\{ \left( \frac{d}{dt} \right)^2  + \left( \frac{d}{dt} \right)^2  + \left( \frac{d}{dt} \right)^2 - 1  \right\} \left( \frac{dt}{ds} \right)^2,
+\end{equation*} 
+
+\noindent as this is just the scalar product in Minkowskian space-time. Therefore (NOT SURE WHERE THIS COMES FROM)
+
+\begin{equation*}
+\frac{dt}{ds} = \gamma (s) \vcentcolon = (1-u^2)^{-1/2},
+\end{equation*}
+
+\noindent where $u = |\vec{u}| = \sqrt{\vec{u} \cdot \vec{u}}$. Thus from Eqn.(\ref{Infinitesimal_Chain_Rule})
+
+\begin{equation}\label{infinitesimal_v_interms_gamma}
+v^i = \gamma(u) (\vec{u}, 1)
+\end{equation}
+
+\noindent It is now conveinient to display Eqn.(\ref{Infinitesimal_DE_interms_v}) as two equations denoting the spacial part and the temproal part, in terms of $\gamma$ and $u$. Again using the chain rule to obtain
+
+\begin{equation*} 
+\frac{dt}{ds} \frac{dv^i}{dt} = \tensor{L}{^{i}_{j}}v^j. 
+\end{equation*} 
+
+\noindent This then implies that 
+
+\begin{eqnarray}\label{Infinitesimal_gamma_u_1}
+\gamma(u) \frac{d}{dt} (\gamma(u) u^{\alpha}) = \tensor{L}{^{\alpha}_{j}} v^j, \\\nonumber
+\gamma(u) \frac{d}{dt} \gamma(u) = \tensor{L}{^{4}_{j}} v^j,
+\end{eqnarray}
+
+\noindent as $v^i = \gamma(u)(\vec{u},1)$. Here we have used the usual convention that greek indices denote the sum over the spacial indices only, thus $\alpha = 1,2,3$. Now Eqn.(\ref{infinitesimal_v_interms_gamma}) can be used to rewrite the $\tensor{L}{^{i}_{j}}$ coefficients to get
+
+\begin{eqnarray}\label{Infinitesimal_gamma_u_2}
+\tensor{L}{^{\alpha}_{j}} v^j = \gamma(u) (\tensor{L}{^{\alpha}_{\beta}} u^{\beta} + \tensor{L}{^{\alpha}_4}) \\ \nonumber
+\tensor{L}{^{4}_{j}} v^j = \gamma(u) (\tensor{L}{^{4}_{\alpha}} u^{\alpha0})
+\end{eqnarray} 
+
+\noindent where $\tensor{L}{^{4}_{4}} = 0$ from Eqn.(\ref{infinitesimal_Matrix_component_wise}). Putting together Eqns.(\ref{Infinitesimal_gamma_u_1}) and (\ref{Infinitesimal_gamma_u_2}) to obtain differential equations for the spacial and temporal coordinates in terms of the particles $3$-velocity,
+
+\begin{eqnarray*} 
+\frac{d}{dt} (\gamma(u) u^{\alpha}) = \tensor{L}{^{\alpha}_{\beta}} u^{\beta} + \tensor{L}{^{\alpha}_{4}} \\
+\frac{d\gamma(u)}{dt} = \tensor{L}{^{4}_{\alpha}} u^{\alpha}
+\end{eqnarray*} 
+
+(ON TOP OF pg 5:6)
+
+
+
+
+ 
+
+
+
+
+
+
+
 
