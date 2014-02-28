@@ -1,6 +1,10 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{1}{section*.1}
 \tocdepth@restore 
-\contentsline {section}{\numberline {I}Infinitesimal Lorentz Transformations}{2}{section*.2}
-\contentsline {section}{\numberline {II}Acknowledgements}{2}{section*.3}
-\contentsline {section}{\numberline {}References}{2}{section*.4}
+\contentsline {section}{\numberline {I}Special Linear Matrices of the Lorentz Transformation}{2}{section*.2}
+\contentsline {subsection}{\numberline {A}Example 1: Rotational Transformation}{3}{section*.3}
+\contentsline {subsection}{\numberline {B}Example 2: Special Relativity Lorentz Transfomation}{3}{section*.4}
+\contentsline {subsection}{\numberline {C}Example 3: Singular Lorentz Transformation}{3}{section*.5}
+\contentsline {section}{\numberline {II}Infinitesimal Lorentz Transformations}{4}{section*.6}
+\contentsline {section}{\numberline {III}Acknowledgements}{4}{section*.7}
+\contentsline {section}{\numberline {}References}{4}{section*.8}
