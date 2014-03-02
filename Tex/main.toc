@@ -1,19 +1,8 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{1}{section*.1}
 \tocdepth@restore 
-\contentsline {section}{\numberline {I}The Lorentz Transformation}{2}{section*.2}
-\contentsline {section}{\numberline {II}Reparameterisation of the Schwarzschild Solution}{2}{section*.3}
-\contentsline {subsection}{\numberline {A}Line Element of Minkowskian Space-Time}{4}{section*.4}
-\contentsline {section}{\numberline {III}The Singular Lorentz Transformation}{6}{section*.5}
-\contentsline {section}{\numberline {IV}Special Linear Matrices of the Lorentz Transformation}{7}{section*.6}
-\contentsline {subsection}{\numberline {A}Example 1: Rotational Transformation}{9}{section*.7}
-\contentsline {subsection}{\numberline {B}Example 2: Special Relativity Lorentz Transfomation}{9}{section*.8}
-\contentsline {subsection}{\numberline {C}Example 3: Singular Lorentz Transformation}{9}{section*.9}
-\contentsline {section}{\numberline {V}Stereographic Projecttion and the Extended Complex Plane}{9}{section*.10}
-\contentsline {subsection}{\numberline {A}Singular and Non-Singular Lorentz Transformations}{12}{section*.11}
-\contentsline {subsection}{\numberline {B}Example: Standard Lorentz Transformation}{13}{section*.12}
-\contentsline {section}{\numberline {VI}Infinitesimal Lorentz Transformations}{13}{section*.13}
-\contentsline {subsection}{\numberline {A}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{18}{section*.14}
-\contentsline {subsection}{\numberline {B}Pure Radiation Field Conditions in Minkowskian Space-Time}{19}{section*.15}
-\contentsline {section}{\numberline {VII}Acknowledgements}{19}{section*.16}
-\contentsline {section}{\numberline {}References}{19}{section*.17}
+\contentsline {section}{\numberline {I}Infinitesimal Lorentz Transformations}{2}{section*.2}
+\contentsline {subsection}{\numberline {A}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{6}{section*.3}
+\contentsline {subsection}{\numberline {B}Pure Radiation Field Conditions in Minkowskian Space-Time}{7}{section*.4}
+\contentsline {section}{\numberline {II}Acknowledgements}{7}{section*.5}
+\contentsline {section}{\numberline {}References}{7}{section*.6}

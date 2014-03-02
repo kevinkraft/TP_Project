@@ -365,10 +365,10 @@ a_1^2 = a_2^2 + b_1 c_1 - b_2 c_2 = 0, \\\label{Infinitesimal_discriminant_relat
 
 It is interesting to write these equations in terms of the electric and magnetic vectors, namely $\vec{E} = (E^1, E^2, E^3)$ and $\vec{B} = (B^1,B^2,B^3)$. The relation between the $a$,$b$ and $c$ and the $\vec{B}$ and $\vec{E}$ coefficients comes from Eqn.(\ref{Infinitesimal_P_Q_interms_E_B}), where the factor $q/m$ has been suppressed for conveinience. 
 
-\begin{eqnarray*} 
-a_1 = -\frac{1}{2} E^3 \text{,  } b_2 = \frac{1}{2}(E^2 + B^1) \text{,  } c_1 = \frac{1}{2} (E^1 + B^2) \text{,  } \\
+\begin{eqnarray}\label{Infinitesimal_abc_interms_EB_1}
+a_1 = -\frac{1}{2} E^3 \text{,  } b_2 = \frac{1}{2}(E^2 + B^1) \text{,  } c_1 = \frac{1}{2} (E^1 + B^2) \text{,  } \\\label{Infinitesimal_abc_interms_EB_2}
 a_2 = -\frac{1}{2} B^3 \text{,  } b_1 = \frac{1}{2} (E^1 - B^2) \text{,  } c_2  = \frac{1}{2} (B^1 - E^2). 
-\end{eqnarray*}
+\end{eqnarray}
 
 \noindent So Eqn.(\ref{Infinitesimal_discriminant_relation_1}) implies
 
@@ -407,7 +407,37 @@ Eqns.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond
 \zeta = - \frac{\bar{a}}{\bar{b}},
 \end{equation*}
 
-\noindent is the fixed point. Now determine the corresponding null direction $k^i$. 
+\noindent is the fixed point. Now determine the corresponding null direction $k^i$. (HOW DID WE DO THIS???)
+
+\begin{equation*}
+k^i = (\bar{\zeta} + \zeta,i(\bar{\zeta} - \zeta),\bar{\zeta}\zeta - 1,\bar{\zeta}\zeta + 1).
+\end{equation*}
+
+\noindent Now relate $k^i$ to $\tensor{L}{_i_j} = \eta_{ij} \tensor{L}{^k_j}$. From the relations in (\ref{Infinitesimal_abc_interms_EB_1}) and (\ref{Infinitesimal_abc_interms_EB_2}) it is clear that
+
+\begin{equation*}  
+L_{ij} = 
+\frac{q}{m}
+\left(
+\begin{array}{cccc}
+0    & B^3  & -B^2 & E^1 \\
+-B^3 & 0    & B^1  & E^2 \\
+B^2  & -B^1 & 0    & E^3 \\
+-E^1 & -E^2 & -E^3 & 0   \\
+\end{array}
+\right)
+=
+-(L_{ij}).
+\end{equation*}
+
+\noindent The dual of this quantity is defined by
+
+\begin{equation*}
+^*L_{ij} = \frac{1}{2} \epsilon_{ijkl} L^{kl},
+\end{equation*}
+
+\noindent where $\epsilon_{ijkl}$ is the Levi-Civita permutation symbol in 4 dimensions. 
+  
 
 
 
