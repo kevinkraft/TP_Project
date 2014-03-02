@@ -255,17 +255,79 @@ v^i = \gamma(u) (\vec{u}, 1)
 \noindent where $\tensor{L}{^{4}_{4}} = 0$ from Eqn.(\ref{infinitesimal_Matrix_component_wise}). Putting together Eqns.(\ref{Infinitesimal_gamma_u_1}) and (\ref{Infinitesimal_gamma_u_2}) to obtain differential equations for the spacial and temporal coordinates in terms of the particles $3$-velocity,
 
 \begin{eqnarray*} 
-\frac{d}{dt} (\gamma(u) u^{\alpha}) = \tensor{L}{^{\alpha}_{\beta}} u^{\beta} + \tensor{L}{^{\alpha}_{4}} \\
-\frac{d\gamma(u)}{dt} = \tensor{L}{^{4}_{\alpha}} u^{\alpha}
+\frac{d}{dt} (\gamma(u) u^{\alpha}) = \tensor{L}{^{\alpha}_{\beta}} u^{\beta} + \tensor{L}{^{\alpha}_{4}}, \\
+\frac{d\gamma(u)}{dt} = \tensor{L}{^{4}_{\alpha}} u^{\alpha}.
 \end{eqnarray*} 
 
-(ON TOP OF pg 5:6)
+\noindent These can be written explicitely as four equations
 
+\begin{eqnarray}\label{Infinitesimal_gamma_u_explicit_1}
+\frac{d}{dt} (\gamma(u) u^{(1)}) = -2a_2u^{(2)} + (b_1 - c_1)u^{(3)} + b_1 + c_1, \\ \label{Infinitesimal_gamma_u_explicit_2}
+\frac{d}{dt} (\gamma(u) u^{(2)}) = 2a_2 u^{(1)} + (b_2 + c_2) u^{(3)} + b_2 - c_2,\\ \label{Infinitesimal_gamma_u_explicit_3}
+\frac{d}{dt} (\gamma(u) u^{(3)}) = -(b_1 - c_1) u^{(1)} - (b_2 + c_2 )u^{(2)} - 2a_1,\\ \label{Infinitesimal_gamma_u_explicit_4}
+\frac{d\gamma(u)}{dt} = (b_1 + c_1)u^{(1)} + (b_2 - c_2) u^{(2)} - 2a_1 u^{(3)}.
+\end{eqnarray}
 
+Now define the $3$-vectors $\vec{P}$ and $\vec{Q}$ such that
 
+\begin{eqnarray*}
+\vec{P} = (b_1+c_1,b_2-c_2,-2a_1),
+\vec{Q} = (b_2 + c_2, -(b_1 - c_1),-2a_2).
+\end{eqnarray*}
 
- 
+It is clear that Eqns.(\ref{Infinitesimal_gamma_u_explicit_1})-(\ref{Infinitesimal_gamma_u_explicit_4}) can be written in terms of $\vec{P}$ and $\vec{Q}$ as follows,
 
+\begin{eqnarray}\label{Infinitesimal_like_Lorentz_force_1}
+\frac{d}{dt} (\gamma(u)\vec{u}) = \vec{P} + \vec{u} \times \vec{Q}, \\ \label{Infinitesimal_like_Lorentz_force_2}
+\frac{d\gamma}{dt} = \vec{u} \cdot \vec{P}.
+\end{eqnarray}
+
+\noindent Note that these expressions look remarkably like the Lorentz force in electromagnetism. It is easily shown that Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) implies Eqn.(\ref{Infinitesimal_like_Lorentz_force_2}). To see this, first take the scalar product of Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) with $\vec{U}$.
+
+\begin{eqnarray}\label{Infinitesimal_1_imples_2_calc_1}
+\vec{u} \cdot \frac{d}{dt} (\gamma(u)\vec{u}) = \vec{u} \cdot \vec{P} + \vec{u} \cdot (\vec{u} \times \vec{Q}), \\ \label{Infinitesimal_1_imples_2_calc_2}
+\gamma \vec{u} \frac{d\vec{u}}{dt} + \vec{u} \cdot \vec{u} \frac{d\gamma}{dt} = \vec{u} \cdot \vec{P},
+\end{eqnarray}
+
+\noindent by using the product rule and as the scalar product of the cross product with a repeated vector is zero in the third term. The quantity $\gamma$ is known in terms of $u$, so it is possible to write the derivative in the first term as a derivative of $\gamma$ as follows,
+
+\begin{eqnarray*} 
+\gamma^{-2} = 1 - u^{2} = 1- \vec{u} \cdot \vec{u}, \\
+\Rightarrow -2 \gamma^{-3} \frac{d\gamma}{dt} = - 2 \vec{u} \cdot \frac{d \vec{u}}{dt}.
+\end{eqnarray*}
+
+\noindent Subbing this result back into Eqn.(\ref{Infinitesimal_1_imples_2_calc_2}) to obtain
+
+\begin{eqnarray*} 
+\gamma \gamma^{-3} \frac{d\gamma}{dt} + u^2 \frac{d\gamma}{dt} = \vec{u} \cdot \vec{P}, \\
+(\gamma^{-2} + u^2) \frac{d\gamma}{dt} = \vec{u} \cdot \vec{P}.
+\end{eqnarray*} 
+
+Therefore
+
+\begin{equation*}
+\frac{d\gamma}{dt} =  \vec{u} \cdot \vec{P},
+\end{equation*}
+
+and so it is shown that Eqn.(\ref{Infinitesimal_like_Lorentz_force_2}) is a generalization of Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) and contains no new information. 
+
+The dependance of the $3$-force acting on a particle as shown by Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}), depends in general on the particles $3$-velocity $\vec{u}$ in a special way, in order to be compatible with Special Relativity. Thus in particular \textit{the Lorentz $3$-force acting on a particle of rest mass $m$ and charge $q$ must depend upon $\vec{u}$ as in Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) to be compatible with special Relativity.} So the Lorentz force of electromagnetism is a special case of the a charged particle moving through Minkowskian space-time along a world-line of infiniteimal Lorentz transformations. In this case, make the identifications
+
+\begin{equation*} 
+\vec{P} = \frac{q}{m} \vec{E} \text{, and  } \vec{Q} = \frac{q}{m}\vec{B},
+\end{equation*} 
+
+\noindent where $\vec{E}$ is the external electric field and $\vec{B}$ is the external magnetic field in which the particle is moving. Then Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) takes the familiar form
+
+\begin{equation*}
+m \frac{d}{dt} (\gamma(u) \vec{u}) = q(\vec{E} + \vec{u} \times \vec{B}).
+\end{equation*}
+
+\noindent Or in the case of a slow moving particle $\gamma \approx 1$ and 
+
+\begin{equation*}  
+m \vec{a} = q (\vec{E} + \vec{u} \times \vec{B}).
+\end{equation*}  
 
 
 
