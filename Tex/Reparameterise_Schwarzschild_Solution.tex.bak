@@ -65,7 +65,7 @@ dr = {\mu}^{-1} dr' \\
 \epsilon {ds}^2 = \frac{r^2}{\cosh^{2}{\mu \xi}} ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr} - \left( \mu^{2} - \frac{2k}{r} \right) {du}^2
 \end{equation*}
 
-\noindent Where the primes have been dropped for convenience. This is now in an appropriate form to take the limit $m \rightarrow \infty$ which is equivalent to $\mu \rightarrow 0$. This limit gives:
+\noindent Where the primes have been dropped for conveinience. This is now in an appropriate form to take the limit $m \rightarrow \infty$ which is equivalent to $\mu \rightarrow 0$. This limit gives:
 
 \begin{equation}\label{Kasner_after_limit}
 \epsilon {ds}^2 = r^2 ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr} - \frac{2k}{r} {du}^2
