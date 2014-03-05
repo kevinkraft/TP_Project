@@ -1,114 +1,182 @@
 \section{Reparameterisation of the Schwarzschild Solution}
 
-In this section the Kasner solution of the vacuum field equations is derived from the Schwarzschild solution by taking the limit as the mass goes to infinity. It is then shown that the special case of the Kasner solution with no mass is equivalent to a novel form of Minkowskian space-time. (what do we want the Kasner vacuum solution for???). Starting with the Schwarzschild Solution of the vacuum field equations:
+In this section the Kasner solution of the vacuum field equations is derived from the Schwarzschild solution by taking the limit as the mass goes to infinity. It is then shown that the special case of the Kasner solution with no mass is equivalent to a novel form of Minkowskian space-time. (what do we want the Kasner vacuum solution for???). Start with the Schwarzschild Solution of the vacuum field equations given by
 
 \begin{equation}\label{Schwarz_Sol} 
-\epsilon {ds}^2 = {\big(1 - \frac{2m}{r}\big)}^{-1} {dr}^{2} + r^2 ({d\theta}^2 + {{\sin}^2 \theta}{d \phi}^2) - \big(1 - \frac{2m}{r}\big) {dt}^2
+\epsilon {\mathrm{d}s}^2 = {\left(1 - \frac{2m}{r}\right)}^{-1} {\mathrm{d}r}^{2} + r^2 ({\mathrm{d}\theta}^2 + {{\sin}^2 \theta}{\mathrm{d} \phi}^2) - \left(1 - \frac{2m}{r}\right) {\mathrm{d}t}^2.
 \end{equation}
 
-\noindent Now make the Eddington-Finkelstein coordinate transformation:
+\subsection{Eddington-Finkelstein Coordinate Transformation}
+
+\noindent First, make the Eddington-Finkelstein coordinate transformation
 
 \begin{equation}\label{Ed-Fin_trans}
-u = t - r - 2m \ln(r - 2m)
+u = t - r - 2m \ln(r - 2m).
 \end{equation}
 
-\noindent Working out the differential:
+\noindent Calculate the differentials
 
-\begin{eqnarray*}
-du = dt - dr - \frac{2m dr}{r - 2m}
-\end{eqnarray*}
+\begin{align*}
+\mathrm{d}u & = \mathrm{d}t - \mathrm{d}r - \frac{2m \mathrm{d}r}{r - 2m},\\
+            & = \mathrm{d}t - \mathrm{d}r{\left( 1-\frac{2m}{r}  \right)}^{-1},\\
+\mathrm{d}t & = \mathrm{d}u + {\left( 1-\frac{2m}{r}  \right)}^{-1} \mathrm{d}r, 
+\end{align*}
 
-SEE CALCULATIONS PG1
+\noindent and sub them into Eqn.(\ref{Schwarz_Sol}).
 
-\noindent Then write Eqn.(\ref{Schwarz_Sol}) in terms of $u$ to obtain:
-
-\begin{equation*} 
-\epsilon {ds}^{2} = r^2 ({d\theta}^2 + {{\sin}^2 \theta}{d \phi}^2) - 2 du dr - {du}^{2} + \frac{2m}{r} {du}^{2} 
+\begin{equation*}
+\epsilon {\mathrm{d}s}^{2} = {\left( 1-\frac{2m}{r}  \right)}^{-1} \mathrm{d}r^2 + r^2 ({\mathrm{d}\theta}^2 + {{\sin}^2 \theta}{\mathrm{d} \phi}^2) - {\left( 1-\frac{2m}{r}  \right)} {\left( \mathrm{d}u + {\left( 1-\frac{2m}{r}  \right)}^{-1} \mathrm{d}r \right)}^{2},
 \end{equation*}
 
-Note that if $m = 0$ the space-time becomes Minkowskian, as expected. Setting $r = 0$ in this Minkowskian space-time the line element becomes:
+\noindent which gives the result,
 
-$$ \epsilon {ds}^2 = - {du}^{2} \Rightarrow t = -1$$
+\begin{equation}\label{Reparameterisation_Schwarzschild_Before_Limit}
+\epsilon {\mathrm{d}s}^{2} = r^2 ({\mathrm{d}\theta}^2 + {{\sin}^2 \theta}{\mathrm{d} \phi}^2) - 2 \mathrm{d}u \mathrm{d}r - {\mathrm{d}u}^{2} + \frac{2m}{r} {\mathrm{d}u}^{2}. 
+\end{equation}
 
-\noindent Which implies that $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u.(CHECK ITS A GEODESIC???)
+Note that if $m = 0$ the space-time becomes Minkowskian, as expected. If $r = 0$ in this Minkowskian space-time the line element becomes
 
-We want to find the limit of the Schwarzschild solution as $m \rightarrow \infty$. In its current form, the limit cannot be calculated so first a suitable coordinate transformation must be made. 
+$$ \epsilon {\mathrm{d}s}^2 = - {\mathrm{d}u}^{2},$$
 
-\begin{eqnarray*} 
-u = \mu u'        & \text{, where }  \mu = \text{ const}\\
-r = {\mu}^{-1} r' & 
-\end{eqnarray*} 
+\noindent which implies that $\epsilon = -1$ and the first integral of this trajectory is also equal to $-1$. Thus $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u.(CHECK ITS A GEODESIC???NEED TO CHECK ANSWER WITH HOGAN)
 
-\noindent So that
+The limit of the Schwarzschild solution as $m \rightarrow \infty$ must be calculated to find the Kasner solution. In its current form the limit cannot be taken, so two suitable coordinate transformations must be made to get it in a more useful form. First Set 
+
+\begin{gather*} 
+u = \mu u', \\
+r = {\mu}^{-1} r',   
+\end{gather*} 
+
+\noindent where $\mu = \text{ const}$ so that
   
-\begin{eqnarray*} 
-du = \mu du' \\
-dr = {\mu}^{-1} dr' \\
-\Rightarrow du dr = du' dr'
-\end{eqnarray*} 
+\begin{gather*} 
+\mathrm{d}u = \mu \mathrm{d}u', \\
+\mathrm{d}r = {\mu}^{-1} \mathrm{d}r'. \\
+\end{gather*} 
 
-\noindent To obtain (SEE CALCS PG3):
-
-\begin{equation*}
-\epsilon {ds}^2 = {r'}^2 \sin^2 \theta \left\{ \frac{{d\theta}^2}{\mu^2 \sin^2 \theta} +  \mu^{-2} {d \phi}^2 \right\} - 2 {du'} {dr'} - \left( \mu^2 - \frac{2 m \mu^3}{r'} {du'} \right) 
-\end{equation*}
-
-\noindent Now set $m \mu^{3} = k = \text{ const} \Rightarrow m = k \mu^{-3}$ and make another transformation first done by Ivor Robinson(check this???) given by:
-
-\begin{eqnarray} 
-\sin{\theta} = \frac{1}{\cosh{(\mu \xi)}} & \text{   ,    } \mu^{-1} \phi = \eta  
-\end{eqnarray} 
-
-\noindent Which results in (SEE CALCS PG 3): 
+\noindent The product of the differentials is then invariant
 
 \begin{equation*}
-\epsilon {ds}^2 = \frac{r^2}{\cosh^{2}{\mu \xi}} ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr} - \left( \mu^{2} - \frac{2k}{r} \right) {du}^2
+{\mathrm{d}u}{\mathrm{d}r} = {\mathrm{d}u'}{\mathrm{d}r'}. 
 \end{equation*}
 
-\noindent Where the primes have been dropped for convenience. This is now in an appropriate form to take the limit $m \rightarrow \infty$ which is equivalent to $\mu \rightarrow 0$. This limit gives:
+\noindent When the new coordinates are subbed into Eqn.(\ref{Reparameterisation_Schwarzschild_Before_Limit}) the Schwarzschild solution becomes
+
+\begin{equation}\label{Reparameterise_Schwarzschild_Next_Before_Limit}
+\epsilon {\mathrm{d}s}^2 = {r'}^2 \sin^2 \theta \left\{ \frac{{\mathrm{d}\theta}^2}{\mu^2 \sin^2 \theta} +  \mu^{-2} {\mathrm{d} \phi}^2 \right\} - 2 {\mathrm{d}u'} {\mathrm{d}r'} - \left( \mu^2 - \frac{2 m \mu^3}{r'}\right) {\mathrm{d}u'}^2 . 
+\end{equation}
+
+\noindent Now set $m \mu^{3} = k$ or $ m = k \mu^{-3}$ and make another transformation first done by Ivor Robinson(check this???) given by
+
+\begin{align*} 
+\sin{\theta} = \frac{1}{\cosh{(\mu \xi)}}, & \mu^{-1} \phi = \eta.  
+\end{align*} 
+
+\noindent The second of these transformations gives simply $\mu^{-2} \mathrm{d}\phi^2 = \mathrm{d} \eta^2$. To rewrite the first coordinate transformation, first differentiate.
+
+\begin{align*} 
+\cos{\theta} \mathrm{d} \theta & = \frac{-1}{(\cosh(\mu \xi))^{2}} \sinh(\mu \xi) \mu \mathrm{d} \xi, \\
+                      & = -{\sin}^{2}\theta \sinh(\mu \xi) \mu \mathrm{d} \xi.
+\end{align*}
+
+\noindent Use the forumla $\cosh^2 A - \sinh^2 A = 1$, divide by $\mathrm{d} \xi$ and simplfy using trigonometric identities
+
+\begin{align*}
+\cos{\theta} \frac{\mathrm{d} \theta}{\mathrm{d} \xi} & = -\mu \sin^2 \theta \sqrt{\frac{1}{\sin^2 \theta} - 1}, \\
+                                    & = - \mu \sin \theta \cos \theta.
+\end{align*}
+
+\noindent Finally rewrite in terms of $\mathrm{d} \xi$
+
+\begin{equation*}
+\mathrm{d} \xi^2 = {\left( \frac{\mathrm{d} \theta}{\mu \sin \theta}  \right)}^2.
+\end{equation*}
+
+\noindent Subbing these transformations into Eqn.(\ref{Reparameterise_Schwarzschild_Next_Before_Limit}) gives
+
+\begin{equation*}
+\epsilon {\mathrm{d}s}^2 = \frac{r^2}{\cosh^{2}{\mu \xi}} ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r} - \left( \mu^{2} - \frac{2k}{r} \right) {\mathrm{d}u}^2,
+\end{equation*}
+
+\noindent where the primes have been dropped for convenience. 
+
+\subsection{The Kasner Solution}
+
+This is now in an appropriate form to take the limit $m \rightarrow \infty$ which is equivalent to $\mu \rightarrow 0$, to obtain
 
 \begin{equation}\label{Kasner_after_limit}
-\epsilon {ds}^2 = r^2 ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr} - \frac{2k}{r} {du}^2
+\epsilon {\mathrm{d}s}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r} - \frac{2k}{r} {\mathrm{d}u}^2
 \end{equation}
 
-\noindent This is still a solution of the field equations, but it is no longer the Schwarzschild solution. It is found that this is the Kasner solution. To see this (SEE CALCS PG ???):
-
-\begin{equation}\label{Our_Kasner} 
-\epsilon {ds}^2 = T^{-2/3} {dX}^2 + T^{4/3} \left( dY^2 + dZ^2 \right) - dT^2
-\end{equation}
-
-\noindent By definition the Kasner solution is given by:
+\noindent This is still a solution of the field equations but it is no longer the Schwarzschild solution. In this section it is shown to be the Kasner Solution(READ UP ABOUT THIS), which by definition is given by
 
 \begin{equation*} 
-\epsilon {ds}^2 = T^{2p} {dX}^2 + T^{2q} dY^2 + T^{2r} dZ^2 - dT^2
+\epsilon {\mathrm{d}s}^2 = T^{2p} {\mathrm{d}X}^2 + T^{2q} \mathrm{d}Y^2 + T^{2r} \mathrm{d}Z^2 - \mathrm{d}T^2,
 \end{equation*}
 
 \noindent With:
 
 \begin{eqnarray*}
-p + q + r = 1 = p^2 + q^2 + r^2
+p + q + r = 1 = p^2 + q^2 + r^2.
 \end{eqnarray*}
 
-\noindent So it is clear that Eqn.(\ref{Our_Kasner}) is the Kasner solution with $p = -1/3$ and $q = r = 2/3$.
+To write Eqn.(\ref{Kasner_after_limit}) in this form first make the transformation
+
+\begin{align*} 
+\xi' = \lambda^{-1} \xi, & \eta' = \lambda^{-1} \eta, \\
+r' = \lambda r,          & u' = \lambda^{-1} u,
+\end{align*}
+
+\noindent with $\lambda \vcentcolon = k^{-1/3}$. Subbing in these new coordinates gives
+
+\begin{equation*}  
+\epsilon \mathrm{d} s^2 = {r'}^2 (\mathrm{d} {\xi'}^2 + \mathrm{d} {\eta'}^2) - 2 \mathrm{d} u' \mathrm{d} r' + \frac{2}{r'}\mathrm{d} {u'}^2.
+\end{equation*}
+
+\noindent Now add and subtract $(r'/2) \mathrm{d} {r'}^2$ to complete the square as follows
+
+\begin{equation*}  
+\epsilon \mathrm{d} s^2 = r^2 (\mathrm{d} \xi^2 + \mathrm{d} \eta^2) \frac{2}{r}{\left( \mathrm{d} u  - \frac{r}{2} \mathrm{d} r\right)}^2 - \frac{r}{2}\mathrm{d} r^2,
+\end{equation*}
+
+\noindent where the primes have again been dropped for convenience. Now set
+
+\begin{align*}
+\bar{X} = u - \frac{r^2}{4}, & T = \frac{\sqrt{2}}{3} r^{3/2},
+\end{align*}
+
+\noindent so the differential of $\bar{X}$ is
+
+\begin{equation*}
+\mathrm{d} \bar{X} = \mathrm{d} u - \frac{r}{2} \mathrm{d}r
+\end{equation*}
+
+(ERROR HAVE CHECK TO HERE)
+
+\begin{equation}\label{Our_Kasner} 
+\epsilon {\mathrm{d}s}^2 = T^{-2/3} {\mathrm{d}X}^2 + T^{4/3} \left( \mathrm{d}Y^2 + \mathrm{d}Z^2 \right) - \mathrm{d}T^2
+\end{equation}
+
+\noindent So it is clear that Eqn.(\ref{Our_Kasner}) is the Kasner solution with $p = -1/3$ and $q = r = 2/3$, and thus Eqn.(\ref{Kasner_after_limit}) is also the Kasner solution
 
 \subsection{Line Element of Minkowskian Space-Time}
 
 Minkowskian space-time reemerges again by setting $k = 0$ in Eqn.(\ref{Kasner_after_limit}), which is equivalent to $m = 0$. 
 
 \begin{equation}\label{Kasner_after_limit_no_k}
-\epsilon {ds}^2 = r^2 ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr}
+\epsilon {\mathrm{d}s}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r}
 \end{equation}
 
-Setting $r = 0$ it can be shown that $\epsilon {ds}^2 = 0$ in this case. Then $r = 0$ is a null geodesic with $u$ an affine parameter along it. To demonstrate these properties first let $x^i = (x,y,z,t)$ be rectangular Cartesian coordinates with time in Minkowskian space-time with the usual line element:
+Setting $r = 0$ it can be shown that $\epsilon {\mathrm{d}s}^2 = 0$ in this case. Then $r = 0$ is a null geodesic with $u$ an affine parameter along it. To demonstrate these properties first let $x^i = (x,y,z,t)$ be rectangular Cartesian coordinates with time in Minkowskian space-time with the usual line element:
 
 \begin{equation*} 
-\epsilon {ds_0}^2 = {dx}^2 + {dy}^2 + {dz}^2 - {dt}^2
+\epsilon {\mathrm{d}s_0}^2 = {\mathrm{d}x}^2 + {\mathrm{d}y}^2 + {\mathrm{d}z}^2 - {\mathrm{d}t}^2
 \end{equation*} 
 
 \noindent We note that $C: x = 0, y = 0, z = t$ is a null geodesic as it will lie in the light cone of Minkowskian space-time. it we write it parametrically as $x^i = w^i (u)$ such that $w^i = (0,0,u,u)$ then $u$ is an affine parameter along $C$. The tangent to $C$ is then computed as:
 
 \begin{equation*} 
-v^i (u) = \frac{d w^i}{du} = (0,0,1,1)
+v^i (u) = \frac{\mathrm{d} w^i}{\mathrm{d}u} = (0,0,1,1)
 \end{equation*} 
    
 \noindent As $C$ is a null geodesic the first integral will be $v_i v^i = 0$ (IS THIS CALLED THE FIRST INTEGRAL?) and thus $v_i = (0,0,1,-1)$ where we have chosen the convention $(+,+,+,-)$. 
@@ -120,7 +188,7 @@ x^i = w^i (u) = r k^i \\
 \text{or } x^i = w^i(u) + r k^i 
 \end{eqnarray*}
 
-\noindent Thus $r$ is a new parameter which tell us the shortest distance between $C$ and some point $x^i$, and $k^i$ is the unit vector in that direction. As $k^i$ is a unit vector it satisfies the realtions:
+\noindent Thus $r$ is a new parameter which tell us the shortest distance between $C$ and some point $x^i$, and $k^i$ is the unit vector in that direction. As $k^i$ is a unit vector it satisfies the relations:
 
 \begin{eqnarray}
 k^i k_i = 0 \label{k_rel_1}\\
@@ -134,7 +202,7 @@ k^i = (\xi, \eta, A, B) \\
 \Rightarrow k_i = (\xi, \eta, A, -B)
 \end{eqnarray*}
 
-\noindent We can choose any variable for the first two slots of $k^i$ so we choose $\xi$ and $\eta$ from before for conveinience. Using the relation (\ref{k_rel_1}) it is clear that:
+\noindent We can choose any variable for the first two slots of $k^i$ so we choose $\xi$ and $\eta$ from before for convenience. Using the relation (\ref{k_rel_1}) it is clear that:
 
 \begin{equation*}
 \xi^2 + \eta^2 + A^2 - B^2 = 0
@@ -182,14 +250,14 @@ t = u + \frac{r}{2} (1 + \xi^2 + \eta^2)  \label{trans_x_to_xi}
 \noindent as is clear from Eqn.(\ref{rel_for_trans_1}) - Eqn.(\ref{rel_for_trans_4}). Now this is applied to the Minkowskian line element Eqn.(\ref{Kasner_after_limit_no_k}). First, the $x$ and $y$ differentials are:
 
 \begin{eqnarray*} 
-dx = r d\xi + \xi dr \\
-dy = r d\eta + \eta dr 
+dx = r \mathrm{d}\xi + \xi \mathrm{d}r \\
+\mathrm{d}y = r \mathrm{d}\eta + \eta \mathrm{d}r 
 \end{eqnarray*} 
 
 \noindent Which gives:
 
 \begin{equation}\label{differentials_1}
-{dx}^2 + {dy}^2 = r^2 ({d\xi}^2 + {d\eta}^2) + 2 r \xi {d\xi} {dr} + 2 r \eta {d\eta}{dr} + (\xi^2 + \eta^2) {dr}^2
+{\mathrm{d}x}^2 + {\mathrm{d}y}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) + 2 r \xi {\mathrm{d}\xi} {\mathrm{d}r} + 2 r \eta {\mathrm{d}\eta}{\mathrm{d}r} + (\xi^2 + \eta^2) {\mathrm{d}r}^2
 \end{equation}
 
 \noindent Next, the $z$ and $t$ differentials:
@@ -197,20 +265,20 @@ dy = r d\eta + \eta dr
 \begin{eqnarray*}
 z + t = 2 u + r (\xi^2 + \eta^2) \\
 z - t = - r \\
-{dz} + {dt} = 2 du + (\xi^2 + \eta^2) dr + 2 r \xi {d\xi} + 2 r \eta {d\eta} \\
-{dz} - {dt} = - dr 
+{\mathrm{d}z} + {\mathrm{d}t} = 2 \mathrm{d}u + (\xi^2 + \eta^2) \mathrm{d}r + 2 r \xi {\mathrm{d}\xi} + 2 r \eta {\mathrm{d}\eta} \\
+{\mathrm{d}z} - {\mathrm{d}t} = - \mathrm{d}r 
 \end{eqnarray*}
 
 \noindent Using difference of two squares to obtain:
 
 \begin{equation}\label{differentials_2}
-{dz}^2 - {dt}^2 = -2 {du}{dr} - (\xi^2 + \eta^2) {dr}^2 - 2 r \xi {d\xi}{dr} - 2 r \eta {d\eta}{dr}
+{\mathrm{d}z}^2 - {\mathrm{d}t}^2 = -2 {\mathrm{d}u}{\mathrm{d}r} - (\xi^2 + \eta^2) {\mathrm{d}r}^2 - 2 r \xi {\mathrm{d}\xi}{\mathrm{d}r} - 2 r \eta {\mathrm{d}\eta}{\mathrm{d}r}
 \end{equation}
 
 \noindent Combining Eqn.(\ref{differentials_1}) and (\ref{differentials_2}) to get:
 
 \begin{equation*}
-{dx}^2 + {dy}^2 + {dz}^2 - {dt}^2 = r^2 ({d\xi}^2 + {d\eta}^2) - 2 {du}{dr}
+{\mathrm{d}x}^2 + {\mathrm{d}y}^2 + {\mathrm{d}z}^2 - {\mathrm{d}t}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r}
 \end{equation*}
 
 \noindent and from this it is clear that Eqn.(\ref{Kasner_after_limit_no_k}) is the line element of Minkowskian space-time with $r = 0$ a null geodesic with affine parameter $u$ along it as before. 

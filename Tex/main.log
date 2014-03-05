@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  4 MAR 2014 18:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  5 MAR 2014 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,13 +436,8 @@ e
 Class revtex4 Warning: Assuming \noaffiliation for Kevin Maguire (10318135).
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
-Overfull \hbox (5.00003pt too wide) detected at line 13
- \OT1/cmr/m/n/10 12
- []
-
-
 Overfull \hbox (5.00003pt too wide) detected at line 14
- \OT1/cmr/m/n/10 13
+ \OT1/cmr/m/n/10 10
  []
 
 
@@ -452,21 +447,31 @@ Overfull \hbox (5.00003pt too wide) detected at line 15
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 16
- \OT1/cmr/m/n/10 18
+ \OT1/cmr/m/n/10 14
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 17
- \OT1/cmr/m/n/10 19
+ \OT1/cmr/m/n/10 14
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 18
- \OT1/cmr/m/n/10 21
+ \OT1/cmr/m/n/10 18
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 19
+ \OT1/cmr/m/n/10 19
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 20
+ \OT1/cmr/m/n/10 21
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 21
  \OT1/cmr/m/n/10 21
  []
 
@@ -474,67 +479,67 @@ Overfull \hbox (5.00003pt too wide) detected at line 19
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [1] (./Lorentz_Transform.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+ [2] (./Lorentz_Transform.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ))
-(./Reparameterise_Schwarzschild_Solution.tex [2] [3] [4])
-(./Singular_Lorentz_Transformation.tex [5]
+(./Reparameterise_Schwarzschild_Solution.tex [1] [2] [3] [4] [5])
+(./Singular_Lorentz_Transformation.tex
 
 LaTeX Warning: Reference `trans_x_to_xi_4' on page 6 undefined on input line 18
 .
 
-[6]) (./Special_Linear_Matrices_of_Lorentz.tex [7] [8pdfTeX warning (ext4): des
-tination with the same identifier (name{equation.4.24}) has been already used, 
-duplicate ignored
+[6]) (./Special_Linear_Matrices_of_Lorentz.tex [7] [8])
+(./Extended_Complex_Plane.tex [9pdfTeX warning (ext4): destination with the sam
+e identifier (name{equation.4.25}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 \begin{eqnarray*}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.4.24}) has been already used, duplicate ignored
+l.5 \begin{equation*}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.4.25}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 \begin{eqnarray*}
-                       ]) (./Extended_Complex_Plane.tex [9] [10] [11] [12])
-(./Infinitesimal_Lorentz_Transformation.tex [13] [14] [15] [16] [17]
+l.5 \begin{equation*}
+                     ] [10] [11] [12] [13])
+(./Infinitesimal_Lorentz_Transformation.tex [14] [15] [16] [17] [18]
 Overfull \hbox (6.09271pt too wide) in alignment at lines 375--378
  [][][] []
  []
 
-[18] [19]) [20]
+[19] [20])
 
-Package natbib Warning: Empty `thebibliography' environment on input line 59.
+Package natbib Warning: Empty `thebibliography' environment on input line 60.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
 [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6BD8FAEE7D12ED6E28F3A5AA99CC5BDC;1390.
+(rerunfilecheck)             Checksum: 05C3628CA68A92B6718107E1BBB78DDD;1552.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9653 strings out of 495059
- 150005 string characters out of 3182030
- 327518 words of memory out of 3000000
- 12644 multiletter control sequences out of 15000+200000
+ 9663 strings out of 495059
+ 150273 string characters out of 3182030
+ 322518 words of memory out of 3000000
+ 12650 multiletter control sequences out of 15000+200000
  7550 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,13n,29p,797b,457s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,13n,29p,797b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -549,10 +554,10 @@ amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 251783 bytes).
+Output written on main.pdf (23 pages, 256286 bytes).
 PDF statistics:
- 402 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

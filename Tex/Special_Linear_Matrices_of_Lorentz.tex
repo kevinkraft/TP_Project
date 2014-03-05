@@ -1,6 +1,6 @@
 \section{Special Linear Matrices of the Lorentz Transformation}\label{Special_Linear_Matrices_of_Lorentz}
 
-Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ hermitian matrix:
+Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ Hermitian matrix:
 
 \begin{equation}\label{Special_Matrices_A_first}
 A = 
@@ -12,13 +12,13 @@ x - iy & t+z \\
 \right)  
 \end{equation}
 
-\noindent with $A^{\dagger}(\vec{x}) = A(\vec{x})$. This is useful as its determinant is the same as the usual lorentz invariant quantity(WHAT DO WE CALL THIS???):
+\noindent with $A^{\dagger}(\vec{x}) = A(\vec{x})$. This is useful as its determinant is the same as the usual Lorentz invariant quantity(WHAT DO WE CALL THIS???):
 
 \begin{equation*}
 \det(A(\vec{x})) = t^2 - x^2 - y^2 - z^2
 \end{equation*}
 
-Consider any $2 \times 2$ hermitian matrix H. 
+Consider any $2 \times 2$ Hermitian matrix H. 
 
 \begin{equation*}
 H = \left( \begin{array}{cc}
@@ -37,7 +37,7 @@ H^{\dagger} = \left( \begin{array}{cc}
 x + iy = q = \bar{r} \text{ ,   } t - z = p \text{ ,   } t+z = s
 \end{equation*}
 
-\noindent by comparing with matrix $A$ above. Hence it is true that there is a one to one correspondence between points in Minkowskian space-time and $2 \times 2$ hermitian matrices.
+\noindent by comparing with matrix $A$ above. Hence it is true that there is a one to one correspondence between points in Minkowskian space-time and $2 \times 2$ Hermitian matrices.
 
 Construct the following matrix:
 
@@ -50,14 +50,14 @@ U = \left(
 \right)
 \end{equation*}
 
-\noindent with $\alpha$,$\beta$,$\gamma$,$\delta \in \mathbb{C}$. With the condition that $\det(U) = 1$. Such matrices $U$ form a group called the special linear group, which is denoted by $SL(2, \mathbb{C})$. Given $A(\vec{x})$ consider $U A(\vec{x}) U^{\dagger}$. This is a $2 \times 2$ hermitian matrix since:
+\noindent with $\alpha$,$\beta$,$\gamma$,$\delta \in \mathbb{C}$. With the condition that $\det(U) = 1$. Such matrices $U$ form a group called the special linear group, which is denoted by $SL(2, \mathbb{C})$. Given $A(\vec{x})$ consider $U A(\vec{x}) U^{\dagger}$. This is a $2 \times 2$ Hermitian matrix since:
 
 \begin{eqnarray*}
 (U A(\vec{x}) U^{\dagger})^{\dagger} & =  (U^{\dagger})^{\dagger} A^{\dagger}(\vec{x}) U^{\dagger} \\
                                      & = U A(\vec(x)) U^{\dagger}
 \end{eqnarray*} 
 
-\noindent since $(U^{\dagger})^{\dagger} = U$ and $A^{\dagger} = A$. Hence there exists a point $\vec{x'} = (x', y', z', t')$ in minkowskian space-time for which:
+\noindent since $(U^{\dagger})^{\dagger} = U$ and $A^{\dagger} = A$. Hence there exists a point $\vec{x'} = (x', y', z', t')$ in Minkowskian space-time for which:
 
 \begin{equation}\label{SL_trans}
 A(\vec{x'}) = U A(\vec{x}) U^{\dagger}
@@ -158,7 +158,7 @@ t'+z' = t+z
 
 Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{coeff_equate_a}) to obtain: (SEE CALS)
 
-\subsection{Example 2: Special Relativity Lorentz Transfomation}\label{Special_Linear_Matrices_Example_2}
+\subsection{Example 2: Special Relativity Lorentz Transformation}\label{Special_Linear_Matrices_Example_2}
 
 (CALCS)
 
@@ -166,4 +166,4 @@ Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{coeff_equ
 
 (CALCS)
 
-It is clear that there will always be two matrices $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x'}) = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondece between the elements of $SL(2,\mathbb{C})$ and the proper orthochronous Lorentz transofrmation.
+It is clear that there will always be two matrices $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x'}) = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondence between the elements of $SL(2,\mathbb{C})$ and the proper orthochronous Lorentz transformation.

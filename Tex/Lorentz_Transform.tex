@@ -1,30 +1,25 @@
 \section{The Lorentz Transformation}
 
-In this section the two null directions inherent in all Lorentz transformations, except the singular Lorentz transformations, are illustrated. The Lorentz Transform is defined by 
+In this section the two null directions inherent in all Lorentz transformations, except the singular Lorentz transformations, are illustrated. The Lorentz Transform is defined by $(x,y,z,t) \rightarrow (x',y',z',t')$ such that
+
+\begin{equation*}
+{x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 = x^2 + y^2 + z^2 - t^2.
+\end{equation*}
+
+\noindent If the transformation preserves the orientation of the spatial axes then is it called a \textit{proper} Lorentz transformation. This is equivalent to saying the transformation does not change the handedness of the axes. Also if $t \geq 0$ implies that time is always positive then it is called an \textit{orthochronous} Lorentz transformation, which ensures that the time direction is preserved. In this project the ``Lorentz transformation'' will refer to the proper, orthochronous Lorentz transformation.
+
+Consider a photon moving in the $x$ direction at the speed of light, $c = 1$, and starting at $x = 0$. The space-time for such a photon can be illustrated as in Fig.() (FIGURE). It is clear that there are two null directions in this space-time, $x = \pm t$. To see this use the standard Lorentz transformation
+
+\begin{align*}
+x'  = \gamma (x - vt),  \\
+t'  = \gamma (t - vx),
+\end{align*}
+
+\noindent where $\gamma = {(1 - v^2)}^{-1/2}$. Rearrange to obtain
 
 \begin{eqnarray*}
-(x,y,z,t) \rightarrow (x',y',z',t') \text{ such that } \\
-{x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 = x^2 + y^2 + z^2 - t^2 
+x' - t' = \gamma (1 + v) (x - t), \\
+x' + t' = \gamma (1 - v) (x + t).
 \end{eqnarray*}
 
-\noindent If the transformation preserves the orientation of the spatial axes then is it called a proper Lorentz transformation. This is equivalent to saying the transformation does not change the handedness of the axes. Also If $t \geq 0 \Rightarrow t' \geq 0$ then it is called an orthochronous Lorentz transformation. This ensures that the time direction is preserved. In this project the ``Lorentz transformation'' will refer to the proper, orthochronous Lorentz transformation.
-
-Consider a photon moving in the $x$ direction at the speed of light, $c = 1$, and starting at $x = 0$. The space-time for such a photon can be illustrated as follows (FIGURE). It is clear that there are two null directions in this space-time, $x = \pm t$. To see this use the standard Lorentz transformation:
-
-\begin{eqnarray*}
-x'  = \gamma (x - vt) & \text{, where } \gamma = {(1 - v^2)}^{-1/2} \\
-t'  = \gamma (t - vx) & 
-\end{eqnarray*}
-
-\noindent Rearranging:
-
-\begin{eqnarray*}
-x' - t' = \gamma (1 + v) (x - t) \\
-x' + t' = \gamma (1 - v) (x + t)
-\end{eqnarray*}
-
-\noindent It is clear that:
-
-$$x = \pm t \leftrightarrow x' = \pm t'$$
-
-\noindent Thus there are two null directions (are null directions by definition invariant??? yes)in this space-time at $x = \pm t$. It can be shown that all Lorentz transformations have two invariant null directions except the singular Lorentz transformation which has only one fixed null direction.  
+\noindent It is clear that $x = \pm t$ implies $x' = \pm t'$. Thus there are two null directions in this space-time at $x = \pm t$, as null directions are by definition invariant under a Lorentz transformation. It can be shown that all Lorentz transformations have two invariant null directions except the singular Lorentz transformation which has only one fixed null direction.  
