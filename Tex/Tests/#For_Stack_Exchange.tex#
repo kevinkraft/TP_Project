@@ -1,0 +1,49 @@
+\documentclass[floatfix,aps,prd,amsmath,amssymb]{revtex4}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listing}
+\usepackage{mathtools}
+
+\begin{document}
+
+First equation
+
+\begin{equation}\label{first}  
+{t'}^2 - {x'}^2 - {y'}^2 - {z'}^2 = {t}^2 - {x}^2 - {y}^2 - {z}^2.
+\end{equation}
+
+second equation with letters in the equation numberings
+
+\begin{gather}
+\label{second_a}\tag{{\theequation}a}
+t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
+\\\label{second_b}\tag{{\theequation}b}
+x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
+\\\label{second_c}\tag{{\theequation}c}
+t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
+\end{gather}
+
+third equation with letters in the equation numbers
+
+\begin{gather}
+\label{third_a}\tag{{\theequation}a}
+\alpha \bar{\beta} + \bar{\alpha} \beta = 0, 
+\\\label{third_b}\tag{{\theequation}b}
+i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0, 
+\\\label{third_c}\tag{{\theequation}c}
+-\alpha \bar{\alpha} + \beta \bar{\beta} = -1, 
+\\\label{third_d}\tag{{\theequation}d}
+\alpha \bar{\alpha} + \beta \bar{\beta} = 1. 
+\end{gather}
+
+Now reference the first equation (\ref{first})
+
+Now reference the second equation with letters in the equation numbering, (\ref{second_a} and (\ref{second_b}) and (\ref{second_c}
+
+Now reference the third equation with letters in the equation numbering, (\ref{second_a} and (\ref{second_b}) and (\ref{second_c}
+
+\end{document}
+
+

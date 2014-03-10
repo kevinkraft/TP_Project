@@ -1,100 +1,98 @@
 \section{The Singular Lorentz Transformation}
 
-In this section a Lorentz transformation that leaves our line element Eqn.(\ref{Kasner_after_limit_no_k}) invariant is constructed. This transformation is then expressed in terms of $(x,y,z,t)$ and examined to see what for it has. First we define an arbitrary complex parameter by $\zeta = \xi + i \eta$ so that the differentials are given by:
+In this section a Lorentz transformation that leaves our line element Eqn.(\ref{Kasner_after_limit_no_k}) invariant is constructed. This transformation is then expressed in terms of $(x,y,z,t)$ and examined to see what form it has. The subgroup of the Lorentz group that it makes is then examined. First we define an arbitrary complex parameter by $\zeta = \xi + i \eta$ so that the differentials are given by
 
 \begin{eqnarray*}
-d\zeta = {d\xi} + i {d\eta} \\
-d\bar{\zeta} = {d\bar{\xi}} + i {d\bar{\eta}} \\
+d\zeta = {d\xi} + i {d\eta}, \\
+d\bar{\zeta} = {d\bar{\xi}} - i {d\bar{\eta}}, \\
 \end{eqnarray*}
 
-\noindent and the line element can be rewritten as:
+\noindent and the line element can be rewritten as
 
 \begin{equation*}
-\epsilon {ds^2} = r^2 {d\zeta}{d\bar{\zeta}} - 2 {du}{dr}
+\epsilon {ds^2} = r^2 {d\zeta}{d\bar{\zeta}} - 2 {du}{dr}.
 \end{equation*}
 
-\noindent In this form the transformation $\zeta \rightarrow \zeta + w$, where $w \in \mathbb{C}$, is trivial. It leaves the line element unchanged and the null geodesic $r = 0$ trivially invariant. This is a Lorentz transformation which leaves one null direction invariant. Therefore it is a two real parameter, singular Lorentz transformation, where the two parameters come from the complex variable $w$. With this form of the line element the transformation is obviously trivial, we now want to see what this transformation looks like in terms of the usual variables $(x,y,z,t)$.
+\noindent In this form the transformation $\zeta \rightarrow \zeta + w$, where $w \in \mathbb{C}$, is trivial. It leaves the line element unchanged and the null geodesic $r = 0$ trivially invariant. This is a Lorentz transformation which leaves one null direction invariant. Therefore it is a two real parameter, singular Lorentz transformation, where the two parameters come from the complex variable $w$. With this form of the line element the transformation is obviously trivially invariant, we now want to see what this transformation looks like in terms of the usual coordinates $(x,y,z,t)$.
 
-First we invert the transformation (\ref{trans_x_to_xi_4}) and use the new variable $\zeta$:
+First invert the transformation (\ref{trans_x_to_xi}) and use the new variable $\zeta$
 
-\begin{eqnarray*} 
-x + iy = r (\xi + i \eta) = r \zeta \\
-z = u + \frac{r}{2}(-1 + \zeta \bar{\zeta}) \\
-t = u + \frac{r}{2}(1 + \zeta \bar{\zeta})
-\end{eqnarray*}
+\begin{align} \nonumber
+x + iy  & = r (\xi + i \eta) = r \zeta \\\nonumber
+z  & = u + \frac{r}{2}(-1 + \zeta \bar{\zeta}) \\\label{Singular_Trans_x,y,z,t_xi,eta,r,u_first}
+t &  = u + \frac{r}{2}(1 + \zeta \bar{\zeta})
+\end{align}
 
-\noindent From this it is clear that:
+\noindent From this it is clear that
 
-\begin{eqnarray*}
-t - z = r \text{, and } \\
-t + z = 2 u + r \zeta \bar{\zeta} 
-\end{eqnarray*}
+\begin{align*}
+t - z & = r, \\
+t + z & = 2 u + r \zeta \bar{\zeta}. 
+\end{align*}
 
-\noindent So finally:
+\noindent So finally
 
-\begin{eqnarray*}
-\zeta = \frac{x + i y}{t-z} \\
-r = t - z \\
-u = \frac{1}{2} (t + z) - \frac{(x^2 + y^2)}{2(t - z)}
-\end{eqnarray*}
+\begin{align}\nonumber
+r & = t - z, \\\nonumber
+\zeta & = \frac{x + i y}{t-z}, \\\label{Singular_Trans_x,y,z,t_xi,eta,r,u_second}
+u & = \frac{1}{2} (t + z) - \frac{(x^2 + y^2)}{2(t - z)}.
+\end{align}
 
-Now make the desired transformation:
+\noindent Now make the desired transformation $(\zeta', \bar{\zeta}', r', u') \rightarrow (\zeta + w, \bar{\zeta} + \bar{w}, r, u)$ by first replacing these new quantities into transformation (\ref{Singular_Trans_x,y,z,t_xi,eta,r,u_first})
 
-\begin{eqnarray*}
-\zeta' \rightarrow \zeta + w \\
-\bar{\zeta}' \rightarrow \bar{\zeta} + \bar{w} \\
-r' = r \\
-u' = u
-\end{eqnarray*}
+\begin{align*}
+x' + iy' & = r'\zeta' = r(\zeta + w), \\
+z' & = u + \frac{r}{2}(-1 + \zeta \bar{\zeta} + \zeta \bar{w} + \bar{\zeta} w + w \bar{w}), \\
+t' & = u + \frac{r}{2} (1 + \zeta \bar{\zeta} + \zeta \bar{w} + \bar{\zeta} w + w \bar{w}). 
+\end{align*}
 
-(SEE NOTES PG 2:6 FOR CALC)
+\noindent So the transformed Cartesian coordinates have been written in terms of the untransformed particular coordinates, $(\zeta, r, u)$. Next, using the relations (\ref{Singular_Trans_x,y,z,t_xi,eta,r,u_second}), write the transformed Cartesian coordinates in terms of the untransformed Cartesian coordinates.
 
-\noindent To obtain:
+\begin{align}
+x' + i y' & = x + iy + w(t-z) \label{sing_final_no_prime_1}, \\
+z' - t' & = -r = z - t \label{sing_final_no_prime_2}, \\
+z' + t' & = z+t + w(x - i y) + w(x + iy) + w\bar{w} (t-z) \label{sing_final_no_prime_3}.
+\end{align}
 
-\begin{eqnarray}
-x' + i y' = x + iy + w(t-z) \label{sing_final_no_prime_1} \\
-z' - t' = -r = z - t \label{sing_final_no_prime_2} \\
-z' + t' = z+t + w(x - i y) + w(x + iy) + w\bar{w} (t-z) \label{sing_final_no_prime_3}
-\end{eqnarray}
+It is necessary to show that this is indeed a Lorentz transformation by verifying the usual Lorentz invariant quadratic form. First Eqn.(\ref{sing_final_no_prime_1}) implies
 
-Next, it is necessary to show that this is indeed a Lorentz transformation by verifying the usual Lorentz invariant quantity. First from Eqn.(\ref{sing_final_no_prime_1}) implies:
+\begin{align*}
+{x'}^2 + {y'}^2 &  = (x + iy + w(t-z))(x - iy + \bar{w}(t-z)) \\
+& = x^2 + y^2 + \bar{w}(t - z)(x+iy) + w(t-z)(x-iy) + w\bar{w}{(t-z)}^2.
+\end{align*}
 
-\begin{eqnarray*}
-{x'}^2 + {y'}^2 = (x + iy + w(t-z))(x - iy + \bar{w}(t-z)) \\
-= x^2 + y^2 + \bar{w}(t - z)(x+iy) + w(t-z)(x-iy) + w\bar{w}{(t-z)}^2
-\end{eqnarray*}
+\noindent Then Eqn.(\ref{sing_final_no_prime_2}) and Eqn.(\ref{sing_final_no_prime_3}) imply
 
-Then Eqn.(\ref{sing_final_no_prime_2}) and Eqn.(\ref{sing_final_no_prime_3}) imply:
+\begin{align*}
+{z'}^2 - {t'}^2 & = (z' + t')(z' - t') \\
+& = z^2 - t^2 + (z - t)w(x-iy) + (z-t)\bar{w}(x+iy) + (z -t)w\bar{w}(t-z)
+\end{align*}
 
-\begin{eqnarray*}
-(z' + t')(z' - t') = {z'}^2 - {t'}^2 \\
-= z^2 - t^2 + (z - t)w(x-iy) + (z-t)\bar{w}(x+iy) + (z -t)w\bar{w}(t-z)
-\end{eqnarray*}
-
-\noindent Thus the Lorentz invariant quantity in the primed frame is the same as that of the unprimed frame:
+\noindent Thus the extra terms cancel and Lorentz invariant quadratic form in the primed frame is the same as that of the unprimed frame,
 
 \begin{equation*} 
-{x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 = {x}^2 + {y}^2 + {z}^2 - {t}^2
+{x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 = {x}^2 + {y}^2 + {z}^2 - {t}^2.
 \end{equation*} 
 
 \noindent It is also clear from Eqn.(\ref{sing_final_no_prime_2}) that the null direction $z = t$ is invariant under this Lorentz transformation.
 
-In conclusion, this transformation involves one complex parameter and thus two real parameters. In the usual Cartesian coordinates it is described by Eqns.(\ref{sing_final_no_prime_1}) - (\ref{sing_final_no_prime_1}) and in the coordinates $(\xi, \eta, r, u)$ (SHOULD THIS NOT BE WITH A $\zeta$ ???) derived in previous sections, it is expressed simply as:
+In conclusion, this transformation involves one complex parameter and thus two real parameters. In the usual Cartesian coordinates it is described by Eqns.(\ref{sing_final_no_prime_1}) - (\ref{sing_final_no_prime_3}) and in the coordinates $(\xi, \eta, r, u)$, also denoted by $(\zeta, r,u)$ derived in previous sections, it is expressed simply as
 
-\begin{eqnarray*}
-\zeta' = \zeta + w \\
-r' = r \\
-u' = u
-\end{eqnarray*}
+\begin{align*}
+\zeta' & = \zeta + w, \\
+r' & = r, \\
+u' & = u.
+\end{align*}
 
-Note that the operation of addition of complex numbers is commutative so that:
+Note that the operation of addition of complex numbers is commutative so that if $\zeta' = \zeta + w_1$ and $\zeta'' = \zeta' + w_2$ then
 
-\begin{eqnarray*} 
-\zeta' = \zeta + w_1 \text{, and } \zeta'' = \zeta' + w_2 \\
-\Rightarrow \zeta'' = \zeta + w_1 + w_2
-\end{eqnarray*} 
+\begin{equation*} 
+\zeta'' = \zeta + w_1 + w_2 = \zeta + w_3.
+\end{equation*} 
  
-\noindent and thus these transformations form a 2-parameter abelian subgroup of the Lorentz group with the binary operation of addition of complex numbers. (SHOW ALL 2 PARAM ABELIAN SUBGROUPS OF THE LORENTZ GROUP ARE SINGULAR TRANSFORMATIONS???)
+\noindent Thus these transformations form a 2-parameter abelian subgroup of the Lorentz group with the binary operation of addition of complex numbers. (ERROR. SHOW ALL 2 PARAM ABELIAN SUBGROUPS OF THE LORENTZ GROUP ARE SINGULAR TRANSFORMATIONS???)
+
+So a Lorentz transformation that preserves the line element Eqn.(\ref{Kasner_after_limit_no_k}) has been constructed. It is found that this transformation is a singular Lorentz transformation as it keeps the null direction $r=0$ fixed. Thus it is shown that all two parameter abelian subgroups of the Lorentz group are singular Lorentz transformations. (ERROR. HAVE WE DONE ENOUGH TO SAY THIS)
 
 
 
