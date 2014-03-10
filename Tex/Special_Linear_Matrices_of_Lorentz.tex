@@ -126,23 +126,25 @@ x - i y & t + z   \\
 
 \noindent Thus the relations
 
-%\begin{equation}\label{coeff_equate_a}\tag{{\theequation}a}
-%t' - z' = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta}
-%\end{equation}
-%\begin{equation}\label{coeff_equate_b}\tag{{\theequation}b}
-%x' + iy' = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta}
-%\end{equation}
-%\begin{equation}\label{coeff_equate_c}\tag{{\theequation}c}
-%t' + z' = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}
-%\end{equation}
+%\begin{subequations}
+%\begin{gather}\label{general_coeff_equate_a}\tag{{\theequation}a}
+%t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
+%\\\label{general_coeff_equate_b}\tag{{\theequation}b}
+%x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
+%\\\label{general_coeff_equate_c}\tag{{\theequation}c}
+%t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
+%\end{gather}
+%\end{subequations}
 
-\begin{gather}\label{general_coeff_equate_a}\tag{{\theequation}a}
+\begin{subequations}
+\begin{gather}\label{general_coeff_equate_a}
 t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
-\\\label{general_coeff_equate_b}\tag{{\theequation}b}
+\\\label{general_coeff_equate_b}
 x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
-\\\label{general_coeff_equate_c}\tag{{\theequation}c}
+\\\label{general_coeff_equate_c}
 t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
 \end{gather}
+\end{subequations}
 
 \noindent are obtained. Now these equations are used on some specific cases.
 
@@ -167,21 +169,25 @@ t'+z' & = t+z
 
 \noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_a}) to obtain
 
-\begin{gather}\label{Ex1_equate_coeffs_first_a}\tag{{\theequation}a}
-\alpha \bar{\beta} + \bar{\alpha} \beta = 0, \\\label{Ex1_equate_coeffs_first_b}\tag{{\theequation}b}
-i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0, \\\label{Ex1_equate_coeffs_first_c}\tag{{\theequation}c}
--\alpha \bar{\alpha} + \beta \bar{\beta} = -1, \\\label{Ex1_equate_coeffs_first_d}\tag{{\theequation}d}
+\begin{subequations}
+\begin{gather}\label{Ex1_equate_coeffs_first_a}
+\alpha \bar{\beta} + \bar{\alpha} \beta = 0, \\\label{Ex1_equate_coeffs_first_b}
+i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0, \\\label{Ex1_equate_coeffs_first_c}
+-\alpha \bar{\alpha} + \beta \bar{\beta} = -1, \\\label{Ex1_equate_coeffs_first_d}
 \alpha \bar{\alpha} + \beta \bar{\beta} = 1. 
 \end{gather}
+\end{subequations}
 
 \noindent Then Eqn.(\ref{Ex1_equate_coeffs_first_a}) and (\ref{Ex1_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = 0$ so $\alpha = 0$ or $\beta = 0$. Also Eqn.(\ref{Ex1_equate_coeffs_first_c}) and (\ref{Ex1_equate_coeffs_first_d}) imply $2\beta\bar{\beta} = 0$ so $\beta = 0$ and $2\alpha \bar{\alpha} = 0$ so $\alpha \neq 0$ and $\alpha \bar{\alpha} = 1$. Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_b}) to obtain
 
-\begin{gather}\label{Ex1_equate_coeffs_second_a}\tag{{\theequation}a}
-e^{-i\theta} = \alpha \bar{\delta} + \beta\bar{\gamma}, \\\label{Ex1_equate_coeffs_second_b}\tag{{\theequation}b}
-e^{-i\theta} = \alpha \bar{\delta} - \beta\bar{\gamma},\\\label{Ex1_equate_coeffs_second_c}\tag{{\theequation}c}
-0 = -\alpha\bar{\gamma} + \beta \bar{\delta},\\\label{Ex1_equate_coeffs_second_d}\tag{{\theequation}d}
+\begin{subequations}
+\begin{gather}\label{Ex1_equate_coeffs_second_a}
+e^{-i\theta} = \alpha \bar{\delta} + \beta\bar{\gamma}, \\\label{Ex1_equate_coeffs_second_b}
+e^{-i\theta} = \alpha \bar{\delta} - \beta\bar{\gamma},\\\label{Ex1_equate_coeffs_second_c}
+0 = -\alpha\bar{\gamma} + \beta \bar{\delta},\\\label{Ex1_equate_coeffs_second_d}
 0 = \alpha\bar{\gamma} + \beta \bar{\delta}. 
 \end{gather}
+\end{subequations}
 
 \noindent With $\beta = 0$, Eqn.(\ref{Ex1_equate_coeffs_second_a}) and (\ref{Ex1_equate_coeffs_second_b}) imply $\alpha \bar{\delta} = e^{-i\theta}$. Also Eqn.(\ref{Ex1_equate_coeffs_second_c}) and (\ref{Ex1_equate_coeffs_second_d}) imply $\alpha \bar{\gamma} = 0$ so $\gamma = 0$ since $\alpha \neq 0$. Then using $\alpha \bar{\alpha} =1$
 
@@ -193,12 +199,14 @@ e^{-i\theta} = \alpha \bar{\delta} - \beta\bar{\gamma},\\\label{Ex1_equate_coeff
 
 \noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_c}) to obtain
 
-\begin{gather}\label{Ex1_equate_coeffs_third_a}\tag{{\theequation}a}
-\gamma \bar{\delta} + \delta \bar{\gamma} = 0, \\\label{Ex1_equate_coeffs_third_b}\tag{{\theequation}b}
-\gamma \bar{\delta} - \delta \bar{\gamma} = 0 ,\\\label{Ex1_equate_coeffs_third_c}\tag{{\theequation}c}
--\gamma \bar{\gamma} + \delta \bar{\delta} = 1 ,\\\label{Ex1_equate_coeffs_third_d}\tag{{\theequation}d}
+\begin{subequations}
+\begin{gather}\label{Ex1_equate_coeffs_third_a}
+\gamma \bar{\delta} + \delta \bar{\gamma} = 0, \\\label{Ex1_equate_coeffs_third_b}
+\gamma \bar{\delta} - \delta \bar{\gamma} = 0 ,\\\label{Ex1_equate_coeffs_third_c}
+-\gamma \bar{\gamma} + \delta \bar{\delta} = 1 ,\\\label{Ex1_equate_coeffs_third_d}
 \gamma \bar{\gamma} + \delta \bar{\delta} = 1. 
 \end{gather}
+\end{subequations}
 
 \noindent Eqn(\ref{Ex1_equate_coeffs_third_a}) and (\ref{Ex1_equate_coeffs_third_b}) are satisfied since $\gamma = 0$, this also implies that $\delta \bar{\delta} = 1$ from Eqn(\ref{Ex1_equate_coeffs_third_c}). Now use the fact that $\det{(U)} = 1$, which implies
 
@@ -206,7 +214,7 @@ e^{-i\theta} = \alpha \bar{\delta} - \beta\bar{\gamma},\\\label{Ex1_equate_coeff
 \alpha \delta - \beta \gamma = 1,
 \end{equation*}
 
-\noindent thus $\alpha \delta = 1$ as $\beta = 0$. Then using $\alpha \bar{\alpha} = 1$ again and $\alpha \delta = 1$
+\noindent thus $\alpha \delta = 1$ as $\beta = 0$. Then using $\alpha \bar{\alpha} = 1$ again and $\delta \bar{\delta} = 1$
 
 \begin{align*}
 \alpha^2 e^{-\theta} & = 1, \\
@@ -226,29 +234,142 @@ e^{-i\theta/2} & 0            \\
 \right)
 \end{equation*}
 
-
-
-
-
-
-%\begin{gather}\label{Ex1_equate_coeffs_second_a}\tag{{\theequation}a}
-%, \\\label{Ex1_equate_coeffs_second_b}\tag{{\theequation}b}
-% ,\\\label{Ex1_equate_coeffs_second_c}\tag{{\theequation}c}
-% ,\\\label{Ex1_equate_coeffs_second_d}\tag{{\theequation}d}
-%. 
-%\end{gather}
-
-
-
-
-
-
+\noindent The next two examples are then very similar.
 
 \subsection{Example 2: Special Relativity Lorentz Transformation}\label{Special_Linear_Matrices_Example_2}
 
-(CALCS)
+\noindent Find $U$ corresponding to the one parameter Lorentz transformation,
+
+\begin{align*} 
+x' & = \gamma_0 (x-vt), \\
+t' & = \gamma_0 (t-vx), \\
+y' & = y, \\
+z' & = z, \\
+\end{align*} 
+
+\noindent Where $\gamma_0 = (1-v^2)^{-1/2}$.  This implies that
+
+\begin{align*}
+t'-z' & = -\gamma_0 v x + \gamma_0 t - z \\
+x'+iy' & = \gamma_0 x - v \gamma_0 t + iy  \\
+t'+z' & = -v \gamma_0 x + \gamma_0 t +z
+\end{align*}
+
+\noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_a}) to obtain
+
+\begin{subequations}
+\begin{gather}\label{Ex2_equate_coeffs_first_a}
+\alpha \bar{\beta} + \bar{\alpha} \beta = -\gamma_0 v, \\\label{Ex2_equate_coeffs_first_b}
+i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0, \\\label{Ex2_equate_coeffs_first_c}
+-\alpha \bar{\alpha} + \beta \bar{\beta} = -1, \\\label{Ex2_equate_coeffs_first_d}
+\alpha \bar{\alpha} + \beta \bar{\beta} = \gamma_0. 
+\end{gather}
+\end{subequations}
+
+\noindent Then Eqn.(\ref{Ex2_equate_coeffs_first_a}) and (\ref{Ex2_equate_coeffs_first_b}) imply that $\alpha \bar{\beta} = \bar{\alpha} \beta $. Also Eqn.(\ref{Ex2_equate_coeffs_first_c}) and (\ref{Ex2_equate_coeffs_first_d}) imply that
+
+\begin{align}
+\label{Ex2_refer_to_beta_beta}
+\beta \bar{\beta} & = \frac{\gamma_0 - 1}{2},
+\\\label{Ex2_refer_to_alpha_alpha}
+\alpha \bar{\alpha} & = \frac{\gamma_0 + 1}{2}. 
+\end{align}
+
+\noindent Thus $\beta$ can be written in terms of $\alpha$ using Eqn.(\ref{Ex2_equate_coeffs_first_a})
+
+\begin{gather*}
+\alpha \bar{\beta} = -\frac{\gamma_0 v}{2}, \\
+\alpha \bar{\alpha} \bar{\beta} = - \bar{\alpha} \frac{\gamma_0 v}{2}, \\
+\beta = -\alpha \frac{\gamma_0 v}{\gamma_0 + 1}.
+\end{gather*}
+
+\noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_b}) to obtain
+
+\begin{subequations}
+\begin{gather}\label{Ex2_equate_coeffs_second_a}
+\gamma_0 = \alpha \bar{\delta} + \beta\bar{\gamma}, \\\label{Ex2_equate_coeffs_second_b}
+1 = \alpha \bar{\delta} - \beta\bar{\gamma},\\\label{Ex2_equate_coeffs_second_c}
+0 = -\alpha\bar{\gamma} + \beta \bar{\delta},\\\label{Ex2_equate_coeffs_second_d}
+-v\gamma_0 = \alpha\bar{\gamma} + \beta \bar{\delta}. 
+\end{gather}
+\end{subequations}
+
+\noindent Eqn.(\ref{Ex2_equate_coeffs_second_a}) and (\ref{Ex2_equate_coeffs_second_b}) imply that
+
+\begin{align*}
+\beta \bar{\gamma} = \frac{\gamma_0 - 1}{2}, \\
+\alpha \bar{\delta} = \frac{\gamma_0 + 1}{2}.
+\end{align*}
+
+Thus $\delta$ can be written in terms of $\alpha$ by using Eqn.(\ref{Ex2_refer_to_alpha_alpha})
+
+\begin{gather*}
+\alpha \bar{\alpha} \bar{\delta} = \bar{\alpha} \frac{\gamma_0 + 1}{2}, \\
+\bar{\delta} = \bar{\alpha}, \\
+\delta = \alpha. 
+\end{gather*}
+
+Also, using Eqn.(\ref{Ex2_refer_to_beta_beta}) $\gamma$ can be written in terms of $\beta$
+
+\begin{gather*}
+\beta \bar{\gamma} = \frac{\gamma_0 - 1}{2},\\
+\bar{\beta} \beta \bar{\gamma} = \bar{\beta} \frac{\gamma_0 - 1}{2},\\
+\bar{\gamma} = \bar{\beta}, \\
+\gamma = \beta.
+\end{gather*}
+
+\noindent  Now use the fact that $\det{(U)} = 1$, which implies
+
+\begin{equation*}
+\alpha \delta - \beta \gamma = 1,
+\end{equation*}
+
+\noindent thus $\alpha^2 - \beta^2 = 1$ as $\delta = \alpha$ and $\gamma = \beta$. Now replace $\beta$
+
+\begin{gather*}
+\alpha^2\left( \frac{(\gamma_0 + 1)^2 - (\gamma_0 v)^2}{(\gamma_0 + 1)^2}   \right) = 1\ \\
+\alpha = \pm \frac{\gamma_0 + 1}{\sqrt{(\gamma_0 + 1)^2 - (\gamma_0 v)^2}}.
+\end{gather*}
+
+\noindent Now rewrite the denominator of $\alpha$ using $\gamma_0 v = \sqrt{{\gamma_0}^{2} - 1}$
+
+\begin{align*}
+(\gamma_0 + 1)^2 - (\gamma_0 v)^2 & = {\gamma_0}^{2} + 1 + 2\gamma_0 - {\gamma_0}^{2} + 1, \\
+                                  & = 2(\gamma_0 + 1).
+\end{align*}
+
+\noindent So finally
+
+\begin{equation*}
+\alpha = \pm \frac{\sqrt{\gamma_0 + 1}}{2}.
+\end{equation*}
+
+\noindent Hence there are 2 matrices $U$ corresponding to this Lorentz transformation given by
+
+\begin{equation*}
+U = \pm
+\left(
+\begin{array}{ccc}
+\frac{\sqrt{\gamma_0 + 1}}{2}   & & -\frac{\sqrt{\gamma_0 - 1}}{2} \\
+ & & \\
+- \frac{\sqrt{\gamma_0 - 1}}{2} & &  \frac{\sqrt{\gamma_0 + 1}}{2}  \\
+\end{array}
+\right)
+\end{equation*}
 
 \subsection{Example 3: Singular Lorentz Transformation}\label{Special_Linear_Matrices_Example_3}
+
+%\begin{subequations}
+%\begin{gather}\label{Ex2_equate_coeffs_second_a}
+%, \\\label{Ex2_equate_coeffs_second_b}
+% ,\\\label{Ex2_equate_coeffs_second_c}
+% ,\\\label{Ex2_equate_coeffs_second_d}
+%. 
+%\end{gather}
+%\end{subequations}
+
+
+
 
 (CALCS)
 

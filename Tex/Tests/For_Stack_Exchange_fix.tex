@@ -13,17 +13,20 @@ The first equation should be labelled with a one
 
 Now the second equation has letters in the equation references and should be labelled with a 2
 
-\begin{gather}
-\label{second_a}\tag{{\theequation}a}
-t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
-\\\label{second_b}\tag{{\theequation}b}
-x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
-\\\label{second_c}\tag{{\theequation}c}
-t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
-\end{gather}
+\begin{subequations}
+  \begin{gather}
+    \label{second_a}\tag{{\theequation}a}
+    t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
+    \\\label{second_b}\tag{{\theequation}b}
+    x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
+    \\\label{second_c}\tag{{\theequation}c}
+    t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
+  \end{gather}
+\end{subequations}
 
 Now the third equation also has letters in the equation reference and should be labelled with a 3
 
+\begin{subequations}
 \begin{gather}
 \label{third_a}\tag{{\theequation}a}
 \alpha \bar{\beta} + \bar{\alpha} \beta = 0, 
@@ -34,6 +37,7 @@ i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0,
 \\\label{third_d}\tag{{\theequation}d}
 \alpha \bar{\alpha} + \beta \bar{\beta} = 1. 
 \end{gather}
+\end{subequations}
 
 Now reference the first equation, (\ref{first}).
 
