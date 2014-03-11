@@ -1,6 +1,6 @@
 \section{Special Linear Matrices of the Lorentz Transformation}\label{Special_Linear_Matrices_of_Lorentz}
 
-(ERROR. NEED MORE INTRO)Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ Hermitian matrix
+In this section it is shown that there is a $2$ to $1$ correspondence between the matrices $SL(2, \mathbb{C})$ and the proper orthochronous Lorentz transformations. First it is demonstrated that there is a one to one correspondence between $2 \times 2$ Hermitian matrices and Minkowskian space-time, this is then applied to Lorentz transformations. Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ Hermitian matrix
 
 \begin{equation}\label{Special_Matrices_A_first}
 A = 
@@ -18,7 +18,7 @@ x - iy & t+z \\
 \det(A(\vec{x})) = t^2 - x^2 - y^2 - z^2.
 \end{equation*}
 
-Consider any $2 \times 2$ Hermitian matrix H. 
+Consider any $2 \times 2$ Hermitian matrix $H$, thus
 
 \begin{equation*}
 H = \left( \begin{array}{cc}
@@ -82,7 +82,7 @@ Any $U$ involves 6 real parameters, 2 each from the four complex components, wit
 
 \noindent Hence the transformation $\vec{x} \rightarrow \vec{x}'$ implicit in Eqn.(\ref{SL_trans}) is a Lorentz transformation. This equation describes the most general proper, orthochronous Lorentz transformation.
 
-It is useful to calculate the matrix $U$ for some examples of Lorentz transformations. First, write Eqn.(\ref{SL_trans}) in terms of its components:
+It is useful to calculate the matrix $U$ for some examples of Lorentz transformations. First, write Eqn.(\ref{SL_trans}) in terms of its components
 
 \begin{align*} 
 \left(
@@ -126,16 +126,6 @@ x - i y & t + z   \\
 
 \noindent Thus the relations
 
-%\begin{subequations}
-%\begin{gather}\label{general_coeff_equate_a}\tag{{\theequation}a}
-%t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
-%\\\label{general_coeff_equate_b}\tag{{\theequation}b}
-%x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
-%\\\label{general_coeff_equate_c}\tag{{\theequation}c}
-%t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
-%\end{gather}
-%\end{subequations}
-
 \begin{subequations}
 \begin{gather}\label{general_coeff_equate_a}
 t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
@@ -178,7 +168,7 @@ i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0, \\\label{Ex1_equate_coeffs_firs
 \end{gather}
 \end{subequations}
 
-\noindent Then Eqn.(\ref{Ex1_equate_coeffs_first_a}) and (\ref{Ex1_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = 0$ so $\alpha = 0$ or $\beta = 0$. Also Eqn.(\ref{Ex1_equate_coeffs_first_c}) and (\ref{Ex1_equate_coeffs_first_d}) imply $2\beta\bar{\beta} = 0$ so $\beta = 0$ and $2\alpha \bar{\alpha} = 0$ so $\alpha \neq 0$ and $\alpha \bar{\alpha} = 1$. Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_b}) to obtain
+\noindent Then Eqn.(\ref{Ex1_equate_coeffs_first_a}) and (\ref{Ex1_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = 0$ so $\alpha = 0$ or $\beta = 0$. Also Eqn.(\ref{Ex1_equate_coeffs_first_c}) and (\ref{Ex1_equate_coeffs_first_d}) imply $2\beta\bar{\beta} = 0$ so $\beta = 0$ and $\alpha \bar{\alpha} = 1$ so $\alpha \neq 0$. Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_b}) to obtain
 
 \begin{subequations}
 \begin{gather}\label{Ex1_equate_coeffs_second_a}
@@ -324,14 +314,14 @@ Also, using Eqn.(\ref{Ex2_refer_to_beta_beta}) $\gamma$ can be written in terms 
 \alpha \delta - \beta \gamma = 1,
 \end{equation*}
 
-\noindent thus $\alpha^2 - \beta^2 = 1$ as $\delta = \alpha$ and $\gamma = \beta$. Now replace $\beta$
+\noindent thus $\alpha^2 - \beta^2 = 1$ as $\delta = \alpha$ and $\gamma = \beta$. Replace $\beta$
 
 \begin{gather*}
 \alpha^2\left( \frac{(\gamma_0 + 1)^2 - (\gamma_0 v)^2}{(\gamma_0 + 1)^2}   \right) = 1\ \\
 \alpha = \pm \frac{\gamma_0 + 1}{\sqrt{(\gamma_0 + 1)^2 - (\gamma_0 v)^2}}.
 \end{gather*}
 
-\noindent Now rewrite the denominator of $\alpha$ using $\gamma_0 v = \sqrt{{\gamma_0}^{2} - 1}$
+\noindent Rewrite the denominator of $\alpha$ using $\gamma_0 v = \sqrt{{\gamma_0}^{2} - 1}$
 
 \begin{align*}
 (\gamma_0 + 1)^2 - (\gamma_0 v)^2 & = {\gamma_0}^{2} + 1 + 2\gamma_0 - {\gamma_0}^{2} + 1, \\
@@ -359,18 +349,52 @@ U = \pm
 
 \subsection{Example 3: Singular Lorentz Transformation}\label{Special_Linear_Matrices_Example_3}
 
-%\begin{subequations}
-%\begin{gather}\label{Ex2_equate_coeffs_second_a}
-%, \\\label{Ex2_equate_coeffs_second_b}
-% ,\\\label{Ex2_equate_coeffs_second_c}
-% ,\\\label{Ex2_equate_coeffs_second_d}
-%. 
-%\end{gather}
-%\end{subequations}
+\noindent Find $U$ corresponding to the two parameter Lorentz transformation,
 
+\begin{align*}
+t'-z' & = t-z \\
+x'+iy' & = x + iy + w(t-z) \\
+t'+z' & = t+z + w(x-iy) + \bar{w} (x + iy) + w \bar{w} (t-z)
+\end{align*}
 
+\noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_a}) to obtain
 
+\begin{subequations}
+\begin{gather}\label{Ex3_equate_coeffs_first_a}
+\alpha \bar{\beta} + \bar{\alpha} \beta = 0, \\\label{Ex3_equate_coeffs_first_b}
+i (\alpha \bar{\beta} - \bar{\alpha} \beta) = 0, \\\label{Ex3_equate_coeffs_first_c}
+-\alpha \bar{\alpha} + \beta \bar{\beta} = -1, \\\label{Ex3_equate_coeffs_first_d}
+\alpha \bar{\alpha} + \beta \bar{\beta} = 1. 
+\end{gather}
+\end{subequations}
 
-(CALCS)
+\noindent Then Eqn.(\ref{Ex3_equate_coeffs_first_a}) and (\ref{Ex3_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = 0$ so $\alpha = 0$ or $\beta = 0$. Also Eqn.(\ref{Ex3_equate_coeffs_first_c}) and (\ref{Ex3_equate_coeffs_first_d}) imply $2\beta\bar{\beta} = 0$ so $\beta = 0$ and $\alpha \bar{\alpha} = 1$ so $\alpha \neq 0$. Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_b}) to obtain
 
-It is clear that there will always be two matrices $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x}') = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondence between the elements of $SL(2,\mathbb{C})$ and the proper orthochronous Lorentz transformation.
+\begin{subequations}
+\begin{gather}\label{Ex3_equate_coeffs_second_a}
+1 = \alpha \bar{\delta} + \beta\bar{\gamma}, \\\label{Ex3_equate_coeffs_second_b}
+1 = \alpha \bar{\delta} - \beta\bar{\gamma},\\\label{Ex3_equate_coeffs_second_c}
+-w = -\alpha\bar{\gamma} + \beta \bar{\delta},\\\label{Ex3_equate_coeffs_second_d}
+w= \alpha\bar{\gamma} + \beta \bar{\delta}. 
+\end{gather}
+\end{subequations}
+
+\noindent With $\beta = 0$, Eqn.(\ref{Ex3_equate_coeffs_second_a}) implies $\alpha \bar{\delta} = 1$, so multiply by $\bar{\alpha}$ and use $\alpha \bar{\alpha} = 1$ to obtain $\delta = \alpha$. Also Eqn.(\ref{Ex3_equate_coeffs_second_c}) and (\ref{Ex3_equate_coeffs_second_d}) imply $\alpha \bar{\gamma} = w$ so $\gamma = \bar{w} \alpha$ since $\alpha \bar{\alpha} = 1$. Now use the fact that $\det{(U)} = 1$, which implies
+
+\begin{equation*}
+\alpha \delta - \beta \gamma = 1,
+\end{equation*}
+
+\noindent thus $\alpha^2 = 1$ as $\beta = 0$ and $\gamma = \alpha$. So $\alpha = \pm 1$, thus $\gamma = \bar{w}$. Hence there are 2 matrices $U$ corresponding to this two parameter transformation, namely
+
+\begin{equation*}
+U = \pm
+\left(
+\begin{array}{cc}
+1       & 0 \\
+\bar{w} & 1 \\
+\end{array}
+\right)
+\end{equation*}
+
+It is clear that there will always be two matrices, $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x}') = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondence between the elements of $SL(2,\mathbb{C})$ and the proper orthochronous Lorentz transformation, with $A$ and $A'$ corresponding to differenent coordinates of Minkowskian space-time and $\pm U$ corresponding to proper orthochronous Lorentz transformations.  
