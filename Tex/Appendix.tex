@@ -1,0 +1,133 @@
+\begin{appendix}
+
+\section{Singular Lorentz Transformation with Special Significance Given to $x$}\label{Appendix_Special_Significance_x}
+
+The choice of components of the matrix $A$ in Eqn.(\ref{Special_Matrices_A_first}) gives an arbitrary but special significance to the corrdinate $z$. In this calculation the matrix $U$ of Eqn.(\ref{SL_trans}) is determined for a singular Lorentz transformation, in which special significance has been given to the coordinate $x$. This transformation is given by
+
+\begin{align*}
+t'-x' & = t-x, \\
+z'+iy' & = z + iy + w(t-x), \\
+t'+x' & = t+x + w(z-iy) + \bar{w} (z + iy) + w \bar{w} (t-x).
+\end{align*}
+
+\noindent Notice that this is the same tranformation as in Example 3, Section (\ref{Special_Linear_Matrices_Example_3}), with $x$ and $z$ swapped. This is equivalent to swapping these two coordinates in the matrix $A$ only. Note that if $x$ and $z$ were exchanged in both $A$ and the transformation then the $U$ obtained would be exactly the same as the example done previously.
+
+First, the components of the matrix $A$ must be construced. Thus the transformation must be written out explicitly as 
+
+\begin{align*}
+x' & = x + \frac{1}{2} (w + \bar{w})z + \frac{i}{2}(\bar{w}- w)y + \frac{1}{2}w\bar{w}(t-x), \\
+y' & = y + \frac{i}{2} (\bar{w} - w)(t-x), \\
+z' & = z + \frac{1}{2} (w + \bar{w})(t-x), \\
+t' & = t + \frac{1}{2} (w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2} w\bar{w}(t-x).
+\end{align*}
+
+\noindent Now construct the components of $A$
+
+\begin{align*}
+t' - z' & = t - z \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) - \frac{1}{2}(\bar{w} + w)(t-x),\\
+t' + z' & = t + z \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) + -\frac{1}{2}(\bar{w} + w)(t-x),\\
+x' + iy' & = x +  \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) - \frac{1}{2}(\bar{w} + w)(t-x) + iy.
+\end{align*}
+
+\noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_a}) to obtain
+
+\begin{subequations}
+\begin{gather}\label{Ex_Ap_equate_coeffs_first_a}
+\alpha \bar{\beta} + \bar{\alpha} \beta = \frac{1}{2}(\bar{w}+w) - \frac{1}{2}w\bar{w}, \\\label{Ex_Ap_equate_coeffs_first_b}
+i (\alpha \bar{\beta} - \bar{\alpha} \beta) = \frac{1}{2} (\bar{w} - w), \\\label{Ex_Ap_equate_coeffs_first_c}
+-\alpha \bar{\alpha} + \beta \bar{\beta} = - 1 + \frac{1}{2}(\bar{w} + w), \\\label{Ex_Ap_equate_coeffs_first_d}
+\alpha \bar{\alpha} + \beta \bar{\beta} = 1. 
+\end{gather}
+\end{subequations}
+
+\noindent Then Eqn.(\ref{Ex_Ap_equate_coeffs_first_a}) and (\ref{Ex_Ap_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = \frac{1}{2}\bar{w} - \frac{1}{4}w\bar{w}$. Also Eqn.(\ref{Ex_Ap_equate_coeffs_first_c}) and (\ref{Ex_Ap_equate_coeffs_first_d}) imply $2\beta\bar{\beta} = \frac{1}{4}w\bar{w}$ and $\alpha \bar{\alpha} = 1 + \frac{1}{4}w\bar{w} - \frac{1}{2}\bar{w} - \frac{1}{2}w$. Hence $\alpha$ can be written in terms of $\beta$
+
+\begin{gather*}
+\alpha \bar{\beta} = (\frac{1}{2}\bar{w} - \frac{1}{4}w\bar{w})\beta, \\
+\frac{1}{4} w \bar{w} \alpha = \frac{1}{2}\bar{w}(1-\frac{1}{2}w)\beta, \\
+\alpha = \frac{(2-w)}{w}\beta.
+\end{gather*}
+
+Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_b}) to obtain
+
+\begin{subequations}
+\begin{gather}\label{Ex_Ap_equate_coeffs_second_a}
+\alpha \bar{\delta} + \beta\bar{\gamma} = 1 - \frac{1}{2}w\bar{w} + \frac{1}{2}(\bar{w}-w), \\\label{Ex_Ap_equate_coeffs_second_b}
+\alpha \bar{\delta} - \beta\bar{\gamma} = \frac{1}{2}(\bar{w}-w) + 1,\\\label{Ex_Ap_equate_coeffs_second_c}
+-\alpha\bar{\gamma} + \beta \bar{\delta} = \frac{1}{2}(\bar{w} + w) ,\\\label{Ex_Ap_equate_coeffs_second_d}
+\alpha\bar{\gamma} + \beta \bar{\delta} = \frac{1}{2}w\bar{w} - \frac{1}{2}(\bar{w}-w). 
+\end{gather}
+\end{subequations}
+
+\noindent Now Eqn.(\ref{Ex_Ap_equate_coeffs_second_a}) and (\ref{Ex_Ap_equate_coeffs_second_b}) imply $\beta \bar{\gamma} = -\frac{1}{4}w\bar{w}$. So using $\bar{\beta} = \frac{1}{4}w\bar{w}$ again to obtain
+
+\begin{gather*}
+\frac{1}{4}w\bar{w} \bar{\gamma} = \bar{\beta}\beta\bar{\gamma},\\
+\frac{1}{4}w\bar{w} \bar{\gamma} = -\frac{1}{4}w\bar{w} \bar{\beta},\\
+\gamma = -\beta.
+\end{gather*}
+
+\noindent Also Eqn.(\ref{Ex_Ap_equate_coeffs_second_c}) and (\ref{Ex_Ap_equate_coeffs_second_d}) imply $\beta \bar{\delta} = \frac{1}{4}w\bar{w} + \frac{1}{2}w$. Thus
+
+\begin{gather*}
+\frac{1}{4}w\bar{w}\bar{\delta} = \left(\frac{1}{4}w\bar{w}+ \frac{1}{2}w\right)\bar{\beta},\\
+\delta = \left(\frac{w\bar{w} + 2\bar{w}}{w\bar{w}}\right)\beta.
+\end{gather*}
+
+
+(DONE TO HERE)
+
+
+\noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_c}) to obtain
+
+\begin{subequations}
+\begin{gather}\label{Ex_Ap_equate_coeffs_third_a}
+\gamma \bar{\delta} + \delta \bar{\gamma} = 0, \\\label{Ex_Ap_equate_coeffs_third_b}
+\gamma \bar{\delta} - \delta \bar{\gamma} = 0 ,\\\label{Ex_Ap_equate_coeffs_third_c}
+-\gamma \bar{\gamma} + \delta \bar{\delta} = 1 ,\\\label{Ex_Ap_equate_coeffs_third_d}
+\gamma \bar{\gamma} + \delta \bar{\delta} = 1. 
+\end{gather}
+\end{subequations}
+
+\noindent Eqn(\ref{Ex_Ap_equate_coeffs_third_a}) and (\ref{Ex_Ap_equate_coeffs_third_b}) are satisfied since $\gamma = 0$, this also implies that $\delta \bar{\delta} = 1$ from Eqn(\ref{Ex_Ap_equate_coeffs_third_c}). Now use the fact that $\det{(U)} = 1$, which implies
+
+\begin{equation*}
+\alpha \delta - \beta \gamma = 1,
+\end{equation*}
+
+\noindent thus $\alpha \delta = 1$ as $\beta = 0$. Then using $\alpha \bar{\alpha} = 1$ again and $\delta \bar{\delta} = 1$
+
+\begin{align*}
+\alpha^2 e^{-\theta} & = 1, \\
+\alpha^2 & = e^{-i\theta}, \\
+\alpha & = \pm e^{{-i\theta}/2}, 
+\end{align*}
+
+
+
+
+
+
+\noindent which finally implies that $\delta = \pm e^{i\theta/2}$. Hence there are 2 matrices $U$ corresponding to the spacial rotation, namely
+
+\begin{equation*}
+U = \pm
+\left(
+\begin{array}{cc}
+e^{-i\theta/2} & 0            \\
+0              & e^{i\theta/2} \\
+\end{array}
+\right)
+\end{equation*}
+
+
+
+
+
+
+
+
+
+
+
+\end{appendix}

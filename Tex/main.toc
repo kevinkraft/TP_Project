@@ -11,11 +11,15 @@
 \contentsline {subsection}{\numberline {A}Example 1: Rotational Transformation}{10}{section*.9}
 \contentsline {subsection}{\numberline {B}Example 2: Special Relativity Lorentz Transformation}{12}{section*.10}
 \contentsline {subsection}{\numberline {C}Example 3: Singular Lorentz Transformation}{14}{section*.11}
-\contentsline {section}{\numberline {V}Stereographic Projection and the Extended Complex Plane}{14}{section*.12}
-\contentsline {subsection}{\numberline {A}Singular and Non-Singular Lorentz Transformations}{18}{section*.13}
-\contentsline {subsection}{\numberline {B}Example: Standard Lorentz Transformation}{19}{section*.14}
-\contentsline {section}{\numberline {VI}Infinitesimal Lorentz Transformations}{19}{section*.15}
-\contentsline {subsection}{\numberline {A}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{23}{section*.16}
-\contentsline {subsection}{\numberline {B}Pure Radiation Field Conditions in Minkowskian Space-Time}{24}{section*.17}
-\contentsline {section}{\numberline {VII}Acknowledgements}{26}{section*.18}
-\contentsline {section}{\numberline {}References}{26}{section*.19}
+\contentsline {section}{\numberline {V}The Fractional Linear Transformation}{14}{section*.12}
+\contentsline {subsection}{\numberline {A}Stereographic Projection and the Extended Complex Plane}{14}{section*.13}
+\contentsline {subsection}{\numberline {B}Extension to Minkowskian Sapce-Time}{17}{section*.14}
+\contentsline {subsection}{\numberline {C}Fixed points and Their Associated Null Directions}{19}{section*.15}
+\contentsline {subsection}{\numberline {D}Example: Standard Lorentz Transformation}{19}{section*.16}
+\contentsline {section}{\numberline {VI}Infinitesimal Lorentz Transformations}{19}{section*.17}
+\contentsline {subsection}{\numberline {A}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{24}{section*.18}
+\contentsline {subsection}{\numberline {B}Pure Radiation Field Conditions in Minkowskian Space-Time}{25}{section*.19}
+\appendix 
+\contentsline {section}{\numberline {A}Singular Lorentz Transformation with Special Significance Given to $x$}{27}{section*.20}
+\contentsline {section}{\numberline {II}Acknowledgements}{28}{section*.21}
+\contentsline {section}{\numberline {}References}{28}{section*.22}
