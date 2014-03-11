@@ -18,8 +18,7 @@
 \contentsline {subsection}{\numberline {D}Example: Standard Lorentz Transformation}{19}{section*.16}
 \contentsline {section}{\numberline {VI}Infinitesimal Lorentz Transformations}{19}{section*.17}
 \contentsline {subsection}{\numberline {A}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{24}{section*.18}
-\contentsline {subsection}{\numberline {B}Pure Radiation Field Conditions in Minkowskian Space-Time}{25}{section*.19}
+\contentsline {subsection}{\numberline {B}Pure Radiation Field Conditions in Minkowskian Space-Time}{26}{section*.19}
 \appendix 
 \contentsline {section}{\numberline {A}Singular Lorentz Transformation with Special Significance Given to $x$}{27}{section*.20}
-\contentsline {section}{\numberline {II}Acknowledgements}{28}{section*.21}
-\contentsline {section}{\numberline {}References}{28}{section*.22}
+\contentsline {section}{\numberline {}References}{30}{section*.21}

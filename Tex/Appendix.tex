@@ -24,8 +24,8 @@ t' & = t + \frac{1}{2} (w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2} w
 \noindent Now construct the components of $A$
 
 \begin{align*}
-t' - z' & = t - z \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) - \frac{1}{2}(\bar{w} + w)(t-x),\\
-t' + z' & = t + z \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) + -\frac{1}{2}(\bar{w} + w)(t-x),\\
+t' - z' & = t - z + \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) - \frac{1}{2}(\bar{w} + w)(t-x),\\
+t' + z' & = t + z + \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) + -\frac{1}{2}(\bar{w} + w)(t-x),\\
 x' + iy' & = x +  \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1}{2}w\bar{w}(t-x) - \frac{1}{2}(\bar{w} + w)(t-x) + iy.
 \end{align*}
 
@@ -34,16 +34,16 @@ x' + iy' & = x +  \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1
 \begin{subequations}
 \begin{gather}\label{Ex_Ap_equate_coeffs_first_a}
 \alpha \bar{\beta} + \bar{\alpha} \beta = \frac{1}{2}(\bar{w}+w) - \frac{1}{2}w\bar{w}, \\\label{Ex_Ap_equate_coeffs_first_b}
-i (\alpha \bar{\beta} - \bar{\alpha} \beta) = \frac{1}{2} (\bar{w} - w), \\\label{Ex_Ap_equate_coeffs_first_c}
+\alpha \bar{\beta} - \bar{\alpha} \beta = \frac{1}{2} (\bar{w} - w), \\\label{Ex_Ap_equate_coeffs_first_c}
 -\alpha \bar{\alpha} + \beta \bar{\beta} = - 1 + \frac{1}{2}(\bar{w} + w), \\\label{Ex_Ap_equate_coeffs_first_d}
-\alpha \bar{\alpha} + \beta \bar{\beta} = 1. 
+\alpha \bar{\alpha} + \beta \bar{\beta} = 1 + \frac{1}{2}w\bar{w} - \frac{1}{2}(\bar{w} + w). 
 \end{gather}
 \end{subequations}
 
-\noindent Then Eqn.(\ref{Ex_Ap_equate_coeffs_first_a}) and (\ref{Ex_Ap_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = \frac{1}{2}\bar{w} - \frac{1}{4}w\bar{w}$. Also Eqn.(\ref{Ex_Ap_equate_coeffs_first_c}) and (\ref{Ex_Ap_equate_coeffs_first_d}) imply $2\beta\bar{\beta} = \frac{1}{4}w\bar{w}$ and $\alpha \bar{\alpha} = 1 + \frac{1}{4}w\bar{w} - \frac{1}{2}\bar{w} - \frac{1}{2}w$. Hence $\alpha$ can be written in terms of $\beta$
+\noindent Then Eqn.(\ref{Ex_Ap_equate_coeffs_first_a}) and (\ref{Ex_Ap_equate_coeffs_first_b}) imply $\alpha \bar{\beta} = \frac{1}{2}\bar{w} - \frac{1}{4}w\bar{w}$. Also Eqn.(\ref{Ex_Ap_equate_coeffs_first_c}) and (\ref{Ex_Ap_equate_coeffs_first_d}) imply $\beta\bar{\beta} = \frac{1}{4}w\bar{w}$ and $\alpha \bar{\alpha} = 1 + \frac{1}{4}w\bar{w} - \frac{1}{2}\bar{w} - \frac{1}{2}w$. Hence $\alpha$ can be written in terms of $\beta$
 
 \begin{gather*}
-\alpha \bar{\beta} = (\frac{1}{2}\bar{w} - \frac{1}{4}w\bar{w})\beta, \\
+\alpha \bar{\beta} = (\frac{1}{2}\bar{w} - \frac{1}{4}w\bar{w}), \\
 \frac{1}{4} w \bar{w} \alpha = \frac{1}{2}\bar{w}(1-\frac{1}{2}w)\beta, \\
 \alpha = \frac{(2-w)}{w}\beta.
 \end{gather*}
@@ -59,7 +59,7 @@ Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_c
 \end{gather}
 \end{subequations}
 
-\noindent Now Eqn.(\ref{Ex_Ap_equate_coeffs_second_a}) and (\ref{Ex_Ap_equate_coeffs_second_b}) imply $\beta \bar{\gamma} = -\frac{1}{4}w\bar{w}$. So using $\bar{\beta} = \frac{1}{4}w\bar{w}$ again to obtain
+\noindent Now Eqn.(\ref{Ex_Ap_equate_coeffs_second_a}) and (\ref{Ex_Ap_equate_coeffs_second_b}) imply $\beta \bar{\gamma} = -\frac{1}{4}w\bar{w}$. So using $\bar{\beta} \beta= \frac{1}{4}w\bar{w}$ again to obtain
 
 \begin{gather*}
 \frac{1}{4}w\bar{w} \bar{\gamma} = \bar{\beta}\beta\bar{\gamma},\\
@@ -74,54 +74,76 @@ Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_c
 \delta = \left(\frac{w\bar{w} + 2\bar{w}}{w\bar{w}}\right)\beta.
 \end{gather*}
 
-
-(DONE TO HERE)
-
-
 \noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_c}) to obtain
 
 \begin{subequations}
 \begin{gather}\label{Ex_Ap_equate_coeffs_third_a}
-\gamma \bar{\delta} + \delta \bar{\gamma} = 0, \\\label{Ex_Ap_equate_coeffs_third_b}
-\gamma \bar{\delta} - \delta \bar{\gamma} = 0 ,\\\label{Ex_Ap_equate_coeffs_third_c}
--\gamma \bar{\gamma} + \delta \bar{\delta} = 1 ,\\\label{Ex_Ap_equate_coeffs_third_d}
-\gamma \bar{\gamma} + \delta \bar{\delta} = 1. 
+\gamma \bar{\delta} + \delta \bar{\gamma} = -\frac{1}{2}w\bar{w} - \frac{1}{2}(w + \bar{w}), \\\label{Ex_Ap_equate_coeffs_third_b}
+\gamma \bar{\delta} - \delta \bar{\gamma} =  \frac{1}{2}(\bar{w}-w),\\\label{Ex_Ap_equate_coeffs_third_c}
+-\gamma \bar{\gamma} + \delta \bar{\delta} = 1 + \frac{1}{2}(w + \bar{w}),\\\label{Ex_Ap_equate_coeffs_third_d}
+\gamma \bar{\gamma} + \delta \bar{\delta} = 1 + \frac{1}{2}w\bar{w} + \frac{1}{2}(\bar{w}+w). 
 \end{gather}
 \end{subequations}
 
-\noindent Eqn(\ref{Ex_Ap_equate_coeffs_third_a}) and (\ref{Ex_Ap_equate_coeffs_third_b}) are satisfied since $\gamma = 0$, this also implies that $\delta \bar{\delta} = 1$ from Eqn(\ref{Ex_Ap_equate_coeffs_third_c}). Now use the fact that $\det{(U)} = 1$, which implies
+\noindent Here Eqn(\ref{Ex_Ap_equate_coeffs_third_a}) and (\ref{Ex_Ap_equate_coeffs_third_b}) imply $\gamma \bar{\delta} = -\frac{w}{4}(2+\bar{w})$. Also, Eqn(\ref{Ex_Ap_equate_coeffs_third_c}) and Eqn(\ref{Ex_Ap_equate_coeffs_third_d}) imply $\gamma \bar{\gamma} = \frac{1}{4}w\bar{w}$. So using these relations $\delta$ can be written in terms of $\gamma$ 
+
+\begin{gather*}
+\gamma \bar{\gamma} \bar{\delta} = \frac{w}{4}(2+\bar{w})\bar{\gamma},\\
+\frac{1}{4}w\bar{w} \bar{\delta} = \frac{w}{4}(2+\bar{w})\bar{\gamma},\\
+\delta = -\frac{(2 + w)}{w}\gamma.
+\end{gather*}
+
+\noindent At this point $\beta$ and $\delta$ have been written in terms of $\gamma$ and $\alpha$ is written in terms of $\beta$. Write $\alpha$ in terms of $\gamma$
 
 \begin{equation*}
-\alpha \delta - \beta \gamma = 1,
+\alpha = \frac{(2-w)}{w}\beta = \frac{(w-2)}{w}\gamma.
 \end{equation*}
 
-\noindent thus $\alpha \delta = 1$ as $\beta = 0$. Then using $\alpha \bar{\alpha} = 1$ again and $\delta \bar{\delta} = 1$
+\noindent Now use the condition that $\det{(U)} = 1$ and replace everything in favour of $\gamma$
+
+\begin{gather*}
+\alpha \delta - \beta \gamma = 1,\\
+-\frac{(w^2 - 4)}{w^2}\gamma^2 + \gamma^2 = 1,\\
+\frac{4}{w^2}\gamma^2 = 1,\\
+\gamma = \pm \frac{w}{2}.
+\end{gather*}
+
+\noindent Replace $\gamma$ and write all the components of $U$ as functions of $w$ only
 
 \begin{align*}
-\alpha^2 e^{-\theta} & = 1, \\
-\alpha^2 & = e^{-i\theta}, \\
-\alpha & = \pm e^{{-i\theta}/2}, 
+\alpha & = \pm \frac{1}{2}(w-2),\\
+\beta & = \mp \frac{w}{2},\\
+\gamma & = \pm \frac{w}{2},\\
+\delta & = \mp \frac{1}{2}(w+2).
 \end{align*}
 
-
-
-
-
-
-\noindent which finally implies that $\delta = \pm e^{i\theta/2}$. Hence there are 2 matrices $U$ corresponding to the spacial rotation, namely
+\noindent Finally it is found that 
 
 \begin{equation*}
 U = \pm
 \left(
-\begin{array}{cc}
-e^{-i\theta/2} & 0            \\
-0              & e^{i\theta/2} \\
+\begin{array}{ccc}
+\frac{w-2}{2} & & -\frac{w}{2}     \\
+ & & \\
+\frac{w}{2}   & & -\frac{(w+2)}{2} \\
 \end{array}
-\right)
+\right).
 \end{equation*}
 
+Now the fractional linear trasnformation associated with $U$ must be determined. Using Eqn.(\ref{Extended_Complex_Fractional_Linear_Transformation}) to find that
 
+\begin{equation*}
+\zeta' = \frac{\bar{w} - (\bar{w} +2)\zeta}{\bar{w} -2 - \bar{w}\zeta}. 
+\end{equation*}
 
+\noindent The fixed points of the system and thus the null directions are found by setting $\zeta' = \zeta$ to obtain
+
+\begin{gather*}
+\bar{w} \zeta^2 - 2 \bar{w} \zeta + \bar{w} = 0,\\
+\bar{w}(\zeta-1)^2 = 0.
+\end{gather*}
+
+\noindent Thus there is a fixed point at $\zeta = 1$. The corresponding null direction is then given by Eqn.(\ref{Ext_Complex_vec_x_relations}) such that $\vec{x}= t(1,0,0,1)$. Hence finally the null direction is the generator of $N^+$, $x=t$. So in this case where $x$ was given special significance instead of $z$ with the given singular Lorentz transformation it is found that the null direction is $x=t$ instead of $z=t$. This is as expected as by exchanging $z$ with $x$ the coordinate system has been rotated. 
 
 
 
