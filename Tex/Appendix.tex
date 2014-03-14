@@ -1,3 +1,5 @@
+\newpage
+
 \begin{appendix}
 
 \section{Singular Lorentz Transformation with Special Significance Given to $x$}\label{Appendix_Special_Significance_x}
@@ -145,9 +147,135 @@ Now the fractional linear trasnformation associated with $U$ must be determined.
 
 \noindent Thus there is a fixed point at $\zeta = 1$. The corresponding null direction is then given by Eqn.(\ref{Ext_Complex_vec_x_relations}) such that $\vec{x}= t(1,0,0,1)$. Hence finally the null direction is the generator of $N^+$, $x=t$. So in this case where $x$ was given special significance instead of $z$ with the given singular Lorentz transformation it is found that the null direction is $x=t$ instead of $z=t$. This is as expected as by exchanging $z$ with $x$ the coordinate system has been rotated. 
 
+\section{Standard Lorentz Transformation of the Electromagnetic Field Vectors}\label{Appendix_Standard_Transform_EM_Vectors}
+
+In this appendix the transformations laws for $\vec{E} = (E^1, E^2, E^3)$ and $\vec{B} = (B^1, B^2 B^3)$ under the standard Lorentz transformation of Eqn.(\ref{Special_Matrices_Standard_Lorentz}) are derived. If $p^i$ is any vector transported along $x^i = x^i (s)$ then, in Eqn.(\ref{Infinitesimal_DE_interms_v}), $v^i$ can be replaced with $p^i$, such that
+
+\begin{equation*} 
+\frac{\mathrm{d}p^i}{\mathrm{d}s} = \tensor{L}{^i_j} p^j.
+\end{equation*} 
+
+\noindent Here $s =$ arc length so the usual line element
+
+\begin{equation*} 
+\epsilon \mathrm{d}s^2 = \mathrm{d}x^2 + \mathrm{d}y^2 + \mathrm{d}z^2 - \mathrm{d}t^2,
+\end{equation*} 
+
+\noindent is formed. $p^i$ is a $4$-vector so it transforms like $x^i = (x,y,z,t)$ under the standard Lorentz transformation, such that
+
+\begin{align*}
+\bar{p}^1 = \gamma (p^1 - v p^4),\\
+\bar{p}^2 = p^2, \\
+\bar{p}^3 = p^3,\\
+\bar{p}^4 = \gamma (p^4 - v p^1).
+\end{align*}
+
+\noindent Which implies that 
+
+\begin{equation*}
+\mathrm{d}p^i = (\mathrm{d}p^1,\mathrm{d}p^2,\mathrm{d}p^3,\mathrm{d}p^4),
+\end{equation*}
+
+\noindent is a $4$-vector and ds is invariant, thus $\frac{\mathrm{d}p^i}{\mathrm{d}s}$ is also a $4$-vector. Hence $\tensor{L}{^i_j} p^j$ is a $4$-vector for any $4$-vector $p^i$, where $\tensor{L}{^i_j}$ is given by
+
+\begin{equation*}
+\tensor{L}{^i_j} = 
+\left(
+\begin{array}
+0    & B^3  & -B^2 & E^1 \\
+-B^3 & 0    & B^1  & E^2 \\
+B^2  & -B^1 & 0    & E^3 \\
+E^1  & E^2  & E^3  & 0   \\
+\end{array}
+\right)
+\end{equation*}
+
+\noindent and a factor of $q/m$ has been left out as it will play no role. Write out $\tensor{L}{^i_j} p^j$ explicitly
+
+\begin{align*}
+\tensor{L}{^1_j}p^j & = B^3 p^2 - B^2 p^3 + E^1 p^4, \\
+\tensor{L}{^2_j}p^j & = -B^3 p^1 + B^1 p^3 + E^2 p^4, \\
+\tensor{L}{^3_j}p^j & = B^2 p^1 - B^1 p^2 + E^3 p^4, \\
+\tensor{L}{^4_j}p^j & = E^1 p^1 + E^2p^2 + E^3 p^3.
+\end{align*}
+
+\noindent Since $\tensor{L}{^i_j} p^j$ is a $4$-vector it transforms under the standard Lorentz transformation, such that
+
+\begin{align}
+\label{Appendix_Lp_Standard_Transform_a}
+\tensor{\bar{L}}{^1_j}\bar{p}^j = \gamma (\tensor{L}{^1_j}p^j - v \tensor{L}{^4_j}p^j),
+\\\label{Appendix_Lp_Standard_Transform_b}
+\tensor{\bar{L}}{^2_j}\bar{p}^j = \tensor{L}{^2_j}p^j,
+\\\label{Appendix_Lp_Standard_Transform_c}
+\tensor{\bar{L}}{^3_j}\bar{p}^j = \tensor{L}{^3_j}p^j,
+\\\label{Appendix_Lp_Standard_Transform_d}
+\tensor{\bar{L}}{^4_j}\bar{p}^j = \gamma(\tensor{L}{^4_j}p^j - v \tensor{L}{^1_j}p^j).
+\end{align}
+
+(ERROR. DONE TO HERE)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{The Triad of Electromagnetic Radiation}\label{Appendix_Orthonormal_Triad}
+
+In this appendix it is shown that the vectors $(\vec{n}, \vec{B}, \vec{E})$ form a right-handed triad. From Eqn.(\ref{Infinitesimal_K_Unit_Vector_Formula}), $k^i$ can be rewritten as
+
+\begin{equation*}
+k^i = (\zeta \bar{\zeta} + 1)(\vec{n}, 1),
+\end{equation*}
+
+\noindent where $\vec{n} = (n^1, n^2, n^3)$ is a unit vector such that $\vec{n} \cdot \vec{n} = 1$. Expanding the relation $\mathcal{L}_{ij} k^i = 0$ in terms of $\vec{n}$ gives
+
+\begin{subequations}
+\begin{align}
+\label{Appendix_2_Expand_L_K_product_a}
+(B^3 - i E^3)n^2 - (B^2 - i E^2)n^3 + E^1 + iB^1 & = 0, 
+\\\label{Appendix_2_Expand_L_K_product_b}
+-(B^3 - i E^3)n^1 + (B^1 - i E^1)n^3 + E^2 + iB^2 & = 0, 
+\\\label{Appendix_2_Expand_L_K_product_c}
+(B^2 - i E^2)n^1 - (B^1 - i E^1)n^2 + E^3 + iB^3 & = 0, 
+\\\label{Appendix_2_Expand_L_K_product_d}
+-(E^1 + i B^1)n^1 - (E^2 + iB^2)n^2 - (E^3 + iB^3) & = 0.
+\end{align}
+\end{subequations}
+
+\noindent Then by equating real and imaginary parts of Eqn.(\ref{Appendix_2_Expand_L_K_product_d}) it is clear that  $\vec{E} \cdot \vec{n} = \vec{B} \cdot \vec{n}$. Also, from Eqns.(\ref{Appendix_2_Expand_L_K_product_a}) - (\ref{Appendix_2_Expand_L_K_product_c}) the following series of equations are seen, first Eqn.(\ref{Appendix_2_Expand_L_K_product_a}) implies
+
+\begin{align*}
+E^1 & = B^2 n^3 - B^3 n^2, \\
+B^1 & = E^3 n^2 - E^2 n^3, 
+\end{align*}
+
+\noindent while Eqn.(\ref{Appendix_2_Expand_L_K_product_b}) gives
+
+\begin{align*} 
+E^2 & = B^3 n^1 - B^1n^3, \\
+B^2 & = E^1 n^3 - E^3 n^1.
+\end{align*} 
+
+\noindent Then Eqn.(\ref{Appendix_2_Expand_L_K_product_c}) implies
+
+\begin{align*}
+E^3 & = B^1 n^2 - B^2 n^1,\\
+B^3 & = E^2 n^1 - E^1 n^2.
+\end{align*}
+
+\noindent Thus is it clear that these are the components of the curl $\vec{E} = \vec{B} \times \vec{n}$ and $\vec{B} = \vec{n} \times \vec{E}$. This curl is proof that the vectors $(\vec{n}, \vec{E}, \vec{B})$ form a right-handed triad. 
 
 
 

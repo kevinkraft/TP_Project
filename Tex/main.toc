@@ -22,4 +22,5 @@
 \contentsline {subsection}{\numberline {C}Pure Radiation Field Conditions in Minkowskian Space-Time}{26}{section*.20}
 \appendix 
 \contentsline {section}{\numberline {A}Singular Lorentz Transformation with Special Significance Given to $x$}{27}{section*.21}
-\contentsline {section}{\numberline {}References}{30}{section*.22}
+\contentsline {section}{\numberline {B}The Triad of Electromagnetic Radiation}{30}{section*.22}
+\contentsline {section}{\numberline {}References}{31}{section*.23}
