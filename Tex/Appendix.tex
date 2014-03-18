@@ -34,10 +34,14 @@ x' + iy' & = x +  \frac{1}{2}(w + \bar{w})z + \frac{i}{2} (\bar{w}-w)y + \frac{1
 \noindent Equating coefficients of $x$, $y$, $z$, $t$ on both sides of Eqn.(\ref{general_coeff_equate_a}) to obtain
 
 \begin{subequations}
-\begin{gather}\label{Ex_Ap_equate_coeffs_first_a}
-\alpha \bar{\beta} + \bar{\alpha} \beta = \frac{1}{2}(\bar{w}+w) - \frac{1}{2}w\bar{w}, \\\label{Ex_Ap_equate_coeffs_first_b}
-\alpha \bar{\beta} - \bar{\alpha} \beta = \frac{1}{2} (\bar{w} - w), \\\label{Ex_Ap_equate_coeffs_first_c}
--\alpha \bar{\alpha} + \beta \bar{\beta} = - 1 + \frac{1}{2}(\bar{w} + w), \\\label{Ex_Ap_equate_coeffs_first_d}
+\begin{gather}
+\label{Ex_Ap_equate_coeffs_first_a}
+\alpha \bar{\beta} + \bar{\alpha} \beta = \frac{1}{2}(\bar{w}+w) - \frac{1}{2}w\bar{w}, 
+\\\label{Ex_Ap_equate_coeffs_first_b}
+\alpha \bar{\beta} - \bar{\alpha} \beta = \frac{1}{2} (\bar{w} - w), 
+\\\label{Ex_Ap_equate_coeffs_first_c}
+-\alpha \bar{\alpha} + \beta \bar{\beta} = - 1 + \frac{1}{2}(\bar{w} + w), 
+\\\label{Ex_Ap_equate_coeffs_first_d}
 \alpha \bar{\alpha} + \beta \bar{\beta} = 1 + \frac{1}{2}w\bar{w} - \frac{1}{2}(\bar{w} + w). 
 \end{gather}
 \end{subequations}
@@ -149,7 +153,7 @@ Now the fractional linear trasnformation associated with $U$ must be determined.
 
 \section{Standard Lorentz Transformation of the Electromagnetic Field Vectors}\label{Appendix_Standard_Transform_EM_Vectors}
 
-In this appendix the transformations laws for $\vec{E} = (E^1, E^2, E^3)$ and $\vec{B} = (B^1, B^2 B^3)$ under the standard Lorentz transformation of Eqn.(\ref{Special_Matrices_Standard_Lorentz}) are derived. If $p^i$ is any vector transported along $x^i = x^i (s)$ then, in Eqn.(\ref{Infinitesimal_DE_interms_v}), $v^i$ can be replaced with $p^i$, such that
+In this appendix the transformation laws for $\vec{E} = (E^1, E^2, E^3)$ and $\vec{B} = (B^1, B^2, B^3)$ under the standard Lorentz transformation of Eqn.(\ref{Special_Matrices_Standard_Lorentz}) are derived. If $p^i$ is any vector transported along $x^i = x^i (s)$ then, in Eqn.(\ref{Infinitesimal_DE_interms_v}), $v^i$ can be replaced with $p^i$, such that
 
 \begin{equation*} 
 \frac{\mathrm{d}p^i}{\mathrm{d}s} = \tensor{L}{^i_j} p^j.
@@ -164,10 +168,10 @@ In this appendix the transformations laws for $\vec{E} = (E^1, E^2, E^3)$ and $\
 \noindent is formed. $p^i$ is a $4$-vector so it transforms like $x^i = (x,y,z,t)$ under the standard Lorentz transformation, such that
 
 \begin{align*}
-\bar{p}^1 = \gamma (p^1 - v p^4),\\
-\bar{p}^2 = p^2, \\
-\bar{p}^3 = p^3,\\
-\bar{p}^4 = \gamma (p^4 - v p^1).
+\bar{p}^1 & = \gamma (p^1 - v p^4),\\
+\bar{p}^2 & = p^2, \\
+\bar{p}^3 & = p^3,\\
+\bar{p}^4 & = \gamma (p^4 - v p^1).
 \end{align*}
 
 \noindent Which implies that 
@@ -181,7 +185,7 @@ In this appendix the transformations laws for $\vec{E} = (E^1, E^2, E^3)$ and $\
 \begin{equation*}
 \tensor{L}{^i_j} = 
 \left(
-\begin{array}
+\begin{array}{cccc}
 0    & B^3  & -B^2 & E^1 \\
 -B^3 & 0    & B^1  & E^2 \\
 B^2  & -B^1 & 0    & E^3 \\
@@ -203,33 +207,124 @@ E^1  & E^2  & E^3  & 0   \\
 
 \begin{align}
 \label{Appendix_Lp_Standard_Transform_a}
-\tensor{\bar{L}}{^1_j}\bar{p}^j = \gamma (\tensor{L}{^1_j}p^j - v \tensor{L}{^4_j}p^j),
+\tensor{\bar{L}}{^1_j}\bar{p}^j & = \gamma (\tensor{L}{^1_j}p^j - v \tensor{L}{^4_j}p^j),
 \\\label{Appendix_Lp_Standard_Transform_b}
-\tensor{\bar{L}}{^2_j}\bar{p}^j = \tensor{L}{^2_j}p^j,
+\tensor{\bar{L}}{^2_j}\bar{p}^j & = \tensor{L}{^2_j}p^j,
 \\\label{Appendix_Lp_Standard_Transform_c}
-\tensor{\bar{L}}{^3_j}\bar{p}^j = \tensor{L}{^3_j}p^j,
+\tensor{\bar{L}}{^3_j}\bar{p}^j & = \tensor{L}{^3_j}p^j,
 \\\label{Appendix_Lp_Standard_Transform_d}
-\tensor{\bar{L}}{^4_j}\bar{p}^j = \gamma(\tensor{L}{^4_j}p^j - v \tensor{L}{^1_j}p^j).
+\tensor{\bar{L}}{^4_j}\bar{p}^j & = \gamma(\tensor{L}{^4_j}p^j - v \tensor{L}{^1_j}p^j).
 \end{align}
 
-(ERROR. DONE TO HERE)
+\noindent Write out Eqn.(\ref{Appendix_Lp_Standard_Transform_a}) explicitly
 
+\begin{gather*}
+\bar{B}^3 \bar{p}^2 - \bar{B}^2 \bar{p}^3 + \bar{E}^1 \bar{p}^4 = \gamma(B^3p^2 - B^2 p^3 + E^1p^4 - v(E^1p^1 + E^2 p^2 + E^3p^3)),\\
+\bar{B}^3 \bar{p}^2 - \bar{B}^2 \bar{p}^3 + \bar{E}^1 \gamma(p^4 - vp^1) = \gamma(B^3p^2 - B^2 p^3 + E^1p^4 - vE^1p^1 -v E^2 p^2 -v E^3p^3).
+\end{gather*}
 
+\noindent Now equate the coefficients of $p^1$, $p^2$, $p^3$ and $p^4$, which gives
 
+\begin{subequations}
+\begin{align}
+\label{Appendix_EB_Standard_Transform_1_p_coffs_a}
+\bar{E}^1 & = E^1,
+\\\label{Appendix_EB_Standard_Transform_1_p_coffs_b}
+\bar{B}^3 & = \gamma(B^3 - vE^2),
+\\\label{Appendix_EB_Standard_Transform_1_p_coffs_b}
+\bar{B}^2 & = \gamma(B^2 + vE^3).
+\end{align}
+\end{subequations}
 
+\noindent Where generally one of the relations given is trivial. Continue by writting Eqn.(\ref{Appendix_Lp_Standard_Transform_b}) explicitly and again equate coefficients to get
 
+%\begin{subequations}
+\begin{align}
+\label{Appendix_EB_Standard_Transform_2_p_coffs_a}
+B^3 & = \gamma (\bar{B}^3 + v \bar{E}^2),
+\\\label{Appendix_EB_Standard_Transform_2_p_coffs_b}
+\bar{B}^1 & = {B}^1,
+\\\label{Appendix_EB_Standard_Transform_2_p_coffs_c}
+E^2 & = \gamma(v\bar{B}^3 + \bar{E}^2).
+\end{align}
+%\end{subequations}
 
+\noindent Eqn(\ref{Appendix_EB_Standard_Transform_2_p_coffs_a}) and (\ref{Appendix_EB_Standard_Transform_2_p_coffs_c}) now need to be inverted using $\gamma (1-v^2) = \gamma^{-1}$, to obtain
 
+\begin{subequations}
+\begin{align}
+\label{Appendix_EB_Standard_Transform_2_p_coeffs_Inverted_a}
+\bar{B}^3 & = \gamma (B^3 - vE^2),
+\\\label{Appendix_EB_Standard_Transform_2_p_coeffs_Inverted_b}
+\bar{E}^2 & = \gamma (E^2 - vB^3)
+\end{align}
+\end{subequations}
 
+\noindent It is also necessary to write out Eqn.(\ref{Appendix_Lp_Standard_Transform_c}) explicitly and equate the coefficients of $p$ to get
 
+\begin{align}
+\label{Appendix_EB_Standard_Transform_3_p_coffs_a}
+B^2 & = \gamma (\bar{B}^2 - v\bar{E}^3),
+\\\label{Appendix_EB_Standard_Transform_3_p_coffs_b}
+\bar{B}^1 & = {B}^1,
+\\\label{Appendix_EB_Standard_Transform_3_p_coffs_c}
+E^3 & = \gamma(\bar{E}^3 - v\bar{B}^2).
+\end{align}
 
+\noindent Again, Eqn(\ref{Appendix_EB_Standard_Transform_3_p_coffs_a}) and (\ref{Appendix_EB_Standard_Transform_3_p_coffs_c}) need to be inverted to give
 
+\begin{subequations}
+\begin{align}
+\label{Appendix_EB_Standard_Transform_3_p_coeffs_Inverted_a}
+\bar{E}^3 & = \gamma (E^3 + vB^2),
+\\\label{Appendix_EB_Standard_Transform_3_p_coeffs_Inverted_b}
+\bar{B}^2 & = \gamma (B^2 + vE^3)
+\end{align}
+\end{subequations}
 
+\noindent Following a similar procedure write Eqn.(\ref{Appendix_Lp_Standard_Transform_d}) out explicitly, equate coefficients to get
 
+\begin{align*}
+\bar{E}^1 = E^1,\\
+\bar{E}^2 = \gamma (E^2 - vB^3),\\
+\bar{E}^3 = \gamma (E^3 + vB^2),
+\end{align*}
 
+\noindent as obtained already. Thus in summary the final form of the standard Lorentz transformation of the electromagnetic vectors $E$ and $B$ is given by
 
+\begin{align*}
+\bar{E}^1 = E^1, \qquad & \bar{E}^2 = \gamma (E^2 - vB^3), \qquad & \bar{E}^3 = \gamma(E^3 + vB^2),\\
+\bar{B}^1 = B^1, \qquad & \bar{B}^2 = \gamma (B^2 + vE^3), \qquad & \bar{B}^3 = \gamma (B^3 - vE^2). 
+\end{align*}
 
+\noindent Using these transformations it is possible to verify that the quantities in Eqn.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond_2} are invariant, by direct computation. Start with
 
+\begin{align*} 
+{|\bar{E}|}^2 - {|\bar{B}|}^2 & = {(\bar{E}^1)}^2 + {(\bar{E}^2)}^2 + {(\bar{E}^3)}^2 - {(\bar{B}^1)}^2 - {(\bar{B}^2)}^2 - {(\bar{B}^3)}^2,\\
+                              & = (E^1)^2 + \gamma^2 ((E^2)^2 - 2vE^2B^3 + v^2 (B^3)^2) \\
+                              & + \gamma^2 ((E^3)^2 + 2vE^3 B^2 + v^2 (B^2)^2) - (B^1)^2 \\
+                              & - \gamma^2 ((B^2)^2 + 2vB^2E^3 + v^2 (B^3)^2) \\
+                              & - \gamma^2 ((B^3)^2 - 2vB^3E^2 + v^2 (E^2)^2),
+\end{align*}
+
+\noindent which gives after some cancellations
+
+\begin{align*}
+{|\bar{E}|}^2 - {|\bar{B}|}^2 & = (E^1)^2 + \gamma^2 (1-v^2)(E^2)^2 + \gamma^2 (1-v^2)(E^3)^2, \\
+                              & - (B^1)^2 - \gamma^2 (1-v^2)(B^2)^2 - \gamma^2 (1-v^2)(B^3)^2, \\
+                              & = {({E}^1)}^2 + {({E}^2)}^2 + {({E}^3)}^2 - {({B}^1)}^2 - {({B}^2)}^2 - {({B}^3)}^2,
+\end{align*}
+
+\noindent as $\gamma^2 (1-v^2) = 1$. Finaly the next equation is verified as follows
+
+\begin{align*}
+\bar{E} \cdot \bar{B} & = \bar{E}^1\bar{B}^1 + \bar{E}^2\bar{B}^2 + \bar{E}^3\bar{B}^3, \\
+                      & = E^1B^1 \\
+                      & + \gamma^2 (E^2B^2 + vE^2E^3 - vB^2B^3 - v^2E^3B^3) \\
+                      & + \gamma^2 (E^3B^3 - vE^2E^3 + vB^2B^3 - v^2 E^2B^2), \\
+                      & = E^1B^1 + \gamma^2 (1-v^2)E^2B^2 \gamma^2 (1-v^2)E^3B^3,\\ 
+                      & = {E}^1{B}^1 + {E}^2{B}^2 + {E}^3{B}^3. \\
+\end{align*}
 
 \section{The Triad of Electromagnetic Radiation}\label{Appendix_Orthonormal_Triad}
 

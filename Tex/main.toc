@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {III}The Singular Lorentz Transformation}{7}{section*.7}
 \contentsline {section}{\numberline {IV}Special Linear Matrices of the Lorentz Transformation}{9}{section*.8}
 \contentsline {subsection}{\numberline {A}Example 1: Rotational Transformation}{10}{section*.9}
-\contentsline {subsection}{\numberline {B}Example 2: Special Relativity Lorentz Transformation}{12}{section*.10}
+\contentsline {subsection}{\numberline {B}Example 2: Standard Lorentz Transformation}{12}{section*.10}
 \contentsline {subsection}{\numberline {C}Example 3: Singular Lorentz Transformation}{14}{section*.11}
 \contentsline {section}{\numberline {V}The Fractional Linear Transformation}{14}{section*.12}
 \contentsline {subsection}{\numberline {A}Stereographic Projection and the Extended Complex Plane}{14}{section*.13}
@@ -21,6 +21,7 @@
 \contentsline {subsection}{\numberline {B}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{24}{section*.19}
 \contentsline {subsection}{\numberline {C}Pure Radiation Field Conditions in Minkowskian Space-Time}{26}{section*.20}
 \appendix 
-\contentsline {section}{\numberline {A}Singular Lorentz Transformation with Special Significance Given to $x$}{27}{section*.21}
-\contentsline {section}{\numberline {B}The Triad of Electromagnetic Radiation}{30}{section*.22}
-\contentsline {section}{\numberline {}References}{31}{section*.23}
+\contentsline {section}{\numberline {A}Singular Lorentz Transformation with Special Significance Given to $x$}{28}{section*.21}
+\contentsline {section}{\numberline {B}Standard Lorentz Transformation of the Electromagnetic Field Vectors}{30}{section*.22}
+\contentsline {section}{\numberline {C}The Triad of Electromagnetic Radiation}{33}{section*.23}
+\contentsline {section}{\numberline {}References}{33}{section*.24}
