@@ -328,7 +328,9 @@ E^3 & = \gamma(\bar{E}^3 - v\bar{B}^2).
 
 \section{The Triad of Electromagnetic Radiation}\label{Appendix_Orthonormal_Triad}
 
-In this appendix it is shown that the vectors $(\vec{n}, \vec{B}, \vec{E})$ form a right-handed triad. From Eqn.(\ref{Infinitesimal_K_Unit_Vector_Formula}), $k^i$ can be rewritten as
+In this appendix it is shown that the vectors $(\vec{n}, \vec{B}, \vec{E})$ form a right-handed triad. 
+
+From Eqn.(\ref{Infinitesimal_K_Unit_Vector_Formula}), $k^i$ can be rewritten as
 
 \begin{equation*}
 k^i = (\zeta \bar{\zeta} + 1)(\vec{n}, 1),
@@ -372,7 +374,55 @@ B^3 & = E^2 n^1 - E^1 n^2.
 
 \noindent Thus is it clear that these are the components of the curl $\vec{E} = \vec{B} \times \vec{n}$ and $\vec{B} = \vec{n} \times \vec{E}$. This curl is proof that the vectors $(\vec{n}, \vec{E}, \vec{B})$ form a right-handed triad. 
 
+\section{Derivation of Familiar Electromagnetism Equations from Pure Radiation Conditions}\label{Appendix_Familair_EM_from_Pure_Cond}
 
+In this appendix the familiar equations
 
+\begin{equation*}
+L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
+\end{equation*}
+
+\noindent are shown to be equivalent to the pure radiation conditions of Eqn.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond_2}). First consider the scalar product
+
+\begin{align*}
+\mathcal{L}_{ij} \mathcal{L}^{ij} & = 2( \mathcal{L}_{12}\mathcal{L}_{12}+\mathcal{L}_{13} \mathcal{L}_{13}+\mathcal{L}_{23}\mathcal{L}_{23} \\
+                                  & - \mathcal{L}_{14} \mathcal{L}_{14} - \mathcal{L}_{24}\mathcal{L}_{24} - \mathcal{L}_{34}\mathcal{L}_{34})
+\end{align*}
+
+\noindent where $\mathcal{L}_{ij} = L_{ij} + i ^{*}L^{ij}$ as before. Writting this in terms of the components of $L$ gives
+
+\begin{align*}
+\frac{1}{2} \mathcal{L}_{ij} \mathcal{L}^{ij} & = \frac{q^2}{m^2} ( -4a^2 + b^2 - 2bc + c^2 - b^2 - 2bc - c^2 \\
+                                              & - b^2 - 2bc - c^2 + b^2 - 2bc + c^2 - 4a^2) \\
+                                              & = -\frac{8q^2}{m^2} (a^2 + bc) = 0,  
+\end{align*}
+
+\noindent as $a^2 + bc = 0$ for a singular Lorentz transformation and this is equivalent to the pure radiation field conditions as shown in Section (\ref{Infinitesimal_Section_Fractional_Linear}). This scalar product can also to written in terms of $L_{ij}$ such that
+
+\begin{equation*}
+\mathcal{L}_{ij} \mathcal{L}^{ij} = L_{ij}L^{ij} - ^{*}L_{ij}^{*}L^{ij} +2i L_{ij}^{*}L^{ij}.
+\end{equation*}
+
+\noindent Rewritting the middle terms component-wise gives the result
+
+\begin{align*}
+^{*}L_{ij} ^{*}L^{ij} & = 2 ( ^{*}L_{12} ^{*}L_{12} + ^{*}L_{13} ^{*}L_{13} + ^{*}L_{23} ^{*}L_{23} \\
+                     & - ^{*}L_{14} ^{*}L_{14} - ^{*}L_{24} ^{*}L_{24} - ^{*}L_{34} ^{*}L_{34}) \\
+                     & 2( L_{34}L_{34} + L_{24}L_{24} + L_{14}L_{14} \\
+                     & - L_{23}L_{23} - L_{13}L_{13} - L_{12}L_{12})
+                     & = - L_{ij}L^{ij},
+\end{align*}
+
+\noindent where $^{*}L_{ij} = \frac{1/2}\epsilon_{ijkl}L^{kl}$ has been used. So the scalar product becomes
+
+\begin{equation*}
+\mathcal{L}_{ij} \mathcal{L}^{ij} = 2 L_{ij}L^{ij} + 2i L_{ij}^{*}L^{ij}.
+\end{equation*}
+
+\noindent So the condition that the Lorentz transformation is singular gives $a^2 + bc = 0$ which implies first that the pure radiation conditions of Eqn.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond_2}) hold and second that the scalar product $\mathcal{L}_{ij} \mathcal{L}^{ij}$ vanishes, which is equivalent to 
+   
+\begin{equation*}
+L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
+\end{equation*}
 
 \end{appendix}

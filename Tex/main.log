@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  18 MAR 2014 20:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  30 MAR 2014 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -455,63 +455,68 @@ LaTeX Info: Redefining \nameref on input line 17.
 Class revtex4 Warning: Assuming \noaffiliation for Kevin Maguire (10318135).
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
-Overfull \hbox (5.00003pt too wide) detected at line 11
- \OT1/cmr/m/n/10 10
+Overfull \hbox (5.00003pt too wide) detected at line 10
+ \OT1/cmr/m/n/10 11
  []
 
 
-Overfull \hbox (5.00003pt too wide) detected at line 12
+Overfull \hbox (5.00003pt too wide) detected at line 11
  \OT1/cmr/m/n/10 12
  []
 
 
-Overfull \hbox (5.00003pt too wide) detected at line 13
+Overfull \hbox (5.00003pt too wide) detected at line 12
  \OT1/cmr/m/n/10 14
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 13
+ \OT1/cmr/m/n/10 15
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 14
- \OT1/cmr/m/n/10 14
+ \OT1/cmr/m/n/10 16
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 15
- \OT1/cmr/m/n/10 14
+ \OT1/cmr/m/n/10 16
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 16
- \OT1/cmr/m/n/10 17
+ \OT1/cmr/m/n/10 19
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 17
- \OT1/cmr/m/n/10 19
+ \OT1/cmr/m/n/10 20
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 18
- \OT1/cmr/m/n/10 19
+ \OT1/cmr/m/n/10 21
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 19
- \OT1/cmr/m/n/10 19
+ \OT1/cmr/m/n/10 21
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 20
- \OT1/cmr/m/n/10 22
- []
-
-
-Overfull \hbox (5.00003pt too wide) detected at line 21
  \OT1/cmr/m/n/10 24
  []
 
 
-Overfull \hbox (5.00003pt too wide) detected at line 22
+Overfull \hbox (5.00003pt too wide) detected at line 21
  \OT1/cmr/m/n/10 26
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 22
+ \OT1/cmr/m/n/10 28
  []
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 24.
@@ -524,52 +529,70 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 Overfull \hbox (5.00003pt too wide) detected at line 24
- \OT1/cmr/m/n/10 28
- []
-
-
-Overfull \hbox (5.00003pt too wide) detected at line 25
  \OT1/cmr/m/n/10 30
  []
 
 
+Overfull \hbox (5.00003pt too wide) detected at line 25
+ \OT1/cmr/m/n/10 32
+ []
+
+
 Overfull \hbox (5.00003pt too wide) detected at line 26
- \OT1/cmr/m/n/10 33
+ \OT1/cmr/m/n/10 35
  []
 
 
 Overfull \hbox (5.00003pt too wide) detected at line 27
- \OT1/cmr/m/n/10 33
+ \OT1/cmr/m/n/10 35
+ []
+
+
+Overfull \hbox (5.00003pt too wide) detected at line 28
+ \OT1/cmr/m/n/10 36
  []
 
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2] (./Lorentz_Transform.tex) (./Reparameterise_Schwarzschild_Solution.tex
-[1] [2] [3] [4] <figs/2_1.png, id=177, 333.49594pt x 306.39468pt>
+ [2] (./Lorentz_Transform.tex <figs/1_1.jpg, id=144, 369.63094pt x 349.305pt>
+File: figs/1_1.jpg Graphic file (type jpg)
+
+<use figs/1_1.jpg>
+Package pdftex.def Info: figs/1_1.jpg used on input line 15.
+(pdftex.def)             Requested size: 295.70514pt x 279.44437pt.
+) (./Reparameterise_Schwarzschild_Solution.tex [1 <./figs/1_1.jpg>] [2] [3] [4]
+ [5] <figs/2_1.png, id=190, 333.49594pt x 306.39468pt>
 File: figs/2_1.png Graphic file (type png)
 
 <use figs/2_1.png>
-Package pdftex.def Info: figs/2_1.png used on input line 214.
+Package pdftex.def Info: figs/2_1.png used on input line 308.
 (pdftex.def)             Requested size: 266.7971pt x 245.11607pt.
- [5 <./figs/2_1.png>] [6])
-(./Singular_Lorentz_Transformation.tex [7] [8])
-(./Special_Linear_Matrices_of_Lorentz.tex [9] [10] [11] [12] [13])
-(./Extended_Complex_Plane.tex [14]
-<figs/4_1.jpg, id=348, 798.73407pt x 238.64156pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6] [7 <./figs/2_1.png>] [8]) (./Singular_Lorentz_Transformation.tex [9]
+[10]) (./Special_Linear_Matrices_of_Lorentz.tex [11] [12] [13] [14] [15])
+(./Extended_Complex_Plane.tex
+<figs/4_1.jpg, id=351, 798.73407pt x 238.64156pt>
 File: figs/4_1.jpg Graphic file (type jpg)
  <use figs/4_1.jpg>
 Package pdftex.def Info: figs/4_1.jpg used on input line 19.
-(pdftex.def)             Requested size: 439.3051pt x 131.25325pt.
- [15 <./figs/4_1.jpg>]
+(pdftex.def)             Requested size: 399.36606pt x 119.32048pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] [17 <./figs/4_1.jpg>]
 
 LaTeX Font Warning: Command \Huge invalid in math mode on input line 119.
 
 
 LaTeX Font Warning: Command \Huge invalid in math mode on input line 119.
 
-[16] <figs/4_5.jpg, id=365, 509.65407pt x 291.33844pt>
+[18] <figs/4_5.jpg, id=385, 509.65407pt x 291.33844pt>
 File: figs/4_5.jpg Graphic file (type jpg)
  <use figs/4_5.jpg>
 Package pdftex.def Info: figs/4_5.jpg used on input line 143.
@@ -581,8 +604,8 @@ LaTeX Font Warning: Command \Huge invalid in math mode on input line 161.
 
 LaTeX Font Warning: Command \Huge invalid in math mode on input line 161.
 
-[17 <./figs/4_5.jpg>] [18]) (./Infinitesimal_Lorentz_Transformation.tex
-[19] [20] <figs/5_4.jpg, id=424, 255.20343pt x 339.51843pt>
+[19 <./figs/4_5.jpg>] [20]) (./Infinitesimal_Lorentz_Transformation.tex
+[21] [22] <figs/5_4.jpg, id=442, 255.20343pt x 339.51843pt>
 File: figs/5_4.jpg Graphic file (type jpg)
  <use figs/5_4.jpg>
 Package pdftex.def Info: figs/5_4.jpg used on input line 183.
@@ -591,7 +614,7 @@ Package pdftex.def Info: figs/5_4.jpg used on input line 183.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] [22 <./figs/5_4.jpg>] [23] [24] [25] [26]) (./Appendix.tex [27]
+[23] [24 <./figs/5_4.jpg>] [25] [26] [27] [28]) (./Appendix.tex [29]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
@@ -600,7 +623,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
 
-[28] [29] [30]pdfTeX warning (ext4): destination with the same identifier (name
+[30] [31] [32]pdfTeX warning (ext4): destination with the same identifier (name
 {equation.0.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -615,56 +638,56 @@ ame{equation.0.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.217 \end{align}
-                  [31] [32]pdfTeX warning (ext4): destination with the same ide
+                  [33] [34]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{equation.0.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.339 \begin{subequations}
+l.341 \begin{subequations}
                           pdfTeX warning (ext4): destination with the same iden
 tifier (name{equation.0.1alph1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.349 \end{align}
+l.351 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.0.1alph2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.349 \end{align}
+l.351 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.0.1alph3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.349 \end{align}
+l.351 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.0.1alph4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.349 \end{align}
-                 )
+l.351 \end{align}
+                  [35])
 
 Package natbib Warning: Empty `thebibliography' environment on input line 62.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-[33]
+[36]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A0A7224F63FB4ADDE86B17331F3A3CD5;2033.
+(rerunfilecheck)             Checksum: 8B5ED3C33984E2607B5E95E0E7244E0A;2151.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10047 strings out of 495059
- 159166 string characters out of 3182030
+ 10062 strings out of 495059
+ 159429 string characters out of 3182030
  328180 words of memory out of 3000000
- 12888 multiletter control sequences out of 15000+200000
+ 12897 multiletter control sequences out of 15000+200000
  11350 words of font info for 43 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,15n,31p,894b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,31p,1050b,451s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -682,10 +705,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (35 pages, 480180 bytes).
+Output written on main.pdf (38 pages, 518118 bytes).
 PDF statistics:
- 729 PDF objects out of 1000 (max. 8388607)
- 661 compressed objects within 7 object streams
- 208 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 760 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
