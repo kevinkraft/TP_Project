@@ -1,7 +1,7 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{ii}{section*.1}
 \tocdepth@restore 
-\contentsline {section}{\numberline {I}The Lorentz Transformation}{1}{section*.2}
+\contentsline {section}{\numberline {I}Introduction}{1}{section*.2}
 \contentsline {section}{\numberline {II}Reparameterisation of the Schwarzschild Solution}{2}{section*.3}
 \contentsline {subsection}{\numberline {A}Eddington-Finkelstein Coordinate Transformation}{2}{section*.4}
 \contentsline {subsection}{\numberline {B}The Kasner Solution}{5}{section*.5}
@@ -9,17 +9,17 @@
 \contentsline {section}{\numberline {III}The Singular Lorentz Transformation}{9}{section*.7}
 \contentsline {section}{\numberline {IV}Special Linear Matrices of the Lorentz Transformation}{11}{section*.8}
 \contentsline {subsection}{\numberline {A}Example 1: Rotational Transformation}{12}{section*.9}
-\contentsline {subsection}{\numberline {B}Example 2: Standard Lorentz Transformation}{14}{section*.10}
+\contentsline {subsection}{\numberline {B}Example 2: Standard Lorentz Transformation}{13}{section*.10}
 \contentsline {subsection}{\numberline {C}Example 3: Singular Lorentz Transformation}{15}{section*.11}
 \contentsline {section}{\numberline {V}The Fractional Linear Transformation}{16}{section*.12}
 \contentsline {subsection}{\numberline {A}Stereographic Projection and the Extended Complex Plane}{16}{section*.13}
-\contentsline {subsection}{\numberline {B}Extension to Minkowskian Sapce-Time}{19}{section*.14}
+\contentsline {subsection}{\numberline {B}Extension to Minkowskian Sapce-Time}{18}{section*.14}
 \contentsline {subsection}{\numberline {C}Fixed points and Their Associated Null Directions}{20}{section*.15}
 \contentsline {subsection}{\numberline {D}Example: Standard Lorentz Transformation}{21}{section*.16}
 \contentsline {section}{\numberline {VI}Infinitesimal Lorentz Transformations}{21}{section*.17}
 \contentsline {subsection}{\numberline {A}The Lorentz Force in Special Relativity}{24}{section*.18}
 \contentsline {subsection}{\numberline {B}Fractional Linear Transformations of the Infinitesimal Linear Transformation}{26}{section*.19}
-\contentsline {subsection}{\numberline {C}Pure Radiation Field Conditions in Minkowskian Space-Time}{28}{section*.20}
+\contentsline {subsection}{\numberline {C}Pure Radiation Field Conditions in Minkowskian Space-Time}{27}{section*.20}
 \appendix 
 \contentsline {section}{\numberline {A}Singular Lorentz Transformation with Special Significance Given to $x$}{30}{section*.21}
 \contentsline {section}{\numberline {B}Standard Lorentz Transformation of the Electromagnetic Field Vectors}{32}{section*.22}
