@@ -1,0 +1,73 @@
+
+\documentclass[floatfix,aps,prd,amsmath,amssymb]{revtex4}
+
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listing} %listings
+\usepackage{braket}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{mathtools}
+\usepackage[noabbrev,capitalise]{cleveref} %for \cref in CKM-Mechanism.tex 
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} %because my scientific notation wouldn't work: Kevin
+\usepackage{tensor}
+\usepackage{amsmath}
+
+\begin{document}
+\title{The Lorentz Group and Singular Lorentz Transformations}
+\author{Kevin Maguire (10318135)}
+\date{\today}
+
+\begin{abstract}
+\textit{abstract}
+\end{abstract}
+
+\maketitle
+\pagenumbering{roman}
+
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=0.8]{figs/Cover.jpg}
+%\end{center}
+%\caption{\textit{}}
+%\label{}
+%\end{figure}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+
+\input{Lorentz_Transform}
+
+\input{Reparameterise_Schwarzschild_Solution}
+
+\input{Singular_Lorentz_Transformation}
+
+\input{Special_Linear_Matrices_of_Lorentz}
+ 
+\input{Extended_Complex_Plane}
+
+\input{Infinitesimal_Lorentz_Transformation}
+
+\input{Appendix}
+
+\begin{thebibliography}{10}
+\bibitem{Hypersurfaces_Hogan_Barrabes}
+P.A Hogan, C. Barrabes - ``Singular Null Hypersurfaces'' - World Scientific Pub Co Inc (April 2004)
+\bibitem{Relativity_Synge}
+J.L. Synge - ``Relativity: The Special Theory'' - North Holland Publishing Company (1965)
+\bibitem{Spinors_I_Penrose}
+R. Penrose, W. Rindler - ``Spinors and Space-Time: Volume 1, Two-Spinor Calculus and Relativistic Fields'' - Cambridge University Press, (Feb 1987)
+\bibitem{I_Robinson_Paper}
+I. Robinson ``Sperical Gravitational Waves'' - Phys.Rev.Lett. 4 (1960) 431-432
+\bibitem{Schild_Lectures}
+Various Authors - ``Space-Time and Geometry: The Alfred Schild Lectures'' - University of Texas Press (March 21, 2012)
+\end{thebibliography}
+
+\end{document}
