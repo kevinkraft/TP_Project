@@ -1,6 +1,6 @@
 \section{Special Linear Matrices of the Lorentz Transformation}\label{Special_Linear_Matrices_of_Lorentz}
 
-In this section it is shown that there is a $2$ to $1$ correspondence between the matrices $SL(2, \mathbb{C})$ and the POLTs. First it is demonstrated that there is a one to one correspondence between $2 \times 2$ Hermitian matrices and Minkowskian space-time, this is then applied to Lorentz transformations. Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ Hermitian matrix \cite[p. 9-10]{Hypersurfaces_Hogan_Barrabes}
+In this section it is shown that there is a $2$ to $1$ correspondence between the matrices $SL(2, \mathbb{C})$ and the POLTs. First it is demonstrated that there is a one to one correspondence between $2 \times 2$ Hermitian matrices and Minkowskian space-time, this is then applied to Lorentz transformations. Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ the following $2 \times 2$ Hermitian matrix can be constructed \cite[p. 9-10]{Hypersurfaces_Hogan_Barrabes}
 
 \begin{equation}\label{Special_Matrices_A_first}
 A = 
@@ -78,17 +78,17 @@ Any $U$ involves 6 real parameters, 2 each from the four complex components, wit
 \begin{align*}  
 \det(A(\vec{x}')) & = \det(U A(\vec{x}) U^{\dagger}), \\
                   & = (\det(U))(\det(A(\vec{x}))(\det(U^{\dagger})), \\
-                  & = (\det(U))(\det(A(\vec{x}))\bar{(\det(U))}, \\
+                  & = (\det(U))(\det(A(\vec{x}))(\det(U)), \\
                   & = \det(A(\vec{x})).
 \end{align*}
 
-\noindent Thus we have the relation
+\noindent Thus the result
 
 \begin{equation*}  
-{t'}^2 - {x'}^2 - {y'}^2 - {z'}^2 = {t}^2 - {x}^2 - {y}^2 - {z}^2.
+{t'}^2 - {x'}^2 - {y'}^2 - {z'}^2 = {t}^2 - {x}^2 - {y}^2 - {z}^2,
 \end{equation*}
 
-\noindent Hence the transformation $\vec{x} \rightarrow \vec{x}'$ implicit in Eqn.(\ref{SL_trans}) is a Lorentz transformation. This equation describes the most general POLT.
+\noindent is obtained. Hence the transformation $\vec{x} \rightarrow \vec{x}'$ implicit in Eqn.(\ref{SL_trans}) is a Lorentz transformation. This equation describes the most general POLT.
 
 It is useful to calculate the matrix $U$ for some examples of Lorentz transformations. First, write Eqn.(\ref{SL_trans}) in terms of its components
 
@@ -136,7 +136,7 @@ x - i y & t + z   \\
 
 \begin{subequations}
 \begin{gather}\label{general_coeff_equate_a}
-t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{alpha} + (t+z)\beta\bar{\beta},
+t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{\alpha} + (t+z)\beta\bar{\beta},
 \\\label{general_coeff_equate_b}
 x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
 \\\label{general_coeff_equate_c}

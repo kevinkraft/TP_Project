@@ -4,7 +4,7 @@
 
 \section{Singular Lorentz Transformation with Special Significance Given to $x$}\label{Appendix_Special_Significance_x}
 
-The choice of components of the matrix $A$ in Eqn.(\ref{Special_Matrices_A_first}) gives an arbitrary but special significance to the coordinate $z$. In this calculation the matrix $U$ of Eqn.(\ref{SL_trans}) is determined for a singular Lorentz transformation, in which special significance has been given to the coordinate $x$. This transformation is given by
+The choice of components of the matrix $A$ in Eqn.(\ref{Special_Matrices_A_first}) gives an arbitrary but special significance to the corrdinate $z$. In this calculation the matrix $U$ of Eqn.(\ref{SL_trans}) is determined for a singular Lorentz transformation, in which special significance has been given to the coordinate $x$. This transformation is given by
 
 \begin{align*}
 t'-x' & = t-x, \\
@@ -12,9 +12,9 @@ z'+iy' & = z + iy + w(t-x), \\
 t'+x' & = t+x + w(z-iy) + \bar{w} (z + iy) + w \bar{w} (t-x).
 \end{align*}
 
-\noindent Notice that this is the same transformation as in Example 3, Section (\ref{Special_Linear_Matrices_Example_3}), with $x$ and $z$ swapped. This is equivalent to swapping these two coordinates in the matrix $A$ only. Note that if $x$ and $z$ were exchanged in both $A$ and the transformation then the $U$ obtained would be exactly the same as the example done previously.
+\noindent Notice that this is the same tranformation as in Example 3, Section (\ref{Special_Linear_Matrices_Example_3}), with $x$ and $z$ swapped. This is equivalent to swapping these two coordinates in the matrix $A$ only. Note that if $x$ and $z$ were exchanged in both $A$ and the transformation then the $U$ obtained would be exactly the same as the example done previously.
 
-First, the components of the matrix $A$ must be constructed. Thus the transformation must be written out explicitly as 
+First, the components of the matrix $A$ must be construced. Thus the transformation must be written out explicitly as 
 
 \begin{align*}
 x' & = x + \frac{1}{2} (w + \bar{w})z + \frac{i}{2}(\bar{w}- w)y + \frac{1}{2}w\bar{w}(t-x), \\
@@ -141,7 +141,7 @@ U = \pm
 \right).
 \end{equation*}
 
-Now the fractional linear transformation associated with $U$ must be determined. Using Eqn.(\ref{Extended_Complex_Fractional_Linear_Transformation}) to find that
+Now the fractional linear trasnformation associated with $U$ must be determined. Using Eqn.(\ref{Extended_Complex_Fractional_Linear_Transformation}) to find that
 
 \begin{equation*}
 \zeta' = \frac{\bar{w} - (\bar{w} +2)\zeta}{\bar{w} -2 - \bar{w}\zeta}. 
@@ -241,7 +241,7 @@ E^1  & E^2  & E^3  & 0   \\
 \end{align}
 \end{subequations}
 
-\noindent Where generally one of the relations given is trivial. Continue by writing Eqn.(\ref{Appendix_Lp_Standard_Transform_b}) explicitly and again equate coefficients to get
+\noindent Where generally one of the relations given is trivial. Continue by writting Eqn.(\ref{Appendix_Lp_Standard_Transform_b}) explicitly and again equate coefficients to get
 
 %\begin{subequations}
 \begin{align}
@@ -320,7 +320,7 @@ E^3 & = \gamma(\bar{E}^3 - v\bar{B}^2).
                               & = {({E}^1)}^2 + {({E}^2)}^2 + {({E}^3)}^2 - {({B}^1)}^2 - {({B}^2)}^2 - {({B}^3)}^2,
 \end{align*}
 
-\noindent as $\gamma^2 (1-v^2) = 1$. Finally the next equation is verified as follows
+\noindent as $\gamma^2 (1-v^2) = 1$. Finaly the next equation is verified as follows
 
 \begin{align*}
 \bar{E} \cdot \bar{B} & = \bar{E}^1\bar{B}^1 + \bar{E}^2\bar{B}^2 + \bar{E}^3\bar{B}^3, \\
@@ -392,7 +392,7 @@ L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
                                   & - \mathcal{L}_{14} \mathcal{L}_{14} - \mathcal{L}_{24}\mathcal{L}_{24} - \mathcal{L}_{34}\mathcal{L}_{34})
 \end{align*}
 
-\noindent where $\mathcal{L}_{ij} = L_{ij} + i ^{*}L^{ij}$ as before. Writing this in terms of the components of $L$ gives
+\noindent where $\mathcal{L}_{ij} = L_{ij} + i ^{*}L^{ij}$ as before. Writting this in terms of the components of $L$ gives
 
 \begin{align*}
 \frac{1}{2} \mathcal{L}_{ij} \mathcal{L}^{ij} & = \frac{q^2}{m^2} ( -4a^2 + b^2 - 2bc + c^2 - b^2 - 2bc - c^2 \\
@@ -406,17 +406,17 @@ L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
 \mathcal{L}_{ij} \mathcal{L}^{ij} = L_{ij}L^{ij} - ^{*}L_{ij}^{*}L^{ij} +2i L_{ij}^{*}L^{ij}.
 \end{equation*}
 
-\noindent Rewriting the middle term component-wise gives the result
+\noindent Rewritting the middle terms component-wise gives the result
 
 \begin{align*}
 ^{*}L_{ij} ^{*}L^{ij} & = 2 ( ^{*}L_{12} ^{*}L_{12} + ^{*}L_{13} ^{*}L_{13} + ^{*}L_{23} ^{*}L_{23} \\
-                      & - ^{*}L_{14} ^{*}L_{14} - ^{*}L_{24} ^{*}L_{24} - ^{*}L_{34} ^{*}L_{34}) \\
-                      & 2( L_{34}L_{34} + L_{24}L_{24} + L_{14}L_{14} \\
-                      & - L_{23}L_{23} - L_{13}L_{13} - L_{12}L_{12}) \\
-                      & = - L_{ij}L^{ij},
+                     & - ^{*}L_{14} ^{*}L_{14} - ^{*}L_{24} ^{*}L_{24} - ^{*}L_{34} ^{*}L_{34}) \\
+                     & 2( L_{34}L_{34} + L_{24}L_{24} + L_{14}L_{14} \\
+                     & - L_{23}L_{23} - L_{13}L_{13} - L_{12}L_{12})
+                     & = - L_{ij}L^{ij},
 \end{align*}
 
-\noindent where $^{*}L_{ij} = \frac{1}{2} \epsilon_{ijkl}L^{kl}$ has been used. So the scalar product becomes
+\noindent where $^{*}L_{ij} = \frac{1/2}\epsilon_{ijkl}L^{kl}$ has been used. So the scalar product becomes
 
 \begin{equation*}
 \mathcal{L}_{ij} \mathcal{L}^{ij} = 2 L_{ij}L^{ij} + 2i L_{ij}^{*}L^{ij}.
