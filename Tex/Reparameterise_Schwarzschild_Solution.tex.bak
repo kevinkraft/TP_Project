@@ -14,7 +14,7 @@ In this section the Kasner solution of the vacuum field equations is derived fro
 u = t - r - 2m \ln(r - 2m).
 \end{equation}
 
-\noindent This is generally used for a schwarzschild geometry, particularly black holes. It is useful as it removes the singularity at the origin (ERROR. see link 4. need to be in college to access)\cite[]{}. Calculate the differentials
+\noindent This is generally used for a Schwarzschild geometry, particularly black holes. It is useful as it removes the singularity at the origin \cite{Finkelstein_Paper}. Calculate the differentials
 
 \begin{align*}
 \mathrm{d}u & = \mathrm{d}t - \mathrm{d}r - \frac{2m \mathrm{d}r}{r - 2m},\\
@@ -38,7 +38,7 @@ Note that if $m = 0$ the space-time becomes Minkowskian, as expected. If $r = 0$
 
 $$ \epsilon {\mathrm{d}s}^2 = - {\mathrm{d}u}^{2},$$
 
-\noindent which implies that $\epsilon = -1$ and the first integral of this trajectory is also equal to $-1$. Thus $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u. It can also be shown that $r=0$ is a geodesic with proper time, $u$ an affine parameter along it, this is done here in two ways. The first method is to write the line element in cartesian coordinates using the transformation
+\noindent which implies that $\epsilon = -1$ and the first integral of this trajectory is also equal to $-1$. Thus $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u. It can also be shown that $r=0$ is a geodesic with proper time, $u$ an affine parameter along it, this is done here in two ways. The first method is to write the line element in Cartesian coordinates using the transformation
 
 \begin{gather*} 
 x = r\sin{\theta}\cos{\phi}, \\
@@ -47,10 +47,10 @@ z = r\cos{\theta}, \\
 t = u + r.
 \end{gather*}
 
-\noindent It is clear that setting $r=0$ will give $x = y = z = 0$ and $t = u$. So the world-line is the t-axis with u a parameter along it an is of course a time-like geodesic. The second method is much longer and involves calculaing the metric and proving the geodesic equations, it is done here as it will be familiar to many readers. The Langrangian method described by the following equations is used
+\noindent It is clear that setting $r=0$ will give $x = y = z = 0$ and $t = u$. So the world-line is the t-axis with $u$ a parameter along it and is of course a time-like geodesic. The second method is much longer and involves calculating the metric and proving the geodesic equations, it is done here as it will be familiar to many readers. The Lagrangian method described by the following equations is used
 
 \begin{gather*}
-L = g_{ij} \dot{x}^{i}\dot{x}^{j},
+L = g_{ij} \dot{x}^{i}\dot{x}^{j},\\
 \frac{d}{ds}\left( \frac{\partial L}{\partial \dot{x}^{i}}\right) - \frac{\partial L}{\partial {x}^{i}} = 2 w_{i}, \\
 w^{j} = g^{ji}w_{i},  
 \end{gather*}
@@ -58,7 +58,7 @@ w^{j} = g^{ji}w_{i},
 \noindent with a geodesic defined by $w^{j} = 0$. The metric of this space-time in coordinates $(r ,\theta, \phi, u)$ is determined from Eqn.(\ref{Reparameterisation_Schwarzschild_Before_Limit}) with $m=0$
 
 \begin{equation*}
-g_{ij}
+g_{ij} = 
 \left(
 \begin{array}{cccc}
 0  & 0 & 0             & -1 \\
@@ -72,7 +72,7 @@ g_{ij}
 \noindent The inverse of the metric is calculated to be
 
 \begin{equation*}
-g^{ij}
+g^{ij} =
 \left(
 \begin{array}{cccc}
 1  & 0           & 0                       & -1 \\
@@ -102,7 +102,7 @@ w^{r} & = g^{rj} w_{j} \\
       & = w_{r} - w_{u}
 \end{align*}
 
-and $w^{u}$ is
+\noindent and $w^{u}$ is
 
 \begin{align*}
 w^{u} & = g^{uj} w_{j} \\
@@ -112,8 +112,8 @@ w^{u} & = g^{uj} w_{j} \\
 \noindent So putting these together to obtain $w^{r} = 2w_{r}$ and $w^{u} = -w_{r}$ which implies
 
 \begin{align*}
-w^{r} = -2 \ddot{u} - 2 r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
-w^{u} = \ddot{u} + r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
+w^{r} & = -2 \ddot{u} - 2 r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
+w^{u} & = \ddot{u} + r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
 \end{align*}
 
 \noindent and also for $\theta$ and $\phi$
@@ -132,7 +132,7 @@ w^{\theta} = 0, \\
 w^{\phi} = 0,.
 \end{align*} 
 
-\noindent Now $s = u$ as u is proper time then $w^{r} = w^{u} = 0$, which implies that the trajectory $r=0$ is a geodesic with $u$ an affine parameter along it. 
+\noindent Now $s = u$ as $u$ is proper time then $w^{r} = w^{u} = 0$, which implies that the trajectory $r=0$ is a geodesic with $u$ an affine parameter along it. 
 
 The limit of the Schwarzschild solution as $m \rightarrow \infty$ must be calculated to find the Kasner solution. In its current form the limit cannot be taken, so two suitable coordinate transformations must be made to get it in a more useful form. First Set 
 
@@ -160,10 +160,10 @@ r = {\mu}^{-1} r',
 \epsilon {\mathrm{d}s}^2 = {r'}^2 \sin^2 \theta \left\{ \frac{{\mathrm{d}\theta}^2}{\mu^2 \sin^2 \theta} +  \mu^{-2} {\mathrm{d} \phi}^2 \right\} - 2 {\mathrm{d}u'} {\mathrm{d}r'} - \left( \mu^2 - \frac{2 m \mu^3}{r'}\right) {\mathrm{d}u'}^2 . 
 \end{equation}
 
-\noindent Now set $m \mu^{3} = k$ or $ m = k \mu^{-3}$ and make another transformation first done by Ivor Robinson given by \cite{I_Robinson_Paper} (ERROR. bad reference? need to check, but cant check until have APS access in college)
+\noindent Now set $m \mu^{3} = k$ or $ m = k \mu^{-3}$ and make another transformation first done by Ivor Robinson given by \cite{I_Robinson_Paper}
 
 \begin{align*} 
-\sin{\theta} = \frac{1}{\cosh{(\mu \xi)}}, & \mu^{-1} \phi = \eta.  
+\sin{\theta} = \frac{1}{\cosh{(\mu \xi)}}, \qquad  \mu^{-1} \phi = \eta.  
 \end{align*} 
 
 \noindent The second of these transformations gives simply $\mu^{-2} \mathrm{d}\phi^2 = \mathrm{d} \eta^2$. To rewrite the first coordinate transformation, first differentiate.
@@ -173,7 +173,7 @@ r = {\mu}^{-1} r',
                       & = -{\sin}^{2}\theta \sinh(\mu \xi) \mu \mathrm{d} \xi.
 \end{align*}
 
-\noindent Use the forumla $\cosh^2 A - \sinh^2 A = 1$, divide by $\mathrm{d} \xi$ and simplfy using trigonometric identities
+\noindent Use the formula $\cosh^2 A - \sinh^2 A = 1$, divide by $\mathrm{d} \xi$ and simplify using trigonometric identities
 
 \begin{align*}
 \cos{\theta} \frac{\mathrm{d} \theta}{\mathrm{d} \xi} & = -\mu \sin^2 \theta \sqrt{\frac{1}{\sin^2 \theta} - 1}, \\
@@ -202,7 +202,7 @@ This is now in an appropriate form to take the limit $m \rightarrow \infty$ whic
 \epsilon {\mathrm{d}s}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r} - \frac{2k}{r} {\mathrm{d}u}^2
 \end{equation}
 
-\noindent This is still a solution of the field equations but it is no longer the Schwarzschild solution. In this section it is shown to be the Kasner Solution(READ UP ABOUT THIS), which by definition is given by
+\noindent This is still a solution of the field equations but it is no longer the Schwarzschild solution. In this section it is shown to be the Kasner Solution, which by definition is given by
 
 \begin{equation}\label{Reparameterise_Definition_Of_Kasner} 
 \epsilon {\mathrm{d}s}^2 = T^{2p} {\mathrm{d}X}^2 + T^{2q} \mathrm{d}Y^2 + T^{2r} \mathrm{d}Z^2 - \mathrm{d}T^2,
@@ -214,7 +214,7 @@ This is now in an appropriate form to take the limit $m \rightarrow \infty$ whic
 p + q + r = 1 = p^2 + q^2 + r^2.
 \end{eqnarray*}
 
-To write Eqn.(\ref{Kasner_after_limit}) in this form first make the transformation
+This solution is characteristic of aniosotropic space-times, which means it is directionally dependant. To write Eqn.(\ref{Kasner_after_limit}) in the above form first make the transformation
 
 \begin{gather*} 
 \xi' = \lambda^{-1} \xi, \text{    }  \eta' = \lambda^{-1} \eta, \\
@@ -281,7 +281,7 @@ Z & = \left( \frac{3}{\sqrt{2}} \right)^{2/3} \eta, \\
 
 \subsection{Line Element of Minkowskian Space-Time}
 
-Minkowskian space-time reemerges again by setting $k = 0$ in Eqn.(\ref{Kasner_after_limit}), which is equivalent to $m = 0$. 
+Minkowskian space-time reemerges again by setting the energy, $k = 0$ in Eqn.(\ref{Kasner_after_limit}), which is equivalent to $m = 0$. 
 
 \begin{equation}\label{Kasner_after_limit_no_k}
 \epsilon {\mathrm{d}s}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r}
@@ -293,13 +293,7 @@ Minkowskian space-time reemerges again by setting $k = 0$ in Eqn.(\ref{Kasner_af
 \epsilon {\mathrm{d}s_0}^2 = {\mathrm{d}x}^2 + {\mathrm{d}y}^2 + {\mathrm{d}z}^2 - {\mathrm{d}t}^2.
 \end{equation*} 
 
-\noindent We note that the trajectory $C$  defined by $x = 0$, $y = 0$, $z = t$ is a null geodesic as it will lie on the light cone of Minkowskian space-time. If $C$ is writen parametrically as $x^i = w^i (u)$ such that $w^i = (0,0,u,u)$ then $u$ is an affine parameter along it. The tangent to $C$ is then computed as
-
-\begin{equation*} 
-v^i (u) = \frac{\mathrm{d} w^i}{\mathrm{d}u} = (0,0,1,1).
-\end{equation*} 
-
-\noindent As $C$ is a null geodesic the first integral will be $v_i v^i = 0$ and thus $v_i = (0,0,1,-1)$ where we have chosen the convention $(+,+,+,-)$. 
+\noindent We note that the trajectory $C$  defined by $x = 0$, $y = 0$, $z = t$ is a null geodesic as it will lie on the light cone of Minkowskian space-time. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -309,14 +303,20 @@ v^i (u) = \frac{\mathrm{d} w^i}{\mathrm{d}u} = (0,0,1,1).
 \end{center}
 \end{figure}
 
-The position vector of a point in Minkowskian space time can be written in the form
+\noindent If $C$ is written parametrically as $x^i = w^i (u)$ such that $w^i = (0,0,u,u)$ then $u$ is an affine parameter along it. The tangent to $C$ is then computed as
+
+\begin{equation*} 
+v^i (u) = \frac{\mathrm{d} w^i}{\mathrm{d}u} = (0,0,1,1).
+\end{equation*} 
+
+\noindent As $C$ is a null geodesic the first integral will be $v_i v^i = 0$ and thus $v_i = (0,0,1,-1)$ where we have chosen the convention $(+,+,+,-)$. The position vector of a point in Minkowskian space time can be written in the form
 
 \begin{eqnarray*}
 x^i - w^i (u) = r k^i, \\
 \text{or } x^i = w^i(u) + r k^i. 
 \end{eqnarray*}
 
-\noindent Thus $r$ is a new parameter which tell us the shortest distance between $C$ and some point $x^i$, and $k^i$ is the unit vector in that direction, see Fig.(\ref{Reparameterization_Figure_Unit_Vector}). As $k^i$ is a unit vector it satisfies the relations
+\noindent Thus $r$ is a new parameter which gives the shortest distance between $C$ and some point $x^i$, and $k^i$ is the unit vector in that direction, see Fig.(\ref{Reparameterization_Figure_Unit_Vector}). As $k^i$ is a unit vector it satisfies the relations
 
 \begin{gather}
 k^i k_i = 0 \label{k_rel_1},\\
@@ -340,7 +340,7 @@ k_i = (\xi, \eta, A, -B).
 
 \begin{gather}
 A - B = -1 \label{sim_rel_1},\\
-\Rightarrow A^2 - B^2 = (A + B)(A - B) = - (A + B).
+A^2 - B^2 = (A + B)(A - B) = - (A + B).
 \end{gather}
 
 \noindent Which implies

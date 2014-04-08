@@ -1,6 +1,6 @@
 \section{Special Linear Matrices of the Lorentz Transformation}\label{Special_Linear_Matrices_of_Lorentz}
 
-In this section it is shown that there is a $2$ to $1$ correspondence between the matrices $SL(2, \mathbb{C})$ and the proper orthochronous Lorentz transformations. First it is demonstrated that there is a one to one correspondence between $2 \times 2$ Hermitian matrices and Minkowskian space-time, this is then applied to Lorentz transformations. Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ Hermitian matrix \cite[p. 9-10]{Hypersurfaces_Hogan_Barrabes}
+In this section it is shown that there is a $2$ to $1$ correspondence between the matrices $SL(2, \mathbb{C})$ and the POLTs. First it is demonstrated that there is a one to one correspondence between $2 \times 2$ Hermitian matrices and Minkowskian space-time, this is then applied to Lorentz transformations. Let $\vec{x} = (x,y,z,t)$ be the position vector of a point in Minkowskian space-time. Knowing $\vec{x}$ we can construct the following $2 \times 2$ Hermitian matrix \cite[p. 9-10]{Hypersurfaces_Hogan_Barrabes}
 
 \begin{equation}\label{Special_Matrices_A_first}
 A = 
@@ -12,17 +12,19 @@ x - iy & t+z \\
 \right),
 \end{equation}
 
-\noindent with $A^{\dagger}(\vec{x}) = A(\vec{x})$. This is useful as its determinant is the same as the Lorentz invariant quadratic form, up to an arbitrary sign.
+\noindent with $A^{\dagger}(\vec{x}) = A(\vec{x})$. This is useful as its determinant is the same as the Lorentz invariant quadratic form, up to an arbitrary sign, such that
 
 \begin{equation*}
 \det(A(\vec{x})) = t^2 - x^2 - y^2 - z^2.
 \end{equation*}
 
-\noindent This form also has a connection to spinors (ERROR. check formula, Lie Algebras? look at RQM notes, reference to spinor scetion if i write one, pg2 references) 
+\noindent This form also has a connection to spinors 
 
 \begin{equation*}
-A = [t\mathcal{I}_{2} - \vec{x} \cdot \vec{\sigma}]
+A = [t\mathbb{I}_{2} - \vec{x} \cdot \vec{\sigma}],
 \end{equation*}  
+
+\noindent where $\vec{\sigma}$ are the Pauli matrices. The matrices $i\vec{\sigma}$ form a basis for the Lie algebra of the special unitary group $SU(2)$. This group will be dicussed briefly in Section (\ref{Fractional_Section_Extension_to_Minkowskian}). 
 
 Consider any $2 \times 2$ Hermitian matrix $H$, thus
 
@@ -86,7 +88,7 @@ Any $U$ involves 6 real parameters, 2 each from the four complex components, wit
 {t'}^2 - {x'}^2 - {y'}^2 - {z'}^2 = {t}^2 - {x}^2 - {y}^2 - {z}^2.
 \end{equation*}
 
-\noindent Hence the transformation $\vec{x} \rightarrow \vec{x}'$ implicit in Eqn.(\ref{SL_trans}) is a Lorentz transformation. This equation describes the most general proper, orthochronous Lorentz transformation.
+\noindent Hence the transformation $\vec{x} \rightarrow \vec{x}'$ implicit in Eqn.(\ref{SL_trans}) is a Lorentz transformation. This equation describes the most general POLT.
 
 It is useful to calculate the matrix $U$ for some examples of Lorentz transformations. First, write Eqn.(\ref{SL_trans}) in terms of its components
 
@@ -407,4 +409,4 @@ U = \pm
 \right)
 \end{equation*}
 
-It is clear that there will always be two matrices, $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x}') = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondence between the elements of $SL(2,\mathbb{C})$ and the proper orthochronous Lorentz transformation, with $A$ and $A'$ corresponding to differenent coordinates of Minkowskian space-time and $\pm U$ corresponding to proper orthochronous Lorentz transformations.  
+It is clear that there will always be two matrices, $\pm U$ corresponding to every Lorentz transformation, since if $U$ satisfies $A(\vec{x}') = U A(\vec{x}) U^{\dagger}$ then so does $-U$. Hence there is a $2$ to $1$ correspondence between the elements of $SL(2,\mathbb{C})$ and the POLTs, with $A$ and $A'$ corresponding to different coordinates of Minkowskian space-time and $\pm U$ corresponding to proper orthochronous Lorentz transformations.  
