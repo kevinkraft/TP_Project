@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  8 APR 2014 18:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.10.4)  15 APR 2014 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,13 +463,14 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 Class revtex4 Warning: Assuming \noaffiliation for Kevin Maguire (10318135).
 
-<figs/Cover.jpg, id=108, 602.25pt x 405.01312pt>
+<figs/Cover.jpg, id=108, 615.06383pt x 413.63043pt>
 File: figs/Cover.jpg Graphic file (type jpg)
  <use figs/Cover.jpg>
 Package pdftex.def Info: figs/Cover.jpg used on input line 31.
-(pdftex.def)             Requested size: 481.80064pt x 324.01093pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/Cover.jpg>] (./m
-ain.toc
+(pdftex.def)             Requested size: 492.05173pt x 330.90479pt.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/Cover.jpg>]
+(./main.toc
 Overfull \hbox (5.00003pt too wide) detected at line 10
  \OT1/cmr/m/n/10 11
  []
@@ -568,14 +569,14 @@ Overfull \hbox (5.00003pt too wide) detected at line 29
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2] (./Lorentz_Transform.tex <figs/1_1.jpg, id=154, 369.63094pt x 349.305pt>
+ [2] (./Lorentz_Transform.tex <figs/1_1.jpg, id=155, 369.63094pt x 349.305pt>
 File: figs/1_1.jpg Graphic file (type jpg)
 
 <use figs/1_1.jpg>
 Package pdftex.def Info: figs/1_1.jpg used on input line 15.
 (pdftex.def)             Requested size: 295.70514pt x 279.44437pt.
 ) (./Reparameterise_Schwarzschild_Solution.tex [1 <./figs/1_1.jpg>] [2] [3] [4]
- [5] [6] <figs/2_1.png, id=209, 333.49594pt x 306.39468pt>
+ [5] [6] <figs/2_1.png, id=210, 333.49594pt x 306.39468pt>
 File: figs/2_1.png Graphic file (type png)
 
 <use figs/2_1.png>
@@ -585,7 +586,7 @@ Package pdftex.def Info: figs/2_1.png used on input line 302.
 (./Singular_Lorentz_Transformation.tex [9] [10])
 (./Special_Linear_Matrices_of_Lorentz.tex [11] [12] [13] [14] [15])
 (./Extended_Complex_Plane.tex [16]
-<figs/4_1.jpg, id=384, 798.73407pt x 238.64156pt>
+<figs/4_1.jpg, id=387, 798.73407pt x 238.64156pt>
 File: figs/4_1.jpg Graphic file (type jpg)
  <use figs/4_1.jpg>
 Package pdftex.def Info: figs/4_1.jpg used on input line 19.
@@ -597,7 +598,7 @@ LaTeX Font Warning: Command \Huge invalid in math mode on input line 117.
 
 LaTeX Font Warning: Command \Huge invalid in math mode on input line 117.
 
-[18] <figs/4_5_2.jpg, id=405, 742.27313pt x 288.3272pt>
+[18] <figs/4_5_2.jpg, id=408, 742.27313pt x 288.3272pt>
 File: figs/4_5_2.jpg Graphic file (type jpg)
  <use figs/4_5_2.jpg>
 Package pdftex.def Info: figs/4_5_2.jpg used on input line 141.
@@ -611,7 +612,7 @@ LaTeX Font Warning: Command \Huge invalid in math mode on input line 159.
 LaTeX Font Warning: Command \Huge invalid in math mode on input line 159.
 
 [20] [21]) (./Infinitesimal_Lorentz_Transformation.tex [22]
-<figs/5_4.jpg, id=468, 255.20343pt x 339.51843pt>
+<figs/5_4.jpg, id=471, 255.20343pt x 339.51843pt>
 File: figs/5_4.jpg Graphic file (type jpg)
  <use figs/5_4.jpg>
 Package pdftex.def Info: figs/5_4.jpg used on input line 183.
@@ -671,12 +672,12 @@ ame{equation.0.1alph3}) has been already used, duplicate ignored
                    \relax 
 l.354 \end{align}
                   [36])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
  [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 51CA926AD7D8EBD1DCACFD76904D2C03;2185.
 
@@ -685,13 +686,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10117 strings out of 495059
- 160548 string characters out of 3182030
+ 10122 strings out of 495059
+ 160605 string characters out of 3182030
  330180 words of memory out of 3000000
- 12934 multiletter control sequences out of 15000+200000
+ 12938 multiletter control sequences out of 15000+200000
  11517 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,15n,31p,2745b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,31p,2765b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -702,19 +703,20 @@ t/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (39 pages, 834370 bytes).
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on main.pdf (39 pages, 833819 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 745 compressed objects within 8 object streams
- 226 named destinations out of 1000 (max. 500000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 750 compressed objects within 8 object streams
+ 227 named destinations out of 1000 (max. 500000)
  239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

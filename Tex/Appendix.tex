@@ -188,7 +188,7 @@ In this appendix the transformation laws for $\vec{E} = (E^1, E^2, E^3)$ and $\v
 \noindent is a $4$-vector and ds is invariant, thus $\frac{\mathrm{d}p^i}{\mathrm{d}s}$ is also a $4$-vector. Hence $\tensor{L}{^i_j} p^j$ is a $4$-vector for any $4$-vector $p^i$, where $\tensor{L}{^i_j}$ is given by
 
 \begin{equation*}
-\tensor{L}{^i_j} = 
+\left( \tensor{L}{^i_j} \right) = 
 \left(
 \begin{array}{cccc}
 0    & B^3  & -B^2 & E^1 \\
@@ -302,7 +302,7 @@ E^3 & = \gamma(\bar{E}^3 - v\bar{B}^2).
 \bar{B}^1 = B^1, \qquad  & \bar{B}^2 = \gamma (B^2 + vE^3), \qquad  & \bar{B}^3 = \gamma (B^3 - vE^2). 
 \end{eqnarray*}
 
-\noindent Using these transformations it is possible to verify that the quantities in Eqn.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond_2} are invariant, by direct computation. Start with
+\noindent Using these transformations it is possible to verify that the quantities in Eqn.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond_2}) are invariant, by direct computation. Start with
 
 \begin{align*} 
 {|\bar{E}|}^2 - {|\bar{B}|}^2 & = {(\bar{E}^1)}^2 + {(\bar{E}^2)}^2 + {(\bar{E}^3)}^2 - {(\bar{B}^1)}^2 - {(\bar{B}^2)}^2 - {(\bar{B}^3)}^2,\\
@@ -354,7 +354,7 @@ k^i = (\zeta \bar{\zeta} + 1)(\vec{n}, 1),
 \end{align}
 \end{subequations}
 
-\noindent Then by equating real and imaginary parts of Eqn.(\ref{Appendix_2_Expand_L_K_product_d}) it is clear that  $\vec{E} \cdot \vec{n} = \vec{B} \cdot \vec{n}$. Also, from Eqns.(\ref{Appendix_2_Expand_L_K_product_a}) - (\ref{Appendix_2_Expand_L_K_product_c}) the following series of equations are seen, first Eqn.(\ref{Appendix_2_Expand_L_K_product_a}) implies
+\noindent Then by equating to zero the real and imaginary parts of Eqn.(\ref{Appendix_2_Expand_L_K_product_d}) it is clear that  $\vec{E} \cdot \vec{n} = 0 = \vec{B} \cdot \vec{n}$. Also, from Eqns.(\ref{Appendix_2_Expand_L_K_product_a}) - (\ref{Appendix_2_Expand_L_K_product_c}) the following series of equations are seen, first Eqn.(\ref{Appendix_2_Expand_L_K_product_a}) implies
 
 \begin{align*}
 E^1 & = B^2 n^3 - B^3 n^2, \\
@@ -375,7 +375,7 @@ E^3 & = B^1 n^2 - B^2 n^1,\\
 B^3 & = E^2 n^1 - E^1 n^2.
 \end{align*}
 
-\noindent Thus is it clear that these are the components of the curl $\vec{E} = \vec{B} \times \vec{n}$ and $\vec{B} = \vec{n} \times \vec{E}$. This curl is proof that the vectors $(\vec{n}, \vec{E}, \vec{B})$ form a right-handed triad. 
+\noindent Thus it is clear that these are the components of $\vec{E} = \vec{B} \times \vec{n}$ and $\vec{B} = \vec{n} \times \vec{E}$. This is proof that the vectors $(\vec{n}, \vec{E}, \vec{B})$ form a right-handed triad. 
 
 \section{Derivation of Familiar Electromagnetism Equations from Pure Radiation Conditions}\label{Appendix_Familair_EM_from_Pure_Cond}
 
@@ -392,7 +392,7 @@ L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
                                   & - \mathcal{L}_{14} \mathcal{L}_{14} - \mathcal{L}_{24}\mathcal{L}_{24} - \mathcal{L}_{34}\mathcal{L}_{34})
 \end{align*}
 
-\noindent where $\mathcal{L}_{ij} = L_{ij} + i ^{*}L^{ij}$ as before. Writing this in terms of the components of $L$ gives
+\noindent where $\mathcal{L}_{ij} = L_{ij} + i ^{*}L_{ij}$ as before. Writing this in terms of the components of $L$ gives
 
 \begin{align*}
 \frac{1}{2} \mathcal{L}_{ij} \mathcal{L}^{ij} & = \frac{q^2}{m^2} ( -4a^2 + b^2 - 2bc + c^2 - b^2 - 2bc - c^2 \\
@@ -425,7 +425,7 @@ L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
 \noindent So the condition that the Lorentz transformation is singular gives $a^2 + bc = 0$ which implies first that the pure radiation conditions of Eqn.(\ref{Infinitesimal_Pure_Rad_Cond_1}) and (\ref{Infinitesimal_Pure_Rad_Cond_2}) hold and second that the scalar product $\mathcal{L}_{ij} \mathcal{L}^{ij}$ vanishes, which is equivalent to 
    
 \begin{equation*}
-L_{ij}L^{ij} = 0 = L_{ij} ^{*}L_{ij},
+L_{ij}L^{ij} = 0 = L_{ij} ^{*}L^{ij},
 \end{equation*}
 
 \end{appendix}
