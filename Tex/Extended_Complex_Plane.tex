@@ -7,10 +7,10 @@ In this section a fractional linear transformation is derived from extending the
 First, a one to one mapping between the $2$-sphere, $\mathbb{S}^2$ and the extended complex plane $\hat{\mathbb{C}}$ is constructed \cite[p. 10]{Spinors_I_Penrose}. \textit{Stereographic projection} is the mapping of points on a sphere to points on a plane. In $\mathbb{R}^3$ with rectangular Cartesian coordinates $(x, y, z)$, consider the unit sphere with centre $(0,0,0)$, defined by
 
 \begin{equation*}
-\mathbb{S}^2 \subset \mathbb{R}^3 \text{ : } x^2 + y^2 + x^2 = 1.
+\mathbb{S}^2 \subset \mathbb{R}^3 \text{ : } x^2 + y^2 + z^2 = 1.
 \end{equation*}
 
-\noindent The projection $P \rightarrow Q$ is a stereographic projection, see Fig.(\ref{Stereographic_Projecttion_Fig}). A relationship between $(X,Y,0)$ and $(x,y,z)$ is constructed as follows. $P$ is subdivided into the line segment $NQ$ in some ratio, $l:m$ say. By coordinate geometry 
+\noindent The projection $P \rightarrow Q$ is a stereographic projection, see Fig.(\ref{Stereographic_Projecttion_Fig}). A relationship between $(X,Y,0)$ and $(x,y,z)$ is constructed as follows. $P$ subdivides the line segment $NQ$ in some ratio, $l:m$ say. By coordinate geometry 
 
 \begin{figure}[h!]
 \begin{center}
@@ -41,7 +41,7 @@ x^2 + y^2 = 1-z^2 = (1-z) (1+z), \\
 (1-z)^2(X^2 +Y^2) = (1-z) (1+z).
 \end{eqnarray*}
 
-\noindent If the point $N$ is excluded, i.e. $z \neq 1$ then divide by $(1-z)^2$ to obtain
+\noindent If the point $N$ is excluded, i.e. $z \neq 1$, then divide by $(1-z)^2$ to obtain
 
 \begin{equation*} 
 X^2 + Y^2 = \frac{1+z}{1-z},
@@ -50,7 +50,7 @@ X^2 + Y^2 = \frac{1+z}{1-z},
 \noindent and rearrange to find
 
 \begin{equation}\label{Ext_Complex_z_in_term_XY} 
-z = \frac{X^2 + y^2 - 1}{X^2 + y^2 + 1}.
+z = \frac{X^2 + Y^2 - 1}{X^2 + Y^2 + 1}.
 \end{equation}
 
 Define $\zeta = X+ iY$ and rewrite Eqn.(\ref{Ext_Complex_z_in_term_XY}) to see that
@@ -79,7 +79,7 @@ x+ iy = \frac{2/\bar{\zeta}}{1 + 1/\zeta\bar{\zeta}} \rightarrow 0 \text{, as  }
 z = \frac{1- 1/\zeta\bar{\zeta}}{1+ 1/\zeta\bar{\zeta}} \rightarrow 1 \text{, as  } \zeta \rightarrow \infty. 
 \end{eqnarray*}
 
-\noindent Then $N = (0,0,1)$ corresponds to $\zeta = \infty$. Thus in this way there is a one to one correspondence between the points of $\mathbb{S}^2$ and the points of the \textit{extended complex plane} $\hat{\mathbb{C}} = \mathbb{C} \cup {\infty}$, which is the usual complex plane with the point at infinity added. Since $\mathbb{S}^2$ has finite surface area, and is therefore called a \textit{compact manifold}, the identification of the points of $\hat{\mathbb{C}}$ with the points of $\mathbb{S}^2$ is called the \textit{compactification} of $\hat{\mathbb{C}}$.
+\noindent Then $N = (0,0,1)$ corresponds to $\zeta = \infty$. Thus in this way there is a one to one correspondence between the points of $\mathbb{S}^2$ and the points of the \textit{extended complex plane} $\hat{\mathbb{C}} = \mathbb{C} \cup \left{ {\infty} \right}$, which is the usual complex plane with the point at infinity added. Since $\mathbb{S}^2$ has finite surface area, and is therefore called a \textit{compact manifold}, the identification of the points of $\hat{\mathbb{C}}$ with the points of $\mathbb{S}^2$ is called the \textit{compactification} of $\hat{\mathbb{C}}$.
 
 The pair $(\zeta, \bar{\zeta})$ are called the \textit{stereographic coordinates} on $\mathbb{S}^2 \backslash \{N\}$. How are they related to the polar angles $\theta$ and $\phi$? To investigate this write the usual spherical polar coordinates in terms of $\zeta$. First it is known that
 
@@ -120,13 +120,13 @@ z = \cos{\theta} = \frac{\zeta\bar{\zeta} - 1}{\zeta\bar{\zeta} + 1} \\
 
 \subsection{Extension to Minkowskian Space-Time}\label{Fractional_Section_Extension_to_Minkowskian}
 
-These results are now extended to Minkowskian space-time to derive an expression for the fractional Linear transformation. Let $\vec{x} = (x,y,z,t)$ be a point on the future null cone with origin $(0,0,0,0)$. Denote the future null cone as $N^{+}$, so that 
+These results are now extended to Minkowskian space-time to derive an expression for the fractional linear transformation. Let $\vec{x} = (x,y,z,t)$ be a point on the future null cone with origin $(0,0,0,0)$. Denote the future null cone as $N^{+}$, so that 
 
 \begin{equation*}
 N^+ : x^2 + y^2 + z^2 - t^2 = 0 \text{,  for  } t>0,
 \end{equation*}
 
-\noindent as all the vectors in the null cone have a Lorentz quadratic form equal to zero by definition. The intersection with the space-like hypersurface $t = \text{const}>0$ is a 2-sphere denoted by 
+\noindent as all the position vectors in the null cone have a Lorentz quadratic form equal to zero by definition. The intersection with the space-like hypersurface $t = \text{const}>0$ is a 2-sphere denoted by 
 
 \begin{equation}\label{Ext_Complex_2Sphere_Definition}
 \mathbb{S}^2 (t) : x^2 + y^2 + z^2 = t^2 = \text{const}, 
@@ -258,7 +258,7 @@ In this context with $\zeta$ related to the null directions of Minkowskian space
 
 \subsection{Fixed points and Their Associated Null Directions}
 
-A given Lorentz transformation is equivalent to known $\alpha$, $\beta$ , $\gamma$ and $\delta$ parameters module a sign and therefore gives an explicit fractional linear transformation. For a given Lorentz transformation a \textit{fixed point} of the corresponding fractional linear transformation corresponds to an invariant null direction. The fixed points $\zeta$ satisfy the relation $\zeta' = \zeta$. Thus from Eq.(\ref{Extended_Complex_Fractional_Linear_Transformation})
+A given Lorentz transformation is equivalent to known $\alpha$, $\beta$ , $\gamma$ and $\delta$ parameters modulo a sign and therefore gives an explicit fractional linear transformation. For a given Lorentz transformation a \textit{fixed point} of the corresponding fractional linear transformation corresponds to an invariant null direction. The fixed points $\zeta$ satisfy the relation $\zeta' = \zeta$. Thus from Eq.(\ref{Extended_Complex_Fractional_Linear_Transformation})
 
 \begin{gather}\nonumber
 \zeta' = \frac{(\bar{\gamma} + \bar{\delta}\zeta)}{(\bar{\alpha} + \bar{\beta}\zeta)} = \zeta, \\\label{Ext_Complex_fixed_point}

@@ -1,6 +1,6 @@
 \section{Infinitesimal Lorentz Transformations}
 
-In this section the infinitesimal Lorentz transformations are derived. In the same way as infinitesimal rotations in Euclidean $3$-space can simplify calculations so too can infinitesimal Lorentz transformations in Minkowskian space-time. These transformations can be used to determine the equations of motion of a particle as it travels through Minkowskian space-time. It is interesting to write these equations in terms of the particles $3$-velocity as the form of the Lorentz force emerges. It is shown that the Lorentz force must depend on the particle's $3$-velocity in a special way in order to be compatible with special relativity. Then the fractional linear transformation associated with the infinitesimal transformation is derived to find that the resulting radiation field must be a pure radiation field. Finally the conditions for a pure radiation field are extended to Minkowskian space-time.
+In this section the infinitesimal Lorentz transformations are derived. In the same way as infinitesimal rotations in Euclidean $3$-space can simplify calculations so too can infinitesimal Lorentz transformations in Minkowskian space-time. These transformations can be used to determine the equations of motion of a particle as it travels through Minkowskian space-time. It is interesting to write these equations in terms of the particle's $3$-velocity as the form of the Lorentz force emerges. It is shown that the Lorentz force must depend on the particle's $3$-velocity in a special way in order to be compatible with special relativity. Then the fractional linear transformation associated with the infinitesimal transformation is derived to find that the resulting radiation field must be a pure radiation field if the Lorentz transformations are singular. Finally the conditions for a pure radiation field are extended to Minkowskian space-time.
 
 The Infinitesimal transformations are Lorentz transformations that are small perturbations of the identity transformation and so $U \in SL(2,\mathbb{C})$ has the form \cite[p. 86]{Relativity_Synge}
 
@@ -178,7 +178,7 @@ Now consider taking a step along the world line of the particle. Define $\bar{s}
 
 \begin{figure}[h!]
 \begin{center}
-\caption{\textit{The trajectory of a particle moving through Minkowskian space time. The position along the path is parameterised by $s$. A step along the curve from $s$ to $s+\alpha$ is shown. This step is found to be a Lorentz transformation as both $v^i(s)$ and $\bar{v}^i(\bar{s})$ have equal Lorentz quadratic forms.}}
+\caption{\textit{The world line of a particle moving through Minkowskian space time. The position along the path is parameterised by $s$. A step along the curve from $s$ to $s+\alpha$ is shown. This step is found to be a Lorentz transformation as both $v^i(s)$ and $\bar{v}^i(\bar{s})$ have equal Lorentz quadratic forms.}}
 \label{Infinitesimal_Fig_Steps_Along_Minkowskian}
 \includegraphics[scale=0.8]{figs/5_4.jpg}
 \end{center}
@@ -208,7 +208,7 @@ v^i(s+\epsilon) = v^i(s) + \epsilon \tensor{L}{^{i}_{j}}(s)v^j (s) + O(\epsilon^
 \frac{dv^i}{ds} = \tensor{L}{^{i}_{j}}(s) v^j (s).
 \end{equation}
 
-\noindent This equation determines the trajectory of the particle through Minkowskian space-time. In terms of $x$ this is equivalent to
+\noindent This equation determines the world line of the particle in Minkowskian space-time. In terms of $x$ this is equivalent to
 
 \begin{equation*}
 \frac{d^2 x^i}{ds^2} = \tensor{L}{^{i}_{j}}(s) \frac{d x^j}{ds}.
@@ -216,7 +216,7 @@ v^i(s+\epsilon) = v^i(s) + \epsilon \tensor{L}{^{i}_{j}}(s)v^j (s) + O(\epsilon^
 
 \subsection{The Lorentz Force in Special Relativity}
 
-Now the form of the Lorentz force can be derived by writing these equations in terms of the particles $3$-velocity given by
+Now the form of the Lorentz force can be derived by writing these equations in terms of the particle's $3$-velocity given by
 
 \begin{equation*}
 \vec{u} = \left( \frac{dx}{dt}, \frac{dy}{dt}, \frac{dz}{dt} \right).
@@ -247,7 +247,7 @@ v^i = \frac{dx^i}{ds} = \frac{dx^i}{dt} \frac{dt}{ds} = \left(\frac{dx}{dt},\fra
 v^i = \gamma(u) (\vec{u}, 1)
 \end{equation}
 
-\noindent It is now convenient to display Eqn.(\ref{Infinitesimal_DE_interms_v}) as two equations denoting the spacial part and the temporal part, in terms of $\gamma$ and $u$. Again using the chain rule to obtain
+\noindent It is now convenient to display Eqn.(\ref{Infinitesimal_DE_interms_v}) as two equations denoting the spatial part and the temporal part, in terms of $\gamma$ and $u$. Again using the chain rule to obtain
 
 \begin{equation*} 
 \frac{dt}{ds} \frac{dv^i}{dt} = \tensor{L}{^{i}_{j}}v^j. 
@@ -260,14 +260,14 @@ v^i = \gamma(u) (\vec{u}, 1)
 \gamma(u) \frac{d}{dt} \gamma(u) = \tensor{L}{^{4}_{j}} v^j,
 \end{gather}
 
-\noindent as $v^i = \gamma(u)(\vec{u},1)$. Here the usual convention that Greek indices denote the sum over the spacial indices only has been used, thus $\alpha = 1,2,3$. Now Eqn.(\ref{infinitesimal_v_interms_gamma}) can be used to rewrite the $\tensor{L}{^{i}_{j}}$ coefficients to get
+\noindent as $v^i = \gamma(u)(\vec{u},1)$. Here the usual convention that Greek letters denote the spatial indices only has been used, thus $\alpha = 1,2,3$. Now Eqn.(\ref{infinitesimal_v_interms_gamma}) can be used to rewrite the $\tensor{L}{^{i}_{j}}$ coefficients to get
 
 \begin{gather}\label{Infinitesimal_gamma_u_2}
 \tensor{L}{^{\alpha}_{j}} v^j = \gamma(u) (\tensor{L}{^{\alpha}_{\beta}} u^{\beta} + \tensor{L}{^{\alpha}_4}) \\ \nonumber
 \tensor{L}{^{4}_{j}} v^j = \gamma(u) (\tensor{L}{^{4}_{\alpha}} u^{\alpha})
 \end{gather} 
 
-\noindent where $\tensor{L}{^{4}_{4}} = 0$ from Eqn.(\ref{infinitesimal_Matrix_component_wise}). Putting together Eqns.(\ref{Infinitesimal_gamma_u_1}) and (\ref{Infinitesimal_gamma_u_2}) to obtain differential equations for the spacial and temporal coordinates in terms of the particles $3$-velocity,
+\noindent where $\tensor{L}{^{4}_{4}} = 0$ from Eqn.(\ref{infinitesimal_Matrix_component_wise}). Putting together Eqns.(\ref{Infinitesimal_gamma_u_1}) and (\ref{Infinitesimal_gamma_u_2}) to obtain differential equations for the spatial and temporal coordinates in terms of the particle's $3$-velocity,
 
 \begin{gather*} 
 \frac{d}{dt} (\gamma(u) u^{\alpha}) = \tensor{L}{^{\alpha}_{\beta}} u^{\beta} + \tensor{L}{^{\alpha}_{4}}, \\
@@ -326,7 +326,7 @@ It is clear that Eqns.(\ref{Infinitesimal_gamma_u_explicit_1})-(\ref{Infinitesim
 
 \noindent and so it is shown that Eqn.(\ref{Infinitesimal_like_Lorentz_force_2}) is a generalization of Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) and contains no new information. 
 
-The dependence of the $3$-force acting on a particle as shown by Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}), depends in general on the particles $3$-velocity $\vec{u}$ in a special way, in order to be compatible with Special Relativity. Thus in particular \textit{the Lorentz $3$-force acting on a particle of rest mass $m$ and charge $q$ must depend upon $\vec{u}$ as in Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) to be compatible with special Relativity.} So the Lorentz force of electromagnetism is a special case of a charged particle moving through Minkowskian space-time along a world-line of infinitesimal Lorentz transformations. In this case, make the identifications
+The dependence of the $3$-force acting on a particle as shown by Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}), depends in general on the particle's $3$-velocity $\vec{u}$ in a special way, in order to be compatible with Special Relativity. Thus in particular \textit{the Lorentz $3$-force acting on a particle of rest mass $m$ and charge $q$ must depend upon $\vec{u}$ as in Eqn.(\ref{Infinitesimal_like_Lorentz_force_1}) to be compatible with special Relativity.} So the Lorentz force of electromagnetism is a special case of a charged particle moving through Minkowskian space-time along a world-line of infinitesimal Lorentz transformations. In this case, make the identifications
 
 \begin{equation}\label{Infinitesimal_P_Q_interms_E_B} 
 \vec{P} = \frac{q}{m} \vec{E}, \qquad \vec{Q} = \frac{q}{m}\vec{B},

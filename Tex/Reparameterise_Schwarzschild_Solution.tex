@@ -38,7 +38,7 @@ Note that if $m = 0$ the space-time becomes Minkowskian, as expected. If $r = 0$
 
 $$ \epsilon {\mathrm{d}s}^2 = - {\mathrm{d}u}^{2},$$
 
-\noindent which implies that $\epsilon = -1$ and the first integral of this trajectory is also equal to $-1$. Thus $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u. It can also be shown that $r=0$ is a geodesic with proper time, $u$ an affine parameter along it, this is done here in two ways. The first method is to write the line element in Cartesian coordinates using the transformation
+\noindent which implies that $\epsilon = -1$ and the first integral of this world line is also equal to $-1$. Thus $r = 0$ is a time-like world-line in Minkowskian space-time, with proper time u. It can also be shown that $r=0$ is a geodesic with proper time, $u$ an affine parameter along it, this is done here in two ways. The first method is to write the line element in Cartesian coordinates using the transformation
 
 \begin{gather*} 
 x = r\sin{\theta}\cos{\phi}, \\
@@ -112,7 +112,7 @@ w^{u} & = g^{uj} w_{j} \\
 \noindent So putting these together to obtain $w^{r} = 2w_{r}$ and $w^{u} = -w_{r}$ which implies
 
 \begin{align*}
-w^{r} & = -2 \ddot{u} - 2 r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
+w^{r} & = \ddot{r} - r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
 w^{u} & = \ddot{u} + r(\dot{\theta}^2 + \sin^2{\theta}\dot{\phi}^2), \\
 \end{align*}
 
@@ -126,13 +126,13 @@ w^{\phi} = \sin{\theta}(\dot{\phi} \dot{r} + r \ddot{\phi}) + 2r \dot{\phi}\cos{
 \noindent Then set $r=0$ to obtain the equations
 
 \begin{align*} 
-w^{r} = - 2 \ddot{u}, \\
+w^{r} = 0, \\
 w^{u} = \ddot{u}, \\
 w^{\theta} = 0, \\
 w^{\phi} = 0,.
 \end{align*} 
 
-\noindent Now $s = u$ as $u$ is proper time then $w^{r} = w^{u} = 0$, which implies that the trajectory $r=0$ is a geodesic with $u$ an affine parameter along it. 
+\noindent Now $u = s$ as $u$ is proper time then $w^{u} = 0$, which implies that the world line $r=0$ is a geodesic with $u$ an affine parameter along it. 
 
 The limit of the Schwarzschild solution as $m \rightarrow \infty$ must be calculated to find the Kasner solution. In its current form the limit cannot be taken, so two suitable coordinate transformations must be made to get it in a more useful form. First Set 
 
@@ -293,11 +293,11 @@ Minkowskian space-time reemerges again by setting the energy, $k = 0$ in Eqn.(\r
 \epsilon {\mathrm{d}s_0}^2 = {\mathrm{d}x}^2 + {\mathrm{d}y}^2 + {\mathrm{d}z}^2 - {\mathrm{d}t}^2.
 \end{equation*} 
 
-\noindent Note that the trajectory $C$  defined by $x = 0$, $y = 0$, $z = t$ is a null geodesic as it will lie on the light cone of Minkowskian space-time. 
+\noindent Note that the world line $C$ defined by $x = 0$, $y = 0$, $z = t$ is a null geodesic as it will lie on the light cone of Minkowskian space-time. 
 
 \begin{figure}[h!]
 \begin{center}
-\caption{\textit{Minkowskian space-time illustrating the new parameter $r$ which is the shortest distance between some point $x^i$ and the trajectory $C$ along the $k^i$ direction. The parameter $u$ which determines the distance travelled along $C$ is also shown}}
+\caption{\textit{Minkowskian space-time illustrating the new parameter $r$ which is the shortest distance between some point $x^i$ and the world line $C$ along the $k^i$ direction. The parameter $u$ which determines the distance travelled along $C$ is also shown}}
 \label{Reparameterization_Figure_Unit_Vector}
 \includegraphics[scale=0.8]{figs/2_1.png}
 \end{center}
@@ -316,7 +316,7 @@ x^i - w^i (u) = r k^i, \\
 \text{or } x^i = w^i(u) + r k^i. 
 \end{eqnarray*}
 
-\noindent Thus $r$ is a new parameter which gives the shortest distance between $C$ and some point $x^i$, and $k^i$ is the unit vector in that direction, see Fig.(\ref{Reparameterization_Figure_Unit_Vector}). As $k^i$ is a unit vector it satisfies the relations
+\noindent Thus $r$ is a new parameter which gives the shortest distance between $C$ and some point $x^i$, and $k^i$ is the null vector in that direction, see Fig.(\ref{Reparameterization_Figure_Unit_Vector}). As $k^i$ is a null vector it satisfies the relations
 
 \begin{gather}
 k^i k_i = 0 \label{k_rel_1},\\
@@ -410,4 +410,4 @@ z - t & = - r, \\
 
 \noindent and from this it is clear that Eqn.(\ref{Kasner_after_limit_no_k}) is the line element of Minkowskian space-time with $r = 0$ a null geodesic with affine parameter $u$ along it as stated in Section (\ref{Ed_Finkel_section}).
 
-Thus it has been shown that the Kasner solution to the vacuum filed equations can be obtained from the Schwarzschild solution of the vacuum field equations by taking the special case where the mass goes to infinity. Then the Minkowskian space-time line element in a particular set of coordinates $(\xi, \eta, r, u)$, can be derived from the Kasner solution by setting the energy, $k$ to zero. It has been shown that the special case where $r=0$ in this Minkowskian space-time is then a null geodesic with $u$ an affine parameter along it.  
+Thus it has been shown that the Kasner solution to the vacuum field equations can be obtained from the Schwarzschild solution of the vacuum field equations by taking the special case where the mass goes to infinity. Then the Minkowskian space-time line element in a particular set of coordinates $(\xi, \eta, r, u)$, can be derived from the Kasner solution by setting the energy, $k$ to zero. It has been shown that the special case where $r=0$ in this Minkowskian space-time is then a null geodesic with $u$ an affine parameter along it.  
