@@ -1,0 +1,71 @@
+\documentclass[10pt,a4paper]{beamer}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{pgfpages}
+\setbeameroption{show notes}
+\setbeameroption{show notes on second screen=right}
+
+\usetheme{Madrid}
+\author{Kevin Maguire}
+\defbeamertemplate*{footline}{shadow theme}
+{\leavevmode
+ \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}
+\usebeamerfont{author in head/foot}\insertframenumber\,/\,\inserttotalframenumber\hfill\insertshortauthor
+\end{beamercolorbox}
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}
+    \usebeamerfont{title in head/foot}\insertshorttitle
+\end{beamercolorbox}}
+  \vskip0pt
+}
+
+\usetheme{Madrid}
+\author{Kevin Maguire}
+\title{Singular Lorentz Transformations and Pure Radiation Fields}
+\date{\today}
+\pagenumbering{arabic}
+
+\begin{document}
+
+\setbeamercovered{transparent}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Layout}
+\begin{enumerate}
+\item<1->{Introduction}
+\item<2->{Line Element in Minkowskian Space-Time}
+\item<0>{Test}
+\item<3->{Singular Lorentz transformation}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\begin{minipage}{5.25cm}
+\frametitle{Introduction: Lorentz Transformations}
+\begin{itemize}
+\item<1->{A Lorentz transformation is defined by the preservation of the quadratic form $${x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 = x^2 + y^2 + z^2 - t^2$$ in the transformation $(x,y,z,t) \rightarrow (x',y',z',t')$}
+\item<2->{Take the \textcolor{red}{Proper Orthochronous Lorentz transformations} which form the \textcolor{red}{restricted Lorentz group} $SO^{+}(1,3)$}
+\item<3->{In general lorentz transformations have two invarient null directions}
+\end{itemize}
+\end{minipage}
+\begin{minipage}{5.25cm}
+\includegraphics<4->[scale=0.4]{../Tex/figs/1_1.jpg}
+\note<2->{--Proper is det 1 . preserves the orientation of spacial axes, preserves handedness}
+\note<2->{--orthochronous means time is always positive and the direction of time is preserved}
+\note<4->{--Think of the standard Lornetz transformation, always two null directions at $x \pm t$}
+\end{minipage}
+\end{frame}
+
+
+
+
+
+
+\end{document}

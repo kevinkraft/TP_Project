@@ -1,0 +1,383 @@
+\documentclass[10pt,a4paper]{beamer}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{enumerate}
+
+%for beamer style
+\usetheme{Madrid}
+\author{Kevin Maguire}
+\defbeamertemplate*{footline}{shadow theme}
+{\leavevmode
+ \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}
+\usebeamerfont{author in head/foot}\insertframenumber\,/\,\inserttotalframenumber\hfill\insertshortauthor
+\end{beamercolorbox}
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}
+    \usebeamerfont{title in head/foot}\insertshorttitle
+\end{beamercolorbox}}
+  \vskip0pt
+}
+
+\begin{document}
+
+\begin{frame}
+\title{New Stripping line for $D^{*}$ tagged $D^{0} \rightarrow h h \pi^{0}$}
+\author{\textbb{Kevin Maguire}, \newline Chirs Parkes, \newline  Mika Vesterinen \newline \newline \newline kevin.maguire@cern.ch}
+\date{\today}
+\maketitle
+\pagenumbering{arabic}
+\end{frame}
+
+\begin{frame}
+
+\begin{minipage}{5.25cm}
+\vspace{1.5em}
+\begin{itemize}
+\item{We consider candiates that are TOS on the inclusive $D^{*}$ HLT2 line}
+\item{HLT2 has tight cuts on the daughter particles. We want to resurrect these candidates in the fastest way possible in the stripping}
+\end{itemize}
+\begin{center}
+\includegraphics[scale=0.4]{figs/decay.png}
+\end{center}
+\end{minipage}
+\hspace{2.0em}
+\begin{minipage}{5.25cm}
+\begin{enumerate}
+\item{Filter on HLT2 decision}
+\item{Construct a 2 track vertex from the h h daughters with PIDK and flight distance cuts}
+\item{One of these daughters is required to have a large IP AND PT by the HLT1TrackAllL0 line}
+\item{Combine with a $\pi^{0}$ with loose PT cut$ > 500~$MeV to form a $D^{0}$}
+\item{Add slow pion with PT $> 300~$MeV to form a $D^{*}$}
+
+\item{TOS requirement on the inclusive D* line}
+\end{enumerate}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\frametitle{Timing and Retention}
+\begin{center}
+\begin{tabular}{l|ccc}
+\hline
+\hline
+\vspace{0.5em}
+Stripping Line & Retention (\%)  & $t$/$(ms)$ & Signal Purity (\%) \\
+\hline
+Kpipi0 Line       & 0.2833         & 0.239      & 6.2                \\
+Kpipi0WS  Line    & 0.1318         & 0.132      & 3                  \\
+pipipi0 Line      & 0.3252         & 0.193      & 2.4 (as PIDK$<$7) \\
+KKpi0 Line        & 0.0264         & 0.087      & 2                  \\
+Kpipi0\_M Line    & 0.0264         & 0.100      & 9.1*                \\
+pipipi0\_M Line   & 0.0183         & 0.119      & 1.5* (as PIDK$<$7)   \\
+KKpi0\_M Line     & 0.0014         & 0.080      & 8.7*                \\
+MassConstraint    & 0.2826         & 0.660      & 5.1 ???            \\
+\hline
+\hline
+\end{tabular}
+\newline
+\vspace{1.0em}
+* Low statistics
+\end{center}
+\vspace{1.0em}
+\begin{itemize}
+\item{``MassConstraint'' line indicates a pi0 refit will not be possible within time constraints}
+\end{itemize}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Resulting ntuple Analysis: D0\_M}
+%\begin{minipage}{5.25cm}
+%\vspace{1.0em}
+%\begin{itemize}
+%\item{with no cuts}
+%\item{with cuts}
+%\begin{itemize}
+%\item{pi0\_MM, (125,146)} 
+%\item{delta mass, (137,153)
+%\end{itemize}
+%\item{with fit}
+%\begin{itemize}
+%\item{\#signal $=2113.69 \slash 10447$} 
+%\item{$\Rightarrow 5.2$ Million signal events in 2012 data}
+%\end{itemize}
+%\end{itemize}
+%\vspace{1.5em}
+%\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/1.7/Kpipi0RS/pdf/fit_D0M.pdf}
+%\end{minipage}
+%\hspace{2.0em}
+%\begin{minipage}{5.25cm}
+%\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/1.7/Kpipi0RS/pdf/D0_M_plot.pdf}
+%\newline
+%\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/1.7/Kpipi0RS/pdf/D0_M_cut_plot.pdf}
+%\end{minipage}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Resulting ntuple Analysis: Raw Signal}
+\begin{itemize}
+\item{Kpipi0}
+\end{itemize}
+\begin{minipage}{5.25cm}
+\begin{center}
+\includegraphics[scale=0.16]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/D0_M_plot.pdf}
+\end{center}
+\end{minipage}
+\begin{minipage}{5.25cm}
+\begin{center}
+\includegraphics[scale=0.16]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/Dstar_M-D0_M_plot.pdf}
+\end{center}
+\end{minipage}
+\begin{itemize}
+\item{pipipi0}
+\end{itemize}
+\begin{minipage}{5.25cm}
+\begin{center}
+\includegraphics[scale=0.16]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/pipipi0/pdf/D0_M_plot.pdf}
+\end{center}
+\end{minipage}
+\begin{minipage}{5.25cm}
+\begin{center}
+\includegraphics[scale=0.16]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/pipipi0/pdf/Dstar_M-D0_M_plot.pdf}
+\end{center}
+\end{minipage}
+\begin{itemize}
+\item{KKpi0}
+\end{itemize}
+\begin{minipage}{5.25cm}
+\begin{center}
+\includegraphics[scale=0.16]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/KKpi0/pdf/D0_M_plot.pdf}
+\end{center}
+\end{minipage}
+\begin{minipage}{5.25cm}
+\begin{center}
+\includegraphics[scale=0.16]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/KKpi0/pdf/Dstar_M-D0_M_plot.pdf}
+\end{center}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Resulting ntuple Analysis: Kpipi0 Fits}
+\begin{minipage}{5.25cm}
+\begin{itemize}
+\item{with cuts}
+\begin{itemize}
+\item{pi0\_MM, (125,146)}  
+\item{delta mass, (137,153)}
+\item{Purity 6.2 \%}
+\item{$\Rightarrow 6.7$ Milion signal events in 2012 data}
+\end{itemize}
+\end{itemize}
+\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/fit_D0M.pdf}
+\end{minipage}
+\hspace{2.0em}
+\begin{minipage}{5.25cm}
+\begin{itemize}
+\item{with cuts}
+\begin{itemize}
+\item{pi0\_MM, (125,146)}  
+\item{D0\_M, (1810,1930)}
+\item{Purity 6.4 \%}
+\item{$\Rightarrow 6.9$ Million signal events in 2012 data}
+\end{itemize}
+\end{itemize}
+\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/fit_DeltaM.pdf}
+\end{minipage}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Resulting ntuple Analysis: delta mass}
+%\begin{minipage}{5.25cm}
+%\vspace{1.0em}
+%\begin{itemize}
+%\item{with no cuts}
+%\item{with cuts}
+%\begin{itemize}
+%\item{pi0\_MM, (125,146)}  
+%\item{D0\_M, (1810,1930)}
+%\end{itemize}
+%\item{with fit}
+%\begin{itemize}
+%\item{\#signal $=  2922.34 \slash  14'116 $}
+%\item{$\Rightarrow 7.2$ Million signal events in 2012 data}
+%\end{itemize}
+%\end{itemize}
+%\vspace{1.5em}
+%\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/fit_DeltaM.pdf}
+%\end{minipage}
+%\hspace{2.0em}
+%\begin{minipage}{5.25cm}
+%\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/Dstar_M-D0_M_plot.pdf}
+%\newline
+%\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/Dstar_M-D0_M_cut_plot.pdf}
+%\end{minipage}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Resulting ntuple Analysis: pi0\_M refit effect}
+\begin{minipage}{5.25cm}
+\begin{itemize}
+\item{With $\pi^{0}$ mass refit}
+\item{\# retained events $-$}
+\end{itemize}
+\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS_MassConstraint/pdf/D0_M_plot.pdf}
+\end{minipage}
+\hspace{2.0em}
+\begin{minipage}{5.25cm}
+\begin{itemize}
+\item{Without $\pi^{0}$ mass refit}
+\item{\# retained events $-$}
+\end{itemize}
+\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/D0_M_plot.pdf}
+\end{minipage}
+\begin{itemize}
+\item{Scaled up to full 2012 data set the difference is - events}
+\item{not much difference, but mass refit takes much longer}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion:}
+\begin{itemize}
+\item{We found that:}
+\begin{itemize}
+\item{ - cuts imporve the stripping line, and will be added}
+\item{ - cuts do not imporve the stripping line}
+\item{Pi0 Mass Refit takes too long, no existing LHCb tool to make this fast enough}
+\item{Fast and efficient stripping line allows us to have a low pi0\_PT and high signal retention}
+\end{itemize}
+\end{itemize}
+\hspace{3.0em}
+%\begin{itemize}
+\item{$\Rightarrow$ Well tested stripping line ready for next stripping at the end of August}
+%\end{itemize}
+\vspace{3.0em}
+%\begin{itemize}
+\hspace{1.0em} \item{\underline{Next:} Trigger for tagged $D^{0} \rightarrow h h \pi^{0}$}
+%\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Back up Slides}
+\end{frame}
+
+\begin{frame}
+\frametitle{Order of Cuts}
+\begin{enumerate}
+\item{GECs}
+\item{Pion (PT $>$ 500 MeV) \& (TRGHOSTPROB $<$ 0.35) \& \textcolor{red}{(PIDK $<$ 7)}}
+\item{Kaon (PT $>$ 500 MeV) \& (TRGHOSTPROB $<$ 0.35) \& \textcolor{red}{(PIDK $>$ 7)}}		
+\item{Slowpi (PT $>$ 300 MeV) \& (TRGHOSTPROB $<$ 0.35) \& (PIDe $<$ 5) \& (MIPCHI2DV(PRIMARY)$<$ 9.0)}
+\item{Pi0R (PT $>$ \textcolor{red}{500 MeV}) \& \textcolor{red}{(M $>$ 135-15 MeV) \& (M $<$ 135+15 MeV)}}
+\item{Pi0M (PT $>$ 1000 MeV) (not used)}
+\item{\textcolor{red}{Kst (((ACHILD(PT,1) $>$ 1.7*GeV) \& (ACHILD(BPVIPCHI2(),1) $>$ 36)) $|$ ((ACHILD(PT,2) $>$ 1.7*GeV) \& (ACHILD(BPVIPCHI2(),2) $>$ 36))) \& (AM $<$ 1850*MeV) \& (ADOCACHI2CUT(15,''))}}
+\item{\textcolor{red}{Kst (VFASPF(VCHI2/VDOF) $<$ 3 \& (BPVVDCHI2 $>$ 100))}}
+\item{D0 (ADAMASS('D0') $<$ \textcolor{red}{150 $+$ 10 MeV}) \& \textcolor{red}{(APT $>$ 1400 MeV)}}
+\item{D0 \textcolor{red}{(DMASS('D0') $<$ 150 MeV)} }
+\item{Dst (AM - ACHILD(M,1) $<$ 180 MeV) \& (ADOCACHI2CUT(20,''))}
+\item{Dst (VFASPF(VCHI2/VDOF) $<$ 9.0)}			
+\item{\textcolor{red}{HLT2 TOS}}		
+\item[]{\textcolor{red}{\hspace{9.0em} RED$=$ADDED TO DRAFT }}		
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Timing and Retention, Full}
+\begin{center}
+\begin{tabular}{l|ccc}
+\hline
+\hline
+\vspace{0.5em}
+Stripping Line    & Retention (\%) & $t$/$(ms)$ & Signal Purity (\%) \\
+\hline
+Kpipi0 Line       & 0.2833         & 0.239      & 6.2                \\
+Kpipi0WS  Line    & 0.1318         & 0.132      & 3                  \\
+pipipi0 Line      & 0.3252         & 0.193      & 2.4 (as PIDK$<$7) \\
+KKpi0 Line        & 0.0264         & 0.087      & 2                  \\
+Kpipi0\_M Line    & 0.0264         & 0.100      & 9.1*                \\
+pipipi0\_M Line   & 0.0183         & 0.119      & 1.5* (as PIDK$<$7)    \\
+KKpi0\_M Line     & 0.0014         & 0.080      & 8.7*                \\
+MassConstraint    & 0.2826         & 0.660      & 5.1 ???            \\
+pi0M tight        & 0.2623         & 0.437      & 6.5 ~~~            \\
+D0 APT $>$ 2000   & 0.2373         & 0.406      & 6.5 ~~~            \\
+Pion PIDK $<$ 0   & 0.2373         & 0.404      & 6.5 ~~~            \\
+no pi0PT cut      & 0.3212         & 0.542      & 4.8 ~~~            \\
+\hline
+\hline
+\end{tabular}
+\end{center}
+\newline
+\vspace{1.0em}
+* Low statistics
+\end{frame}
+
+\begin{frame}
+\frametitle{Resulting ntuple Analysis: pi0\_PT cut effect}
+\begin{minipage}{5.25cm}
+\begin{itemize}
+\item{With no pi0\_PT cut}
+\item{$-$/$-$ signal events}
+\item{$0 \rightarrow 500$ PT cut}
+\item{Loss of $-~$\% of ``signal'' events}
+\end{itemize}
+\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS_pi0PTConstraint/pdf/fit_D0M.pdf}
+\end{minipage}
+\hspace{2.0em}
+\begin{minipage}{5.25cm}
+\begin{itemize}
+\item{pi0\_PT $> 1000~$MeV}
+\item{$-$/$-$ signal events}
+\item{$500 \rightarrow 1000$ PT cut}
+\item{Loss of $-$\% of signal events}
+\end{itemize}
+\includegraphics[scale=0.3]{//afs/cern.ch/user/k/kmaguire/cmtuser/DaVinci_v33r5/Phys/StrippingSelections/Analysis/2.0/Kpipi0RS/pdf/fit_D0M_pi0PTcut.pdf}
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Code for Pi0 Mass Refit}
+\begin{flushleft}
+\begin{flushleft}
+\begin{lstlisting}
+DstComb.addTool( OfflineVertexFitter )                                                                                                  
+DstComb.ParticleCombiners.update({"":"OfflineVertexFitter"})                                                                                    
+DstComb.OfflineVertexFitter.useResonanceVertex = False
+DstComb.OfflineVertexFitter.applyDauMassConstraint = True                                                                                      
+DstComb.ReFitPVs = True
+\end{lstlisting}
+\end{flushleft}
+\end{flushleft}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Discarded cuts}
+\begin{itemize}
+\item{HLT1 TOS requirment}
+\begin{itemize}
+\item{Doesn't Change the retension as the HLT2 does the same job, and adds to the time/event as spends time looking through the Kst candidates, and only removes a very small amount of these candidates}
+\end{itemize}
+\item{D0 (VFASPF(VCHI2/VDOF)}
+\begin{itemize}
+\item{A cut is made on daughter vertecies of the D0 so this extra cut after the creation of a D0 doesn't do anything}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%templates
+
+%\begin{frame}
+%\frametitle{Signal Yeild}
+%\begin{minipage}{3cm}
+%\item $L=0.798~{pb}^{-1}$ with $N=4546$ 
+%\item[]
+%\Rightarrow If   $L=2000~{pb}^{-1}$ then $N=11.3$ Million events
+%\end{minipage}
+%\begin{minipage}{7.5cm}
+%\includegraphics[scale=0.5]{figs/lumi.png}
+%\end{minipage}
+%\end{frame}
+
+\end{document}
