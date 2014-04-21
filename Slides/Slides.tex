@@ -6,6 +6,8 @@
 \usepackage{listings}
 \usepackage{enumerate}
 \usepackage{pgfpages}
+\usepackage{amsmath}
+\usepackage{mathtools}
 \setbeameroption{show notes}
 \setbeameroption{show notes on second screen=right}
 
@@ -42,6 +44,7 @@
 \item<1->{Introduction: Lorentz Transformations}
 \item<2->{Strange Minkowskian Line Element}
 \item<3->{Singular Lorentz transformation}
+\item<4->{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \end{enumerate}
 \end{frame}
 
@@ -74,8 +77,8 @@ add in the contents
 
 \note{
 \begin{itemize}
-\item<1->{derive a strange minkowskian line element}
-\item<2->{making a complicated transformation that keeps a single null geodesic fixed look trivial}
+\item{derive a strange minkowskian line element}
+\item{making a complicated transformation that keeps a single null geodesic fixed look trivial}
 \end{itemize}
 }
 \end{frame}
@@ -104,7 +107,7 @@ add in the contents
 \frametitle{Strange Minkowskian Line Element}
 \begin{itemize}
 \item<1->{Then with $m = 0$ the strange Minkowskian line element is obtained $$\epsilon {\mathrm{d}s}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r}.$$}
-\item<2->{It is easily shown that $r = 0$ gives $$\epsilon {\mathrm{d}s}^2 = 0,$$ and thus is a single null geodesic.}
+\item<2->{It is easily shown that $r = 0$ gives $$\epsilon {\mathrm{d}s}^2 = 0,$$ and thus is a null geodesic.}
 \end{itemize}
 \note{
 \begin{itemize}
@@ -125,9 +128,18 @@ add in the contents
 \begin{frame}
 \frametitle{Singular Lorentz Transformation}
 \begin{itemize}
-\item<1->{Define an arbitrary complex parameter $\zeta \vcentcolon \xi + i \eta,$ to get the new line element $$\epsilon {ds^2} = r^2 {d\zeta}{d\bar{\zeta}} - 2 {du}{dr}.$$}
-\item<2->{The transformation $\zeta \rightarrow \zeta + w$, where $w \in \mathbb{C}$ is then trivial and leave the single null geodesic $r = 0$ invariant.}
-\item<3->{Now see what this looks like in Cartesian coordinates}
+\item<1->{Define an arbitrary complex parameter $\zeta \vcentcolon= \xi + i \eta ,$ to get the new line element[3] $$\epsilon {ds^2} = r^2 {d\zeta}{d\bar{\zeta}} - 2 {du}{dr}.$$}
+\item<2->{The transformation $\zeta \rightarrow \zeta + w$, where $w \in \mathbb{C}$ is then trivial and leaves the single null geodesic $r = 0$ invariant.}
+\item<3->{In Cartesian coordinates this transformation becomes
+
+\begin{align}\nonumber
+x' + i y' & = x + iy + w(t-z), \\\nonumber
+z' - t' & = -r = z - t, \\\nonumber
+z' + t' & = z+t + w(x - i y) + w(x + iy) + w\bar{w} (t-z).
+\end{align}
+}
+\item<4->{Addition of complex numbers is commutative, and $w$ has two parameters, so \textcolor{red}{the singular Lorentz transformations form a 2-parameter abelian subgroup of the Lorentz group}}
+
 \end{itemize}
 
 
@@ -135,6 +147,169 @@ add in the contents
 \begin{itemize}
 \item<3->{This is what we want, An LT which leaves one null invariant.}
 \item<3->{The use in the previous coord transforms was to make this transformation look trivial}
+\item<4->{So this is what the seemingly trivial transformation looks like in cartesians}
+\item<4->{Again its clear that $r = 0$ keeps one direction fixed, as then z=t}
+\item<5->{but it doesn't work both ways, not all 2 parameter abelian subgroups are singular lorentz transformations}
+\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Layout}
+add in the contents
+
+\note{
+\begin{itemize}
+\item{shown here that there is a 2 to 1 correspondence between SL(2,C) and POLTs}
+\end{itemize}
+}
+\end{frame}
+
+%SPECIAL LINEAR MATRICES OF THE LORENTZ TRANSFORMATION
+
+\begin{frame}
+\frametitle{$SL(2,\mathbb{C})$ Matrices of the POLT}
+\begin{itemize}
+\item<1->{There is a one to one correspondence between points in Minkowskian space-time and Hermitian matrices} 
+\item<2->{Contruct the following matrix 
+\begin{equation*}
+A = 
+\left( 
+\begin{array}{cc}
+t-z    & x + i y \\
+x - iy & t+z \\
+\end{array} 
+\right),
+\end{equation*}}
+\item<3->{This is useful as its determinant is the Lorentz quadratic form modulo a sign $$\det(A(\vec{x})) = t^2 - x^2 - y^2 - z^2.$$}
+\item<4->{It is also closely related to spinors $$A = [t\mathbb{I}_{2} - \vec{x} \cdot \vec{\sigma}].$$}
+\item<5->{Construct the transformation $A(\vec{x}') = U A(\vec{x}) U^{\dagger},$ where 
+\begin{equation*} 
+U = \left( 
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right),
+\end{equation*}
+
+\noindent is an element of $SL(2,\mathbb{C})$}
+\end{itemize}
+
+\note{
+\begin{itemize}
+\item<2->{Complex Hermitian matrices have 4 independant components, so the element of such a matrix can be used to represent points in Minkowskian space-time.}
+\item<5->{Where $\sigma$ are the pauli matirces which form a basis for the Lie algebra of $SU(2)$}
+\item<6->{where $\alpha,\beta,\gamma,\delta$ are complex its an element of the special linear group. This means it has determinant 1. **write it on  the board** }
+\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{$SL(2,\mathbb{C})$ Matrices of the POLT}
+\begin{itemize}
+\item<1->{$A(\vec{x}')$ and $A(\vec{x})$ have the same determinant so the above transformation preserves the Lorentz quadratic form, thus is is a Lorentz transformation.}
+\item<2->{Write this transformation component wise
+
+\begin{gather*} 
+\left(
+\begin{array}{cc}
+t' - z' & x' + i y' \\
+x' - i y' & t' + z' \\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+t-z & x + i y \\
+x - i y & t + z   \\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+\bar{\alpha} & \bar{\gamma} \\
+\bar{\beta} & \bar{\delta} \\
+\end{array}
+\right), \\
+ = \left(
+\begin{array}{cc}
+\alpha & \beta \\
+\gamma & \delta \\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+(t-z)\bar{\alpha} + (x + iy)\bar{\beta} & (t-z)\bar{\gamma} + (x + iy)\bar{\delta} \\
+(x - iy)\bar{\alpha} + (t+z)\bar{\beta} & (x-iy)\bar{\gamma} + (t+z)\bar{\delta} \\
+\end{array}
+\right).
+\end{gather*}
+
+}
+
+\item<3->{Thus the \textcolor{red}{general relations}
+
+\begin{gather*}
+t' - z'  = (t-z)\alpha\bar{\alpha} + (x + iy)\alpha\bar{\beta} + (x - iy)\beta\bar{\alpha} + (t+z)\beta\bar{\beta},
+\\
+x' + iy'  = (t-z)\alpha\bar{\gamma} + (x + iy)\alpha\bar{\delta} + (x-iy)\beta\bar{\gamma} + (t+z)\beta\bar{\delta},
+\\
+t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\bar{\gamma} + (t+z)\delta\bar{\delta}.
+\end{gather*}
+}
+\end{itemize}
+
+
+\note{
+\begin{itemize}
+\item<2->{This is becasue the determinant of U is 1}
+\item<3->{I want to show you an example calcualtion of U, to do this we write in component form}
+\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example: Singular Lorentz transformation}
+\begin{itemize}
+\item<1->{Take the singular Lorentz transformation from earlier
+\begin{align*}
+t'-z' & = t-z, \\
+x'+iy' & = x + iy + w(t-z), \\
+t'+z' & = t+z + w(x-iy) + \bar{w} (x + iy) + w \bar{w} (t-z).
+\end{align*}
+}
+\item<2->{Equate coefficients on the RHS of this equation with the RHS of the general relations on the previous slide to obtain
+
+\begin{align*}
+\alpha = \pm 1, \qquad & \beta = 0, \\
+\gamma = \bar{w}\alpha, \qquad &  \delta = \alpha.
+\end{align*}
+}
+\item<3->{So there are always \textcolor{red}{two} possible choices of U
+\begin{equation*}
+U = \pm
+\left(
+\begin{array}{cc}
+1       & 0 \\
+\bar{w} & 1 \\
+\end{array}
+\right)
+\end{equation*}
+}
+\item<4->{Thus \textcolor{red}{there is a 2 to 1 correspondence between elements of $SL(2,\mathbb{C})$ and POLTs}}
+\end{itemize}
+
+\note{
+\begin{itemize}
+\item<3->{Where we have also used $det(U) = 1$}
+\item<3->{becasue the sign doesn't matter is still a solution Eqn(27)}
+\item<5->{A,A' are points in Minkowskian space time, and $\pm U$ are POLTs}
 \end{itemize}
 }
 \end{frame}
@@ -147,8 +322,16 @@ add in the contents
 
 
 
+
+
+
+
+
 \begin{frame}
 \frametitle{temp}
+\begin{itemize}
+\item<1->{temp}
+\end{itemize}
 
 \note{
 \begin{itemize}
