@@ -50,7 +50,7 @@
 \item<4->{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<5->{The Fractional Linear Transformation}
 \item<6->{Infinitesimal Lorentz Transformation}
-\item<7->{Pure Radiation Conditions}
+\item<7->{Pure Radiation conditions}
 \end{enumerate}
 \end{frame}
 
@@ -62,7 +62,7 @@
 \begin{itemize}
 \item<1->{A Lorentz transformation is defined by the preservation of the quadratic form $${x'}^2 + {y'}^2 + {z'}^2 - {t'}^2 = x^2 + y^2 + z^2 - t^2,$$ in the transformation $(x,y,z,t) \rightarrow (x',y',z',t')$}
 \item<2->{Take the \textcolor{red}{Proper Orthochronous Lorentz Transformations(POLTs)} which form the \textcolor{red}{restricted Lorentz group} $SO^{+}(1,3)$}
-\item<3->{In general Lorentz transformations have two invariant null directions}
+\item<3->{In general lorentz transformations have two invariant null directions}
 \end{itemize}
 \end{minipage}
 \begin{minipage}{4.5cm}
@@ -72,7 +72,7 @@
 \begin{itemize}
 \item<3->{--Proper is det 1 . preserves the orientation of spacial axes, preserves handedness}
 \item<3->{--orthochronous means time is always positive and the direction of time is preserved}
-\item<5->{--Think of the standard Lorentz transformation, always two null directions at $x \pm t$}
+\item<5->{--Think of the standard Lornetz transformation, always two null directions at $x \pm t$}
 \end{itemize}
 }
 \end{frame}
@@ -86,11 +86,11 @@
 \item<0>{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<0>{The Fractional Linear Transformation}
 \item<0>{Infinitesimal Lorentz Transformation}
-\item<0>{Pure Radiation Conditions}
+\item<0>{Pure Radiation conditions}
 \end{enumerate}
 \note{
 \begin{itemize}
-\item{derive a strange Minkowskian line element}
+\item{derive a strange minkowskian line element}
 \item{making a complicated transformation that keeps a single null geodesic fixed look trivial}
 \end{itemize}
 }
@@ -109,9 +109,9 @@
 \note{
 \begin{itemize}
 \item<2->{First we are going to derive a strange form of the Minkowskian line element.. of the vacuum field equations, which will be familiar to most of us}
-\item<3->{to remove the coordinate singularity in the Schwarzschild solution}
+\item<3->{to remove the coordinate singularity in the Schwarzchild solution}
 \item<4->{These transformations put the line element in a form where we can take the limit as the energy goes to 0}
-\item<5->{It is easily shown with further coordinate transforms that this is Kasner, but it wont be done here}
+\item<5->{It is easily shown with further coord transforms that this is Kasner, but it wont be done here}
 \end{itemize}
 }
 \end{frame}
@@ -120,12 +120,12 @@
 \frametitle{Strange Minkowskian Line Element}
 \begin{itemize}
 \item<1->{Then with $m = 0$ the strange Minkowskian line element is obtained $$\epsilon {\mathrm{d}s}^2 = r^2 ({\mathrm{d}\xi}^2 + {\mathrm{d}\eta}^2) - 2 {\mathrm{d}u}{\mathrm{d}r}.$$}
-\item<2->{Set $r = 0$ to give $$\epsilon {\mathrm{d}s}^2 = 0,$$ and this is shown to be a null geodesic.}
+\item<2->{It is easily shown that $r = 0$ gives $$\epsilon {\mathrm{d}s}^2 = 0,$$ and thus is a null geodesic.}
 \end{itemize}
 \note{
 \begin{itemize}
-\item<2->{Its easily shown with suitable coordinate transforms that this is Minkowskian line element}
-\item<3->{This is best shown by calculating the geodesic equations after the Eddington-Finkelstein coordinate transforms, all zero if $u$ is proper time along the geodesic}
+\item<2->{Its easily shown with suitable coordinate transforms that this is minkowskian line element}
+\item<3->{This is best shown by calculating the geodesic equations after the Eddington-Finkelstein coord transforms, all zero if $u$ is proper time along the geodesic}
 \end{itemize}
 }
 \end{frame}
@@ -139,7 +139,7 @@
 \item<0>{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<0>{The Fractional Linear Transformation}
 \item<0>{Infinitesimal Lorentz Transformation}
-\item<0>{Pure Radiation Conditions}
+\item<0>{Pure Radiation conditions}
 \end{enumerate}
 \note{LTs that leave one null invariant direction are constructed}
 \end{frame}
@@ -168,9 +168,9 @@ z' + t' & = z+t + w(x - i y) + w(x + iy) + w\bar{w} (t-z).
 \begin{itemize}
 \item<3->{This is what we want, An LT which leaves one null invariant.}
 \item<3->{The use in the previous coord transforms was to make this transformation look trivial}
-\item<4->{So this is what the seemingly trivial transformation looks like in Cartesian}
+\item<4->{So this is what the seemingly trivial transformation looks like in cartesians}
 \item<4->{Again its clear that $r = 0$ keeps one direction fixed, as then z=t}
-\item<5->{but it doesn't work both ways, not all 2 parameter abelian subgroups are singular Lorentz transformations}
+\item<5->{but it doesn't work both ways, not all 2 parameter abelian subgroups are singular lorentz transformations}
 \end{itemize}
 }
 \end{frame}
@@ -184,7 +184,7 @@ z' + t' & = z+t + w(x - i y) + w(x + iy) + w\bar{w} (t-z).
 \item<1>{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<0>{The Fractional Linear Transformation}
 \item<0>{Infinitesimal Lorentz Transformation}
-\item<0>{Pure Radiation Conditions}
+\item<0>{Pure Radiation conditions}
 \end{enumerate}
 \note{
 \begin{itemize}
@@ -199,7 +199,7 @@ z' + t' & = z+t + w(x - i y) + w(x + iy) + w\bar{w} (t-z).
 \frametitle{$SL(2,\mathbb{C})$ Matrices of the POLT}
 \begin{itemize}
 \item<1->{There is a one to one correspondence between points in Minkowskian space-time and Hermitian matrices} 
-\item<2->{Construct the following matrix 
+\item<2->{Contruct the following matrix 
 \begin{equation*}
 A = 
 \left( 
@@ -225,7 +225,7 @@ U = \left(
 
 \note{
 \begin{itemize}
-\item<2->{Complex Hermitian matrices have 4 independent components, so the element of such a matrix can be used to represent points in Minkowskian space-time.}
+\item<2->{Complex Hermitian matrices have 4 independant components, so the element of such a matrix can be used to represent points in Minkowskian space-time.}
 \item<5->{where $\alpha,\beta,\gamma,\delta$ are complex its an element of the special linear group. This means it has determinant 1. **write it on  the board** }
 \end{itemize}
 }
@@ -234,7 +234,7 @@ U = \left(
 \begin{frame}
 \frametitle{$SL(2,\mathbb{C})$ Matrices of the POLT}
 \begin{itemize}
-\item<1->{$A(\vec{x}')$ and $A(\vec{x})$ have the same determinant so the above transformation preserves the Lorentz quadratic form, thus it is a Lorentz transformation.}
+\item<1->{$A(\vec{x}')$ and $A(\vec{x})$ have the same determinant so the above transformation preserves the Lorentz quadratic form, thus is is a Lorentz transformation.}
 \item<2->{Write this transformation component wise
 
 \begin{gather*} 
@@ -294,8 +294,8 @@ t' + z'  = (t-z)\gamma\bar{\gamma} + (x + iy)\gamma\bar{\delta} + (x-iy)\delta\b
 
 \note{
 \begin{itemize}
-\item<2->{This is because the determinant of U is 1}
-\item<3->{I want to show you an example calculation of U, to do this we write in component form}
+\item<2->{This is becasue the determinant of U is 1}
+\item<3->{I want to show you an example calcualtion of U, to do this we write in component form}
 \end{itemize}
 }
 \end{frame}
@@ -334,7 +334,7 @@ U = \pm
 \note{
 \begin{itemize}
 \item<3->{Where we have also used $det(U) = 1$}
-\item<3->{because the sign doesn't matter is still a solution Eqn(27)}
+\item<3->{becasue the sign doesn't matter is still a solution Eqn(27)}
 \item<5->{A,A' are points in Minkowskian space time, and $\pm U$ are POLTs}
 \end{itemize}
 }
@@ -349,11 +349,11 @@ U = \pm
 \item<1>{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<1>{The Fractional Linear Transformation}
 \item<0>{Infinitesimal Lorentz Transformation}
-\item<0>{Pure Radiation Conditions}
+\item<0>{Pure Radiation conditions}
 \end{enumerate}
 \note{
 \begin{itemize}
-\item{Connect Minkowskian space to the 2-sphere by stereographic projection, so we can use points on a 2 sphere to think about LTs}
+\item{Connect Minkoswkian space to the 2-sphere by stereographic projection, so we can use points on a 2 sphere to think about LTs}
 \end{itemize}
 }
 \end{frame}
@@ -378,7 +378,7 @@ U = \pm
 
 \note{
 \begin{itemize}
-\item<3->{As we know, stereographic projection doesn't map the point N at the top of the circle, so that's why we map N to infinity and need to consider the extended complex plane}
+\item<3->{As we know, stereographic projection doesn't map the point N at the top of the circle, so thats why we map N to infinity and need to consider the extended complex plane}
 \item<3->{It can also be written in terms of $\theta$ and $\phi$}
 \end{itemize}
 }
@@ -405,7 +405,7 @@ U = \pm
 \begin{itemize}
 \item<1->{all the points on the 2 sphere are generators of the future null cone in Minkowskian space time}
 \item<1->{Can denote an LT by moving three arbitrary points along the surface of the sphere as the generators have dimension two, so to match the dim of the LT (it's 6) we need three of them}
-\item<4->{Extra coord is because we take time into account now, now $\zeta$ has two parameters so x is in terms of two parameters, t just defines the direction}
+\item<4->{Extra coord is becasue we take time into account now, now $\zeta$ has two parameters so x is in terms of two parameters, t just defines the direction}
 \end{itemize}
 }
 \end{frame}
@@ -488,7 +488,7 @@ c_0\left(
 \item<1>{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<1>{The Fractional Linear Transformation}
 \item<1>{Infinitesimal Lorentz Transformation}
-\item<0>{Pure Radiation Conditions}
+\item<0>{Pure Radiation conditions}
 \end{enumerate}
 \note{
 \begin{itemize}
@@ -560,7 +560,7 @@ where
 
 \note{
 \begin{itemize}
-\item<3->{Clear that these equations can be expressed in terms of P and Q}
+\item<1->{temp}
 \end{itemize}
 }
 \end{frame}
@@ -577,7 +577,7 @@ where
 \begin{equation}
 \vec{P} = \frac{q}{m} \vec{E}, \qquad \vec{Q} = \frac{q}{m}\vec{B},
 \end{equation}}
-\item<4->{\textcolor{red}{To be compatible with special relativity the Lorentz force must depend on $\vec{u}$ in this way}. So the Lorentz force is a special case of a charged particle moving along a world line in Minkowskian space-time generated by an infinitesimal Lorentz transformation.}
+\item<3->{\textcolor{red}{To be compatible with special relativity the Lorentz force must depend on $\vec{u}$ in this way}. So the Lorentz force is a special case of a charged particle moving along a world line in minkowskian space-time generated by an infinitesimal Lorentz transformation.}
 \end{itemize}
 
 \note{
@@ -596,7 +596,7 @@ where
 \item<1>{$SL(2,\mathbb{C})$ Matrices of the Lorentz Transformation}
 \item<1>{The Fractional Linear Transformation}
 \item<1>{Infinitesimal Lorentz Transformation}
-\item<1>{Pure Radiation Conditions}
+\item<1>{Pure Radiation conditions}
 \end{enumerate}
 \note{
 \begin{itemize}
@@ -617,7 +617,7 @@ where
 \item<2->{Fixed points of the system are given by $\zeta = \zeta'$ and correspond to null directions}
 \item<3->{With this condition solve the fractional linear transformation for $\zeta$ $$\bar{\beta}\zeta^2 + (\bar{\alpha}- \bar{\delta})\zeta - \bar{\gamma} = 0.$$}
 \item<4->{A quadratic means it has \textcolor{red}{two roots in general}}
-\item<5->{Interested in the singular root case so take the discriminant equal to zero to get
+\item<5->{Interested in the singular root case so take the descriminant equal to zero to get
 \begin{equation*}
 a^2 +bc = 0.
 \end{equation*}
@@ -626,7 +626,6 @@ a^2 +bc = 0.
 
 \note{
 \begin{itemize}
-\item<2->{This is derived from the form of the infinitesimal U and from the fractional linear transformation formula}
 \item<5->{This is one of the things I said I would show earlier}
 \item<6->{THIS WILL BE VERY IMPORTANT, **write on the board**}
 \end{itemize}
@@ -646,26 +645,26 @@ a_2 = -\frac{1}{2} B^3, \qquad b_1 = \frac{1}{2} (E^1 - B^2), \qquad c_2  = \fra
 {|\vec{E}|}^2 = {|\vec{B}|}^2, \\
 \vec{E} \cdot \vec{B} = 0.
 \end{gather*}}
-\item<3->{These are the familiar pure radiation conditions. Thus \textcolor{red}{if the world line of a charged particle is generated by an infinitesimal singular Lorentz transformation then the particle is moving in a pure radiation EM field.}}
+\item<3->{These are the familiar pure radiation conditions. Thus \textcolor{red}{if the world line of a charged particle is generated by an infinitesimal Lorentz transformation then the particle is moving in a pure radiation EM field.}}
 \end{itemize}
 
 \note{
 \begin{itemize}
-\item<2->{q/m factors suppressed for convenience}
+\item<2->{q/m factors suppresed for convenience}
 \end{itemize}
 }
 \end{frame}
 
-%\begin{frame}
-%\frametitle{Layout}
-%add in the contents
-%
-%\note{
-%\begin{itemize}
-%\item{Many other things can be shown, I will finally show one small lemma of this result}
-%\end{itemize}
-%}
-%\end{frame}
+\begin{frame}
+\frametitle{Layout}
+add in the contents
+
+\note{
+\begin{itemize}
+\item{MAny other things can be shown, I will finally show one small lemma of this result}
+\end{itemize}
+}
+\end{frame}
 
 %ITS LONG ENOUGH ALREADY
 %PROPAGATION DIRECTION OF EM RADIATION
